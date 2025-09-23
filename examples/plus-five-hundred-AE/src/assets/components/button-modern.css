@@ -1,0 +1,312 @@
+/* ========================================
+   🎯 MODERN BUTTON SYSTEM (from React)
+   ======================================== */
+
+/* Base Button Styles */
+.btn-modern {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  font-family: var(--font-inter);
+  line-height: 1;
+  position: relative;
+  overflow: hidden;
+  font-feature-settings:
+    'rlig' 1,
+    'calt' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   BUTTON SIZES
+   ======================================== */
+
+.btn-modern--small {
+  padding: 8px 16px;
+  font-size: var(--text-font-small);
+  border-radius: 8px;
+}
+
+.btn-modern--medium {
+  padding: 12px 24px;
+  font-size: var(--text-font-normal);
+  border-radius: 10px;
+}
+
+.btn-modern--large {
+  padding: 16px 32px;
+  font-size: var(--text-font-medium);
+  border-radius: 12px;
+}
+
+.btn-modern--xl {
+  padding: 20px 40px;
+  font-size: var(--text-font-big);
+  border-radius: 14px;
+}
+
+/* ========================================
+   BUTTON VARIANTS
+   ======================================== */
+
+/* Primary Button */
+.btn-modern--primary {
+  background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-700) 100%);
+  color: white;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-modern--primary:hover:not(.btn-modern--disabled) {
+  background: linear-gradient(135deg, var(--primary-700) 0%, var(--primary-800) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+}
+
+.btn-modern--primary:active:not(.btn-modern--disabled) {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Secondary Button */
+.btn-modern--secondary {
+  background: transparent;
+  color: var(--primary-600);
+  border: 2px solid var(--primary-300);
+  backdrop-filter: blur(10px);
+}
+
+.btn-modern--secondary:hover:not(.btn-modern--disabled) {
+  background: var(--primary-50);
+  border-color: var(--primary-500);
+  color: var(--primary-700);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
+
+.btn-modern--secondary:active:not(.btn-modern--disabled) {
+  transform: translateY(0);
+}
+
+/* Outline Button */
+.btn-modern--outline {
+  background: transparent;
+  color: var(--gray-700);
+  border: 2px solid var(--gray-300);
+}
+
+.btn-modern--outline:hover:not(.btn-modern--disabled) {
+  background: var(--gray-50);
+  border-color: var(--gray-400);
+  color: var(--gray-800);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ghost Button */
+.btn-modern--ghost {
+  background: transparent;
+  color: var(--gray-700);
+  border: 2px solid transparent;
+}
+
+.btn-modern--ghost:hover:not(.btn-modern--disabled) {
+  background: var(--gray-50);
+  color: var(--primary-600);
+  transform: translateY(-1px);
+}
+
+/* Danger Button */
+.btn-modern--danger {
+  background: #dc2626;
+  color: white;
+  border: 2px solid #dc2626;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+.btn-modern--danger:hover:not(.btn-modern--disabled) {
+  background: #b91c1c;
+  border-color: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(220, 38, 38, 0.4);
+}
+
+/* Success Button */
+.btn-modern--success {
+  background: var(--color-btn-green);
+  color: white;
+  border: 2px solid var(--color-btn-green);
+  box-shadow: 0 4px 12px rgba(146, 190, 67, 0.3);
+}
+
+.btn-modern--success:hover:not(.btn-modern--disabled) {
+  background: var(--color-btn-green-light);
+  border-color: var(--color-btn-green-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(146, 190, 67, 0.4);
+}
+
+/* ========================================
+   BUTTON STATES
+   ======================================== */
+
+/* Disabled State */
+.btn-modern--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.btn-modern--disabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Loading State */
+.btn-modern--loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-modern__loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-modern__spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: btn-spin 1s linear infinite;
+}
+
+@keyframes btn-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========================================
+   FOCUS & ACCESSIBILITY
+   ======================================== */
+
+.btn-modern:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.btn-modern:focus-visible {
+  outline: 2px solid var(--primary-600);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   BUTTON GROUPS
+   ======================================== */
+
+.btn-group {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.btn-group--attached .btn-modern {
+  border-radius: 0;
+}
+
+.btn-group--attached .btn-modern:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.btn-group--attached .btn-modern:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.btn-group--attached .btn-modern:only-child {
+  border-radius: 12px;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+  .btn-modern--large {
+    padding: 14px 28px;
+    font-size: var(--text-font-normal);
+  }
+
+  .btn-modern--xl {
+    padding: 16px 32px;
+    font-size: var(--text-font-medium);
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-modern {
+    min-height: 44px; /* Ensure touch-friendly size */
+  }
+
+  .btn-modern--small {
+    padding: 10px 20px;
+  }
+
+  .btn-modern--medium {
+    padding: 12px 24px;
+  }
+}
+
+/* ========================================
+   HIGH CONTRAST MODE
+   ======================================== */
+
+@media (prefers-contrast: high) {
+  .btn-modern--primary {
+    background: var(--primary-800);
+    border-color: var(--primary-800);
+  }
+
+  .btn-modern--secondary {
+    border-color: var(--primary-700);
+    color: var(--primary-700);
+  }
+
+  .btn-modern--outline {
+    border-color: var(--gray-800);
+    color: var(--gray-900);
+  }
+}
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-modern {
+    transition: none;
+  }
+
+  .btn-modern:hover,
+  .btn-modern:active {
+    transform: none !important;
+  }
+
+  .btn-modern__spinner {
+    animation: none;
+  }
+}

@@ -1,0 +1,30 @@
+declare const styles: {
+  readonly stockDashboard: string;
+  readonly container: string;
+  readonly title: string;
+  readonly searchContainer: string;
+  readonly searchBox: string;
+  readonly symbolInput: string;
+  readonly searchButton: string;
+  readonly searchResults: string;
+  readonly searchItem: string;
+  readonly widgetGrid: string;
+  readonly widget: string;
+  readonly widgetContent: string;
+  readonly widgetSpan2: string;
+  readonly widgetSpan3: string;
+  readonly quotePrice: string;
+  readonly quoteChange: string;
+  readonly quoteDetails: string;
+  readonly positive: string;
+  readonly negative: string;
+  readonly profileHeader: string;
+  readonly profileLogo: string;
+  readonly profileDetails: string;
+  readonly newsList: string;
+  readonly newsItem: string;
+  readonly loader: string;
+  readonly error: string;
+};
+
+export default styles;

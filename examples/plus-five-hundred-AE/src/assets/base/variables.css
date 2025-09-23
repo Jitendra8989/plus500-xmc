@@ -1,0 +1,121 @@
+@theme {
+  --font-roboto: 'Roboto', 'sans-serif';
+  --font-inter:
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+
+  /* ========================================
+       MODERN PLUS500 COLOR SYSTEM (from React)
+       ======================================== */
+
+  /* Plus500 Modern Primary Color Palette */
+  --primary-50: #eff6ff;
+  --primary-100: #dbeafe;
+  --primary-200: #bfdbfe;
+  --primary-300: #93c5fd;
+  --primary-400: #60a5fa;
+  --primary-500: #3b82f6;
+  --primary-600: #2563eb;
+  --primary-700: #1d4ed8;
+  --primary-800: #1e40af;
+  --primary-900: #1e3a8a;
+
+  /* Modern Gray Scale */
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+
+  /* Legacy Colors (keeping for backwards compatibility) */
+  --color-main-color: #27272a;
+  --color-bg-basic-color: #ffffff;
+  --color-bg-light-gray: #f7f7f7;
+  --color-bg-lighter-gray: #fafafa;
+  --color-bg-light-gray-active: #dadada;
+  --color-bg-blue: #3b82f6; /* Updated to match React primary */
+  --color-bg-blue-active: #2563eb; /* Updated to match React primary */
+  --color-bg-black: #000;
+  --color-bg-black-active: #3d3d3d;
+  --color-page-bg-editor: none;
+  --color-bg-dark-gray: #262626;
+  --color-bg-submenu: #edebeb;
+  --color-bg-submenu-active: #f6f6f6;
+
+  /* Text colors */
+  --color-text-white: #fff;
+  --color-text-heading-color: #0f172a; /* Updated to modern gray-900 */
+  --color-text-basic: #64748b; /* Updated to modern gray-500 */
+  --color-text-basic-active: #475569; /* Updated to modern gray-600 */
+  --color-text-blue: #3b82f6; /* Updated to match React primary */
+  --color-text-blue-active: #2563eb; /* Updated to match React primary */
+  --color-text-red: #de232f;
+
+  /* Border colors */
+  --color-border-gray: #cbd5e1; /* Updated to modern gray-300 */
+  --color-border-basic-color: #3b82f6; /* Updated to match React primary */
+
+  /* Button colors */
+  --color-btn-green-light: #a0ce4e;
+  --color-btn-green: #92be43;
+  --color-btn-red-active: #c34e30;
+  --color-btn-red: #bc4526;
+
+  /* Other */
+  --color-promo-bg-hero: rgba(0, 0, 0, 0.5);
+  --color-menu-hover-color: #2563eb; /* Updated to match React primary */
+  --color-menu-active-color: #1d4ed8; /* Updated to match React primary */
+
+  /* ========================================
+       MODERN TYPOGRAPHY SYSTEM (from React)
+       ======================================== */
+
+  /* Modern Typography Scale */
+  --text-font-small: 0.875rem; /* 14px */
+  --text-font-normal: 1rem; /* 16px */
+  --text-font-medium: 1.125rem; /* 18px */
+  --text-font-big: 1.25rem; /* 20px */
+  --text-font-large: 1.375rem; /* 22px */
+  --text-font-xl: 1.5rem; /* 24px */
+  --text-font-2xl: 2rem; /* 32px */
+  --text-font-3xl: 2.5rem; /* 40px */
+  --text-font-4xl: 3rem; /* 48px */
+  --text-font-5xl: 4rem; /* 64px */
+  --text-font-6xl: 5rem; /* 80px */
+
+  /* Legacy font sizes (keeping for backwards compatibility) */
+  --text-font-extrabig: 1.5rem; /* Updated to 24px equivalent */
+  --text-navigation-font-basic: 1.125rem; /* Updated to 18px */
+  --text-navigation-font-basic-submenu: 0.875rem; /* Updated to 14px */
+
+  /* Typography weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* Line heights */
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.6;
+  --line-height-loose: 1.8;
+
+  /* // breakpoints */
+  --breakpoint-mobile: 380px;
+  --breakpoint-mobile-horizontal: 640px;
+  --breakpoint-mobile-large: 992px;
+  --breakpoint-desktop: 1024px;
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+}
