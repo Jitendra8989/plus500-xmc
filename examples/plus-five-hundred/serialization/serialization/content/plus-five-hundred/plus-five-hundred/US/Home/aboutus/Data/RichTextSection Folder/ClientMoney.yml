@@ -1,0 +1,161 @@
+﻿---
+ID: "173eb9d4-dfd7-4ea3-a816-c82033f106b2"
+Parent: "36a9a204-a26a-409f-ad5c-7eb4a2874922"
+Template: "fcb27369-56ee-424c-a07f-062bad2b2476"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/RichTextSection Folder/ClientMoney"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7db636d3-ac9f-4473-a7f3-25c568506ee8"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: "<p>في Plus500، أمان أموالك هو أولويتنا القصوى. نطبق إجراءات رائدة في الصناعة لحماية أموال العملاء وضمان فصلها عن أموال الشركة.</p><p><strong>تشمل الحمايات الرئيسية:</strong></p><ul><li>أموال العملاء محفوظة في حسابات منفصلة لدى بنوك من الدرجة الأولى</li><li>عمليات مطابقة ومراقبة يومية</li><li>الامتثال للمتطلبات التنظيمية الصارمة</li></ul>"
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: حماية أموال العملاء
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211640Z
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8d97aa60-a3b3-4207-b29e-c7706a8cc8cf"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: "<p>At Plus500, your funds' security is our top priority. We implement industry-leading measures to protect client money and ensure segregation from company funds.</p><p><strong>Key protections include:</strong></p><ul><li>Client funds held in segregated accounts with tier-1 banks</li><li>Daily reconciliation and monitoring processes</li><li>Compliance with strict regulatory requirements</li><li>Investor compensation schemes in applicable jurisdictions</li></ul><p>Learn more about our <a href='/legal/client-money-protection'>Client Money Protection policies</a>.</p>"
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: Client Money Protection
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T210423Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7a7f4e67-adbe-43a5-87ad-0d218ca24cb1"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: "<p>At Plus500, your funds' security is our top priority. We implement industry-leading measures to protect client money and ensure segregation from company funds.</p><p><strong>Key protections include:</strong></p><ul><li>Client funds held in segregated accounts with tier-1 banks</li><li>Daily reconciliation and monitoring processes</li><li>Compliance with strict regulatory requirements</li><li>Investor compensation schemes in applicable jurisdictions</li></ul><p>Learn more about our <a href='/legal/client-money-protection'>Client Money Protection policies</a>.</p>"
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: Client Money Protection
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211638Z
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7bed7d58-dc52-423b-8ae5-869697b8470a"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: "<p>La Plus500, securitatea fondurilor dumneavoastră este prioritatea noastră principală. Implementăm măsuri de top din industrie pentru a proteja banii clienților și pentru a asigura segregarea de fondurile companiei.</p><p><strong>Protecțiile cheie includ:</strong></p><ul><li>Fondurile clienților sunt păstrate în conturi segregate la bănci de rang întâi</li><li>Procese zilnice de reconciliere și monitorizare</li><li>Conformitatea cu cerințe de reglementare stricte</li></ul>"
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: Protecția Banilor Clienților
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211643Z
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "56210683-73c4-4598-b060-c759e7253d66"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: <p>在Plus500，您的资金安全是我们的首要任务。我们实施行业领先的措施来保护客户资金，并确保与公司资金分离。</p><p><strong>主要保护措施包括：</strong></p><ul><li>客户资金存放在一线银行的隔离账户中</li><li>每日对账和监控流程</li><li>遵守严格的监管要求</li><li>适用司法管辖区的投资者赔偿计划</li></ul>
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: 客户资金保护
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211644Z

@@ -1,0 +1,325 @@
+﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred.yml
+ID: "b14d8dc4-ed75-4111-a726-dbe0cae2e1f7"
+Parent: "1995806f-0a84-42b5-93b0-88f0e2ff872c"
+Template: "840d4a46-5503-49ec-bf9d-bd090946c63d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred"
+Signature: yoCwba1pTed86JqeQebGms9CPzUuNFl8vJFvZiG5VqY=
+Modified: 638940035299506727
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\Card.yml
+ID: "e9f1d3c5-8b24-4a67-9e83-c7d5a9f2e4b8"
+Parent: "b14d8dc4-ed75-4111-a726-dbe0cae2e1f7"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/Card"
+Signature: Eu855Tc/HJjomr4+aRvVeoJxuWUHAZwPD+mih/iurGs=
+Modified: 638940035299506727
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\Plus500.yml
+ID: "8f986080-0bd0-4a43-ac77-5f07914b231d"
+Parent: "b14d8dc4-ed75-4111-a726-dbe0cae2e1f7"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/Plus500"
+Signature: vmCGDGOSlJkQveC8YX79L8GqET9azjEUbnzGnhMNbMM=
+Modified: 638941209536181594
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\Plus500\FeatureSection.yml
+ID: "3306ab16-d4c7-449a-a3d1-de4d6fcead02"
+Parent: "8f986080-0bd0-4a43-ac77-5f07914b231d"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/Plus500/FeatureSection"
+Signature: bV5BM7BhBGh+bPFEk6ulUR7X+JIskdBC00bn/6rOrd8=
+Modified: 638940868392202535
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary.yml
+ID: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Parent: "b14d8dc4-ed75-4111-a726-dbe0cae2e1f7"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary"
+Signature: VLkTt4YTaYTE8XUK+tQ2EZ3lZJhmw1/C6ZXbd10X8CM=
+Modified: 638941828535465329
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\Plus500\FinancialInstruments.yml
+ID: "d8a0fb72-384a-4870-a1aa-40c1cc1c36c3"
+Parent: "8f986080-0bd0-4a43-ac77-5f07914b231d"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/Plus500/FinancialInstruments"
+Signature: qZJhBD5VaGyH4K95XOupcPfroH55+w8vd5dlUlw82rI=
+Modified: 638941828535485492
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\Plus500\FinnhubStockDashboard.yml
+ID: "8f735654-f6c4-4f9c-bb66-587d863d4430"
+Parent: "8f986080-0bd0-4a43-ac77-5f07914b231d"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/Plus500/FinnhubStockDashboard"
+Signature: /s5Hc5Xjm0HpUooz7KNOOIUEjmAYSuTPd1Oh6/Rhhtk=
+Modified: 638941424141016190
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\ComparisonTable.yml
+ID: "51ceee48-dfaf-486b-99cc-edffe91b8f34"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/ComparisonTable"
+Signature: 8yxR+Yg+TNhZd1RVfVoZytk6b00mihaHCrwmQA784LQ=
+Modified: 638941828535525820
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\Plus500\FinnhubWidget.yml
+ID: "8b44a1e9-972f-4223-af2b-5192898130dd"
+Parent: "8f986080-0bd0-4a43-ac77-5f07914b231d"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/Plus500/FinnhubWidget"
+Signature: nHYdW4XjnjwE9zAyvlVN5RgTgTEaViHU4WDKmpVkjRI=
+Modified: 638941424141021227
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\ImageWithCaption.yml
+ID: "85808ede-1ec5-41cf-9586-c06580f89bcf"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/ImageWithCaption"
+Signature: 5uEVoIa7XQGXNabdivST7f2tDuvzu51TwhLy0KSbs5w=
+Modified: 638941828535794524
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\Plus500\Footer.yml
+ID: "8102cd66-6adf-48a5-9e6c-7dc46596cac3"
+Parent: "8f986080-0bd0-4a43-ac77-5f07914b231d"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/Plus500/Footer"
+Signature: kTin4/yDBzgd1WBhC7ZiFEI8TbHbgZQq9zIuPmJy8Wg=
+Modified: 638940868392202535
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\LearningCards.yml
+ID: "e0963815-c1aa-4ef4-a794-19be07cbd1b3"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/LearningCards"
+Signature: g5sF7zIrGpnxUaICmhAo4w6lCSEgnc5MqsmBrWJOS7A=
+Modified: 638941828535826529
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\Plus500\Header.yml
+ID: "b8aafc4b-07c0-4e25-9d81-d56a03c665f2"
+Parent: "8f986080-0bd0-4a43-ac77-5f07914b231d"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/Plus500/Header"
+Signature: AcefZ7ZjS7Fouu41LYTE52BwT+vdh+WMKOoxHh+Dtlg=
+Modified: 638940868392202535
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\RegulationLicencesList.yml
+ID: "b087509f-3c84-4ecb-8b40-63fd657d7aa5"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/RegulationLicencesList"
+Signature: oyGfTVtgB1esx2Y6WVAmQfEzaksl5YXFS32HecAKfkg=
+Modified: 638941828535847067
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\Plus500\HeroSection.yml
+ID: "093f9ed8-fc95-4249-8a05-b93ecf734381"
+Parent: "8f986080-0bd0-4a43-ac77-5f07914b231d"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/Plus500/HeroSection"
+Signature: iMNYYH3Lakyq5LInJosoVDk6HbaZBA7O0jpTNx9jlQg=
+Modified: 638940035299516715
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\ReviewsGrid.yml
+ID: "4c9ef690-8348-4d12-b496-33b6236b8d88"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/ReviewsGrid"
+Signature: y1irovsaLziBvAYIK6IikGsy459PrJeZZau1Ie3DqZ4=
+Modified: 638941828535884868
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\Plus500\MarketCalenderEventDetail.yml
+ID: "b22cf88d-4803-4110-b76a-071c844f5ab2"
+Parent: "8f986080-0bd0-4a43-ac77-5f07914b231d"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/Plus500/MarketCalenderEventDetail"
+Signature: 93UTqr2SUJWOw7P+xt08cCpq9z4zRHuK1OjrLH2vRjA=
+Modified: 638941424141026447
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\ReviewSummary.yml
+ID: "c695b9c7-ec37-48c2-bf56-0a7027dbead2"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/ReviewSummary"
+Signature: 4BCNt3LPDH+BzjyXDTOIzTrVycDIj0BFmudcHWGXb7Q=
+Modified: 638941828535884868
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\Plus500\MarketCalenderRegion.yml
+ID: "141c2e46-a88f-418e-b3ce-327fcea9d1ac"
+Parent: "8f986080-0bd0-4a43-ac77-5f07914b231d"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/Plus500/MarketCalenderRegion"
+Signature: YmQX4HHUtz4FtlolkpWmsLRYdywsrMGCMLMdA1OEvHc=
+Modified: 638941424141026447
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\SponsorsLogos.yml
+ID: "afc7ac9a-f7fe-4acf-884f-637339dcc99d"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/SponsorsLogos"
+Signature: vAnX1xTC2inuLBzTARpzBYblGkGyFJB0g/5h3Es0OsE=
+Modified: 638941828536026862
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\AwardsAndRatings.yml
+ID: "ae778358-8ffb-4f92-a778-564934074d51"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/AwardsAndRatings"
+Signature: 1dBxfFh4j1MffUC86vs701Fvur+SzyEiMXTdpyzjgSo=
+Modified: 638941828535485492
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\Steps.yml
+ID: "27dab541-6805-4dc4-9bba-1a474c242c93"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/Steps"
+Signature: fHlkwpTsel8R5kV95aqvpjHtgxyxi1EJFk9QXIqy1fY=
+Modified: 638941828536026862
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\Breadcrumb.yml
+ID: "4ce38604-0123-4f96-b372-5f1c61943241"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/Breadcrumb"
+Signature: eXSdGPY+95kLsa/98xIGhBRamzT2MCz3CLRE6zymTsc=
+Modified: 638941828535505677
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\VisionPurposeValues.yml
+ID: "61ea220a-8673-4596-8c85-66cbfd8f3782"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/VisionPurposeValues"
+Signature: jf5PeOxd2Uxs3TTPtkJ9BAucEVdnWLoh+RYxUhC63bk=
+Modified: 638941828536123796
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\BulletList.yml
+ID: "10b44761-e1a9-4ad4-986c-58c57a288bba"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/BulletList"
+Signature: uN+g4Akw7gZ9NssfTx50ptthD2Tw1dlCc6Z5PgIeDeU=
+Modified: 638941828535525820
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\CategoryInstrumentsRail.yml
+ID: "7231f6ba-6a0c-458d-be9a-199dc725a650"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/CategoryInstrumentsRail"
+Signature: 881fjJ6NKSfnfmwD6Ao2fxgOncdkW5wXTGHrG03hT8Q=
+Modified: 638941828535525820
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\CTASection.yml
+ID: "cc3c144e-2e6a-4ec4-8896-a2b174058c4b"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/CTASection"
+Signature: 3uFRHSY7UfSJh8PpE7TDQeDiCe8blNY1rL/n5wmWnH0=
+Modified: 638941828535749029
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\FAQAccordion.yml
+ID: "c5d37270-f82b-405c-bc85-4a77ea50d296"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/FAQAccordion"
+Signature: /Ftw4mhqSkXru15vXsqE7iyOLRLkdJWNjnaZVdtyOiY=
+Modified: 638941828535769266
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\GenericTable.yml
+ID: "d546424a-badf-4794-8f1b-dd0889b9dbf7"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/GenericTable"
+Signature: vIP/a1SoFi/4EDI2s60BL9MDpXD98Ch7DPVnQ35JDls=
+Modified: 638941828535769266
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\HeroBanner.yml
+ID: "3a1a86f3-572e-4799-b669-0d7bb583c0ed"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/HeroBanner"
+Signature: 7rVztReKDsEe4QdK8DBWN9KB6gnS5q46i1negwBXBxY=
+Modified: 638941828535794524
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\OfficeComplaintsInfo.yml
+ID: "a434e365-b71b-4a02-9967-fba10e7d2486"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/OfficeComplaintsInfo"
+Signature: FMxQ3G1wKAjOOlfKIA/zFEU8kS6ygsiDgM5Y3tG+g6E=
+Modified: 638941828535826529
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\PromoStrip.yml
+ID: "ddf0aefe-0cad-43ab-acae-9e6e460a9192"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/PromoStrip"
+Signature: MN/4FmOPQEXEO8xFlCAbE4ac6U+T4VH+LgOFlniknGA=
+Modified: 638941828535847067
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\RichTextSection.yml
+ID: "4c015668-9193-4c8b-862d-77a92b0b0af4"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/RichTextSection"
+Signature: XWw48tJXDNm1SKKCa9dYjQGBqtjjvsqW3/+cWWBmsZA=
+Modified: 638941828535905057
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\RiskToolsFeatureTrio.yml
+ID: "7445a81f-ca70-497c-9a7b-1b092c96a98e"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/RiskToolsFeatureTrio"
+Signature: TVuJ1p/QG1XNp9xZsHrXjNu8xJDW6JKyzVRE5uQCCuQ=
+Modified: 638941828535986615
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\Timeline.yml
+ID: "711de696-5594-4a23-9fcc-dbf20bbe612b"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/Timeline"
+Signature: OsxNtKeokfbqLJ3hdLlR0HIf+SEQCzyd9OW/B/kTiuo=
+Modified: 638941828536026862
+---
+File: |
+  D:\projects\DCX\examples\plus-five-hundred\serialization\serialization\renderings\plus-five-hundred\TestLibrary\TitleBand.yml
+ID: "ac3d2bfb-a0ec-453a-bfab-5d0b2b9d207e"
+Parent: "7e4ea33b-e1dd-4c68-bbc0-10714821b349"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/plus-five-hundred/TestLibrary/TitleBand"
+Signature: OdmuNC1WVFV7NptCFXvH8Sur5HlFqorPpSLq7qdY62A=
+Modified: 638941828536026862

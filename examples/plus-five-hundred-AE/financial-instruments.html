@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus500 Financial Instruments Browser</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #00d4ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.8;
+            font-size: 1.1rem;
+        }
+
+        .main-container {
+            display: flex;
+            height: calc(100vh - 120px);
+        }
+
+        .sidebar {
+            width: 350px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            overflow-y: auto;
+        }
+
+        .content-area {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .category-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateX(5px);
+        }
+
+        .category-header {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .category-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #00d4ff;
+        }
+
+        .category-count {
+            background: rgba(0, 212, 255, 0.2);
+            color: #00d4ff;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        .subcategories {
+            padding: 0 1rem 1rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .subcategories.active {
+            max-height: 300px;
+        }
+
+        .subcategory {
+            padding: 0.5rem 0.8rem;
+            margin: 0.3rem 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .subcategory:hover {
+            background: rgba(0, 212, 255, 0.1);
+        }
+
+        .subcategory.selected {
+            background: rgba(0, 212, 255, 0.2);
+            border-left: 3px solid #00d4ff;
+        }
+
+        .instrument-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .instrument-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .instrument-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 212, 255, 0.1);
+        }
+
+        .instrument-symbol {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #00d4ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .instrument-name {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .instrument-price {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #00ff88;
+            margin-bottom: 1rem;
+        }
+
+        .instrument-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+            font-size: 0.85rem;
+        }
+
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .detail-label {
+            opacity: 0.7;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            margin-bottom: 0.2rem;
+        }
+
+        .detail-value {
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            opacity: 0.7;
+        }
+
+        .error {
+            background: rgba(255, 0, 0, 0.1);
+            border: 1px solid rgba(255, 0, 0, 0.3);
+            color: #ff6b6b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .summary-stats {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #00d4ff;
+            display: block;
+        }
+
+        .stat-label {
+            opacity: 0.8;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .search-bar::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .search-bar:focus {
+            outline: none;
+            border-color: #00d4ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Plus500 Financial Instruments</h1>
+        <p>Enterprise-Grade Financial Data Management System</p>
+    </div>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <input type="text" class="search-bar" placeholder="Search instruments..." id="searchBar">
+            <div id="categoryList">
+                <!-- Categories will be loaded here -->
+            </div>
+        </div>
+
+        <div class="content-area">
+            <div class="summary-stats" id="summaryStats">
+                <!-- Summary stats will be loaded here -->
+            </div>
+            
+            <div id="instrumentContent">
+                <div class="loading">Loading financial instruments...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class Plus500Browser {
+            constructor() {
+                // Update to the correct endpoint and add context ID
+                this.graphqlEndpoint = 'https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1';
+                this.sitecoreContextId = '7KMLyD39rv5jUREDjj2Fwr'; // Your complete context ID
+                this.categories = [];
+                this.instruments = [];
+                this.currentView = 'all';
+                this.searchTerm = '';
+                
+                this.init();
+            }
+
+            async init() {
+                try {
+                    await this.loadCategories();
+                    this.setupEventListeners();
+                    this.renderSummaryStats();
+                } catch (error) {
+                    this.showError('Failed to initialize application: ' + error.message);
+                }
+            }
+
+            async makeGraphQLQuery(query, variables = {}) {
+                try {
+                    const url = new URL(this.graphqlEndpoint);
+                    url.searchParams.append('sitecoreContextId', this.sitecoreContextId);
+                    
+                    const response = await fetch(url.toString(), {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json',
+                        },
+                        body: JSON.stringify({ 
+                            query,
+                            variables 
+                        })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+
+                    const result = await response.json();
+                    if (result.errors) {
+                        throw new Error(result.errors[0].message);
+                    }
+                    return result.data;
+                } catch (error) {
+                    console.error('GraphQL Error:', error);
+                    this.showError('Failed to fetch data: ' + error.message);
+                    return null;
+                }
+            }
+
+            showError(message) {
+                const instrumentContent = document.getElementById('instrumentContent');
+                instrumentContent.innerHTML = `
+                    <div class="error">
+                        <h3>Error</h3>
+                        <p>${message}</p>
+                    </div>
+                `;
+            }
+
+            async loadCategories() {
+                // Use item-based query with your actual content path
+                const query = `
+                    query GetFinancialInstruments($language: String!) {
+                        item(path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/Financial Instruments", language: $language) {
+                            id
+                            name
+                            path
+                            children {
+                                results {
+                                    id
+                                    name
+                                    path
+                                    children {
+                                        results {
+                                            id
+                                            name
+                                            path
+                                            children {
+                                                total
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                `;
+
+                const variables = {
+                    language: 'en'
+                };
+
+                const data = await this.makeGraphQLQuery(query, variables);
+                
+                if (data && data.item) {
+                    this.categories = data.item.children.results || [];
+                    this.renderCategories();
+                } else {
+                    this.showError('No categories found or failed to load data');
+                }
+            }
+
+            async loadCategoriesFallback() {
+                // This method is no longer needed since we're using the correct path
+                console.log('Fallback method - not used');
+            }
+
+            async loadInstruments(categoryPath, subcategoryName = null) {
+                let targetPath = categoryPath;
+                if (subcategoryName) {
+                    targetPath = `${categoryPath}/${subcategoryName}`;
+                }
+
+                const query = `
+                    query GetInstruments($language: String!, $path: String!) {
+                        item(path: $path, language: $language) {
+                            id
+                            name
+                            children {
+                                results {
+                                    id
+                                    name
+                                    path
+                                    fields {
+                                        name
+                                        value
+                                    }
+                                }
+                            }
+                        }
+                    }
+                `;
+
+                const variables = {
+                    language: 'en',
+                    path: targetPath
+                };
+
+                const data = await this.makeGraphQLQuery(query, variables);
+                if (data && data.item && data.item.children) {
+                    // Process items and extract field values
+                    this.instruments = data.item.children.results.map(item => {
+                        const fields = {};
+                        if (item.fields) {
+                            item.fields.forEach(field => {
+                                fields[field.name] = { value: field.value };
+                            });
+                        }
+                        
+                        return {
+                            ...item,
+                            symbol: fields.Symbol,
+                            currentPrice: fields['Current Price'],
+                            marketStatus: fields['Market Status'],
+                            assetType: fields['Asset Type'],
+                            exchange: fields.Exchange,
+                            currency: fields.Currency,
+                            leverage: fields.Leverage,
+                            region: fields.Region,
+                            sector: fields.Sector
+                        };
+                    }).filter(item => item.symbol && item.symbol.value);
+                    
+                    console.log('Loaded instruments:', this.instruments);
+                    this.renderInstruments();
+                } else {
+                    console.log('No instruments found in response:', data);
+                    this.instruments = [];
+                    this.renderInstruments();
+                }
+            }
+
+            renderCategories() {
+                const categoryList = document.getElementById('categoryList');
+                
+                categoryList.innerHTML = this.categories.map(category => `
+                    <div class="category-card" data-category="${category.name}">
+                        <div class="category-header" data-category="${category.name}">
+                            <span class="category-title">${category.name}</span>
+                            <span class="category-count">${this.getTotalInstruments(category)}</span>
+                        </div>
+                        <div class="subcategories" id="sub-${category.name}">
+                            ${category.children.results.map(subcat => `
+                                <div class="subcategory" data-category-path="${category.path}" data-subcategory="${subcat.name}">
+                                    <span>${subcat.name}</span>
+                                    <span style="font-size: 0.8rem; opacity: 0.7;">${subcat.children.total}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `).join('');
+
+                // Add event listeners after rendering
+                this.attachCategoryEventListeners();
+            }
+
+            attachCategoryEventListeners() {
+                // Category headers for toggling
+                document.querySelectorAll('.category-header').forEach(header => {
+                    header.addEventListener('click', (e) => {
+                        const categoryName = e.currentTarget.dataset.category;
+                        this.toggleCategory(categoryName);
+                    });
+                });
+
+                // Subcategory items for loading instruments
+                document.querySelectorAll('.subcategory').forEach(subcategory => {
+                    subcategory.addEventListener('click', (e) => {
+                        const categoryPath = e.currentTarget.dataset.categoryPath;
+                        const subcategoryName = e.currentTarget.dataset.subcategory;
+                        
+                        // Remove previous selection
+                        document.querySelectorAll('.subcategory').forEach(sub => sub.classList.remove('selected'));
+                        // Add selection to clicked item
+                        e.currentTarget.classList.add('selected');
+                        
+                        this.loadInstruments(categoryPath, subcategoryName);
+                    });
+                });
+            }
+
+            getTotalInstruments(category) {
+                return category.children.results.reduce((sum, subcat) => 
+                    sum + (subcat.children.total || 0), 0
+                );
+            }
+
+            toggleCategory(categoryName) {
+                const subcategories = document.getElementById(`sub-${categoryName}`);
+                if (subcategories) {
+                    subcategories.classList.toggle('active');
+                }
+            }
+
+            renderInstruments() {
+                const instrumentContent = document.getElementById('instrumentContent');
+                
+                if (this.instruments.length === 0) {
+                    instrumentContent.innerHTML = `
+                        <div style="text-align: center; padding: 3rem; opacity: 0.7;">
+                            <h3>No instruments found</h3>
+                            <p>Select a category from the sidebar to view instruments</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                instrumentContent.innerHTML = `
+                    <div class="instrument-grid">
+                        ${this.instruments.map(instrument => this.renderInstrumentCard(instrument)).join('')}
+                    </div>
+                `;
+            }
+
+            renderInstrumentCard(instrument) {
+                const symbol = instrument.symbol?.value || 'N/A';
+                const name = instrument.name || 'Unknown Instrument';
+                const price = instrument.currentPrice?.value || '0.00';
+                const marketStatus = instrument.marketStatus?.value || 'Unknown';
+                const exchange = instrument.exchange?.value || 'N/A';
+                const currency = instrument.currency?.value || 'N/A';
+                const leverage = instrument.leverage?.value || 'N/A';
+                const region = instrument.region?.value || 'N/A';
+                const sector = instrument.sector?.value || 'N/A';
+
+                return `
+                    <div class="instrument-card">
+                        <div class="instrument-symbol">${symbol}</div>
+                        <div class="instrument-name">${name}</div>
+                        <div class="instrument-price">${currency} ${price}</div>
+                        
+                        <div class="instrument-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Status</span>
+                                <span class="detail-value">${marketStatus}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Exchange</span>
+                                <span class="detail-value">${exchange}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Leverage</span>
+                                <span class="detail-value">${leverage}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Region</span>
+                                <span class="detail-value">${region}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            renderSummaryStats() {
+                const summaryStats = document.getElementById('summaryStats');
+                
+                const totalInstruments = this.categories.reduce((sum, cat) => 
+                    sum + this.getTotalInstruments(cat), 0
+                );
+
+                const totalCategories = this.categories.length;
+                const totalSubcategories = this.categories.reduce((sum, cat) => 
+                    sum + cat.children.results.length, 0
+                );
+
+                summaryStats.innerHTML = `
+                    <div class="stat-item">
+                        <span class="stat-number">${totalInstruments}</span>
+                        <span class="stat-label">Total Instruments</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">${totalCategories}</span>
+                        <span class="stat-label">Asset Classes</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">${totalSubcategories}</span>
+                        <span class="stat-label">Subcategories</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">System Online</span>
+                    </div>
+                `;
+            }
+
+            setupEventListeners() {
+                const searchBar = document.getElementById('searchBar');
+                searchBar.addEventListener('input', (e) => {
+                    this.searchTerm = e.target.value.toLowerCase();
+                    this.filterInstruments();
+                });
+            }
+
+            filterInstruments() {
+                if (!this.searchTerm) {
+                    this.renderInstruments();
+                    return;
+                }
+
+                const filteredInstruments = this.instruments.filter(instrument => {
+                    const symbol = (instrument.symbol?.value || '').toLowerCase();
+                    const name = (instrument.name || '').toLowerCase();
+                    return symbol.includes(this.searchTerm) || name.includes(this.searchTerm);
+                });
+
+                const instrumentContent = document.getElementById('instrumentContent');
+                instrumentContent.innerHTML = `
+                    <div class="instrument-grid">
+                        ${filteredInstruments.map(instrument => this.renderInstrumentCard(instrument)).join('')}
+                    </div>
+                `;
+            }
+        }
+
+        // Initialize the application
+        let browser;
+        document.addEventListener('DOMContentLoaded', () => {
+            browser = new Plus500Browser();
+        });
+    </script>
+</body>
+</html>

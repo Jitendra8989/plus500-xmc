@@ -1,0 +1,190 @@
+﻿---
+ID: "57307cd0-4d2d-457f-a56f-1f1c748dff76"
+Parent: "c39353fe-85c7-4a9a-aaa1-51a166ae1db3"
+Template: "69cec792-527e-4684-bfcc-afbfadde1e91"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/Footer/US-Footer"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1aa36dd1-36e0-4969-9b92-7eff9d4963c9"
+      Hint: BrandTitle
+      Value: Plus 500
+    - ID: "1e3091f2-4b3a-4e83-a305-4532b49039b2"
+      Hint: "Section-1-Links"
+      Value: |
+        {6B63839E-9504-42F1-8564-DBD1F66C3B35}
+        {C4572229-7755-48B3-8FA7-252D4395B5E9}
+        {515773F7-596C-40FA-A7B0-2D2F82A41BF3}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T092949Z
+    - ID: "30d58c71-0a54-4f0f-aa96-201b69f348f8"
+      Hint: "Section-4-Links"
+      Value: |
+        {E93BA985-DAC7-4FFF-897F-0D9C47346B18}
+        {2896698F-1DFE-42F2-827B-0EDE648F6F21}
+        {F1C13543-0240-40D7-8599-52DB94EC326C}
+    - ID: "319adc80-daea-4d5a-8ec6-66455431ace8"
+      Hint: "Section-1-Header"
+      Value: الشركة
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5b2fa97b-0fb5-4904-9244-e4678cbf30a3"
+      Hint: SocialLinks
+      Value: |
+        {E93BA985-DAC7-4FFF-897F-0D9C47346B18}
+        {2896698F-1DFE-42F2-827B-0EDE648F6F21}
+        {F1C13543-0240-40D7-8599-52DB94EC326C}
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "62966293-9a75-4d6b-85d6-c68aca81e383"
+      Hint: Region Info
+      Value: |
+        <div class="ck-content"><p>تحذير المخاطر: عقود الفروقات هي أدوات معقدة وتأتي مع مخاطر عالية لفقدان الأموال بسرعة بسبب الرافعة المالية. يجب أن تفكر فيما إذا كنت تفهم كيف تعمل عقود الفروقات وما إذا كان بإمكانك تحمل المخاطر العالية لفقدان أموالك.</p></div>
+    - ID: "8b2545ce-d4f8-4cad-a52f-d9010c2bd2a4"
+      Hint: Logo
+      Value: |
+        <image mediaid="{59FF5C67-F326-46B7-94EA-E630FE905353}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "00272cdf-019b-47d2-931f-2bf6f0ea9bdd"
+    - ID: "9fbad927-d1ce-4ed5-b275-a9c83d92bfe9"
+      Hint: "Section-3-Header"
+      Value: تعلم
+    - ID: "ab4db917-1d15-4d65-b296-3e4f8460928c"
+      Hint: "Section-4-Header"
+      Value: وسائل التواصل الاجتماعي
+    - ID: "b8a488c5-e877-4ef0-9dff-78a8d17a932c"
+      Hint: "SocialLinks-Header"
+      Value: وسائل التواصل الاجتماعي
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "cf49a32a-403d-4295-a236-317bf4fd7cee"
+      Hint: "Section-3-Links"
+      Value: |
+        {1637E4B5-EB93-48AB-B1BF-1FC243E6D23A}
+        {192A55E3-E59C-4AE6-833C-ECE17671A84C}
+    - ID: "d0c03f69-3747-41e8-9076-fcafb1431607"
+      Hint: LogoCTA
+      Value: |
+        <link class="" id="{860A353E-F5B0-42FD-849F-BAF5E0C616C6}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="" url="/plus-five-hundred/plus-five-hundred/RO/Home" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T155114Z
+    - ID: "e386c884-e8bd-45de-acb7-45638a4efea9"
+      Hint: "Section-2-Links"
+      Value: |
+        {3AA0C579-565D-44E5-AFC7-A1BD588DF24E}
+        {5B328C33-A8A7-45FD-B832-A36712A974E6}
+        {4C64F133-D0E7-43D1-BF33-21C1DBA5CDF0}
+    - ID: "e4cdeda8-f968-4fa5-b821-2064b7b23249"
+      Hint: "Section-2-Header"
+      Value: الأسواق
+    - ID: "ff4ddabd-4e2e-4033-85fb-e96fe78080c0"
+      Hint: LegalText
+      Value: |
+        © 2025 Plus500 UK Ltd. جميع الحقوق محفوظة.\n\nعقود الفروقات هي أدوات معقدة وتأتي مع مخاطر عالية لفقدان الأموال بسرعة بسبب الرافعة المالية. يجب أن تفكر فيما إذا كنت تفهم كيف تعمل عقود الفروقات وما إذا كان بإمكانك تحمل المخاطر العالية لفقدان أموالك.
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1aa36dd1-36e0-4969-9b92-7eff9d4963c9"
+      Hint: BrandTitle
+      Value: Plus 500
+    - ID: "1e3091f2-4b3a-4e83-a305-4532b49039b2"
+      Hint: "Section-1-Links"
+      Value: |
+        {6B63839E-9504-42F1-8564-DBD1F66C3B35}
+        {C4572229-7755-48B3-8FA7-252D4395B5E9}
+        {515773F7-596C-40FA-A7B0-2D2F82A41BF3}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T092949Z
+    - ID: "30d58c71-0a54-4f0f-aa96-201b69f348f8"
+      Hint: "Section-4-Links"
+      Value: |
+        {E93BA985-DAC7-4FFF-897F-0D9C47346B18}
+        {2896698F-1DFE-42F2-827B-0EDE648F6F21}
+        {F1C13543-0240-40D7-8599-52DB94EC326C}
+    - ID: "319adc80-daea-4d5a-8ec6-66455431ace8"
+      Hint: "Section-1-Header"
+      Value: Company
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5b2fa97b-0fb5-4904-9244-e4678cbf30a3"
+      Hint: SocialLinks
+      Value: |
+        {E93BA985-DAC7-4FFF-897F-0D9C47346B18}
+        {2896698F-1DFE-42F2-827B-0EDE648F6F21}
+        {F1C13543-0240-40D7-8599-52DB94EC326C}
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "62966293-9a75-4d6b-85d6-c68aca81e383"
+      Hint: Region Info
+      Value: |
+        <div class="ck-content"><p>Risk Warning: CFDs are comp lex instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.</p></div>
+    - ID: "8b2545ce-d4f8-4cad-a52f-d9010c2bd2a4"
+      Hint: Logo
+      Value: |
+        <image mediaid="{59FF5C67-F326-46B7-94EA-E630FE905353}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fe25cf7e-9ea8-4317-95fc-4ea64e38aea7"
+    - ID: "9fbad927-d1ce-4ed5-b275-a9c83d92bfe9"
+      Hint: "Section-3-Header"
+      Value: Learn
+    - ID: "ab4db917-1d15-4d65-b296-3e4f8460928c"
+      Hint: "Section-4-Header"
+      Value: Social
+    - ID: "b8a488c5-e877-4ef0-9dff-78a8d17a932c"
+      Hint: "SocialLinks-Header"
+      Value: Social
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "cf49a32a-403d-4295-a236-317bf4fd7cee"
+      Hint: "Section-3-Links"
+      Value: |
+        {1637E4B5-EB93-48AB-B1BF-1FC243E6D23A}
+        {192A55E3-E59C-4AE6-833C-ECE17671A84C}
+    - ID: "d0c03f69-3747-41e8-9076-fcafb1431607"
+      Hint: LogoCTA
+      Value: |
+        <link class="" id="{860A353E-F5B0-42FD-849F-BAF5E0C616C6}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="" url="/plus-five-hundred/plus-five-hundred/RO/Home" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T155113Z
+    - ID: "e386c884-e8bd-45de-acb7-45638a4efea9"
+      Hint: "Section-2-Links"
+      Value: |
+        {3AA0C579-565D-44E5-AFC7-A1BD588DF24E}
+        {5B328C33-A8A7-45FD-B832-A36712A974E6}
+        {4C64F133-D0E7-43D1-BF33-21C1DBA5CDF0}
+    - ID: "e4cdeda8-f968-4fa5-b821-2064b7b23249"
+      Hint: "Section-2-Header"
+      Value: Markets
+    - ID: "ff4ddabd-4e2e-4033-85fb-e96fe78080c0"
+      Hint: LegalText
+      Value: |
+        © 2025 Plus500 UK Ltd. All rights reserved.
+        
+        CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.

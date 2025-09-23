@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\projects\DCX\authoring\platform\..\..\..\local-containers\docker\deploy\platform</_PublishTargetUrl>
+    <History>True|2025-09-22T14:13:46.1855227Z||;True|2025-09-22T19:00:05.2336077+10:00||;True|2025-09-22T17:37:26.2941249+10:00||;False|2025-09-22T17:36:56.3301432+10:00||;False|2025-09-22T17:36:48.3461745+10:00||;True|2025-09-22T07:44:00.4147282+10:00||;True|2025-09-22T07:36:46.2581717+10:00||;True|2025-09-21T09:55:18.7018054+10:00||;True|2025-09-21T08:54:43.3754417+10:00||;True|2025-09-21T08:42:55.2339783+10:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/XmCloudNextJsStarter.dll">
+      <publishTime>09/22/2025 18:59:55</publishTime>
+    </File>
+    <File Include="bin/XmCloudNextJsStarter.pdb">
+      <publishTime>09/22/2025 18:59:55</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

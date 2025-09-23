@@ -1,0 +1,161 @@
+﻿---
+ID: "528ea0d2-86b1-4ead-b32b-c090991a0dac"
+Parent: "d0b6f4d0-d21e-4481-a63e-a557235bdd7b"
+Template: "ab381c98-80e4-42ff-83bc-97928cb8e783"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/RegulationLicencesList Folder/RegulationList"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11bb8e1e-0b6c-489e-b5a0-5aed97278483"
+      Hint: Items
+      Value: "المملكة المتحدة: مرخص ومنظم من قبل هيئة السلوك المالي (FCA) - FRN 509909|قبرص: مرخص ومنظم من قبل لجنة الأوراق المالية والبورصة القبرصية (CySEC) - رقم الترخيص 250/14|أستراليا: مرخص من قبل لجنة الاستثمارات والأوراق المالية الأسترالية (ASIC) - AFSL 417727|سنغافورة: مرخص من قبل سلطة سنغافورة النقدية (MAS) - رقم ترخيص CMS CMS100648-1|جنوب أفريقيا: مرخص من قبل هيئة السلوك في القطاع المالي (FSCA) - FSP 47546"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5a83a617-deac-4a84-b086-4883e6a69989"
+      Hint: Heading
+      Value: التنظيم والتراخيص
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ac251180-ab31-4e30-8cee-01165944e401"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211642Z
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11bb8e1e-0b6c-489e-b5a0-5aed97278483"
+      Hint: Items
+      Value: "UK: Authorized and regulated by the Financial Conduct Authority (FCA) - FRN 509909|Cyprus: Licensed and regulated by Cyprus Securities and Exchange Commission (CySEC) - License No. 250/14|Australia: Licensed by the Australian Securities and Investments Commission (ASIC) - AFSL 417727|Singapore: Licensed by the Monetary Authority of Singapore (MAS) - CMS License No. CMS100648-1|South Africa: Authorized by the Financial Sector Conduct Authority (FSCA) - FSP 47546"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5a83a617-deac-4a84-b086-4883e6a69989"
+      Hint: Heading
+      Value: Regulation & Licenses
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "09aba7e4-e67e-498f-b564-d27c35b0110c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T210425Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11bb8e1e-0b6c-489e-b5a0-5aed97278483"
+      Hint: Items
+      Value: "UK: Authorized and regulated by the Financial Conduct Authority (FCA) - FRN 509909|Cyprus: Licensed and regulated by Cyprus Securities and Exchange Commission (CySEC) - License No. 250/14|Australia: Licensed by the Australian Securities and Investments Commission (ASIC) - AFSL 417727|Singapore: Licensed by the Monetary Authority of Singapore (MAS) - CMS License No. CMS100648-1|South Africa: Authorized by the Financial Sector Conduct Authority (FSCA) - FSP 47546"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5a83a617-deac-4a84-b086-4883e6a69989"
+      Hint: Heading
+      Value: Regulation & Licenses
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "723d50b1-b607-4f70-bd0a-49a3ac27fdab"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211639Z
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11bb8e1e-0b6c-489e-b5a0-5aed97278483"
+      Hint: Items
+      Value: "Marea Britanie: Autorizat și reglementat de Autoritatea de Conduită Financiară (FCA) - FRN 509909|Cipru: Licențiat și reglementat de Comisia pentru Valori Mobiliare și Burse din Cipru (CySEC) - Licența Nr. 250/14|Australia: Licențiat de Comisia Australiană pentru Valori Mobiliare și Investiții (ASIC) - AFSL 417727|Singapore: Licențiat de Autoritatea Monetară din Singapore (MAS) - Licența CMS Nr. CMS100648-1|Africa de Sud: Autorizat de Autoritatea de Conduită a Sectorului Financiar (FSCA) - FSP 47546"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5a83a617-deac-4a84-b086-4883e6a69989"
+      Hint: Heading
+      Value: Reglementare și Licențe
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "000d4fe5-8cd2-4893-8611-20cb869a6bd0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211643Z
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11bb8e1e-0b6c-489e-b5a0-5aed97278483"
+      Hint: Items
+      Value: "英国：由金融行为监管局(FCA)授权和监管 - FRN 509909|塞浦路斯：由塞浦路斯证券交易委员会(CySEC)许可和监管 - 许可证编号250/14|澳大利亚：由澳大利亚证券和投资委员会(ASIC)许可 - AFSL 417727|新加坡：由新加坡金融管理局(MAS)许可 - CMS许可证编号CMS100648-1|南非：由金融部门行为监管局(FSCA)授权 - FSP 47546"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5a83a617-deac-4a84-b086-4883e6a69989"
+      Hint: Heading
+      Value: 监管与许可证
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "626eb351-df8e-4ad6-ab26-30e680f11c5a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211644Z

@@ -1,0 +1,38 @@
+﻿---
+ID: "19520395-cfa1-4695-b3c3-53566cfeb4cc"
+Parent: "f5d0500d-bc7c-4064-9736-05f118d8f3bd"
+Template: "f5d0500d-bc7c-4064-9736-05f118d8f3bd"
+Path: "/sitecore/templates/Project/plus-five-hundred/TestLibrary/Datasource/GenericTable/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{1B3FB70B-CDEE-4435-B82A-0D69A2BEECB4}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "acf8971a-ee3a-483d-9b47-c5809fc265ec"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T202236Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "151d6298-90e4-4904-b7df-b3c2263725fc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T202236Z

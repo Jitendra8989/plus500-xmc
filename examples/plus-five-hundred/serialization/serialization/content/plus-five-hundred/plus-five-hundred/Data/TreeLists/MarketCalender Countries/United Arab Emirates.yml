@@ -1,0 +1,56 @@
+﻿---
+ID: "1ee0ef63-4131-428b-9191-1f3203c90475"
+Parent: "a974e967-7ca1-4ac3-9db1-82b0062054ff"
+Template: "78f8f102-70a0-4217-9906-74105c8055f0"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/TreeLists/MarketCalender Countries/United Arab Emirates"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T075749Z
+    - ID: "52fd60e1-7a84-4b1f-9c60-4034796a9a9a"
+      Hint: Title
+      Value: 👔
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e4c2881f-eb37-4510-9fce-da9888da83e3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T155114Z
+    - ID: "ddfb3978-1bb5-46a9-8820-45401f7ef14c"
+      Hint: GeneralLink
+      Value: |
+        <link class="" id="{860A353E-F5B0-42FD-849F-BAF5E0C616C6}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="المؤشرات" url="/plus-five-hundred/plus-five-hundred/RO/Home" />
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T075749Z
+    - ID: "52fd60e1-7a84-4b1f-9c60-4034796a9a9a"
+      Hint: Title
+      Value: United Arab Emirates
+    - ID: "6b79bea1-6966-46c9-8b4e-0cceb778a306"
+      Hint: Sub Title
+      Value: AE
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2229c73b-300e-49d3-9bb2-10f990aa6f3e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T053937Z
+    - ID: "ddfb3978-1bb5-46a9-8820-45401f7ef14c"
+      Hint: GeneralLink
+      Value: 

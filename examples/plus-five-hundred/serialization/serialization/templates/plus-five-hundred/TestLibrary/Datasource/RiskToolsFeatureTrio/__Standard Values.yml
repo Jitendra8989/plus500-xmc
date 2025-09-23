@@ -1,0 +1,38 @@
+﻿---
+ID: "a754d948-9a9e-43d9-b2a7-dc6dde59495a"
+Parent: "680415e3-f5db-4d84-a9d2-77ca4aa729da"
+Template: "680415e3-f5db-4d84-a9d2-77ca4aa729da"
+Path: "/sitecore/templates/Project/plus-five-hundred/TestLibrary/Datasource/RiskToolsFeatureTrio/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{8AF4A94A-99E1-484B-81CA-0BC194BF7B0B}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "df29d118-0409-49f7-831d-db91c3305cb0"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T202238Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7b1359fc-78cb-423d-a1c0-764f26498090"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T202238Z

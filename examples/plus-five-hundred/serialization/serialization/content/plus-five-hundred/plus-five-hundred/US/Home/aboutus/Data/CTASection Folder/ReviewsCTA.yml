@@ -1,0 +1,167 @@
+﻿---
+ID: "0e62f346-fc84-4fb6-af21-57dd4654ced5"
+Parent: "b062813c-66ac-437e-a900-fa479264628d"
+Template: "23299fdc-4d46-4d49-922d-a6a4f0e91880"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/CTASection Folder/ReviewsCTA"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210420Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "29921a8b-b3e1-46ae-975f-67cbe9af6fdd"
+    - ID: "b6d4b7c3-17df-4094-af7c-8da7ca791b05"
+      Hint: Title
+      Value: ما يقوله متداولونا
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "c3117e11-a0dd-48c5-9d14-c7aeb8162471"
+      Hint: Text
+      Value: اكتشف لماذا يثق ملايين المتداولين في Plus500. اقرأ المراجعات والشهادات الأصيلة من مجتمعنا العالمي من المتداولين الناجحين.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211641Z
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210420Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "51f95bb9-949f-4d95-a4b7-2fa948beb2db"
+    - ID: "b6d4b7c3-17df-4094-af7c-8da7ca791b05"
+      Hint: Title
+      Value: What Our Traders Say
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "c3117e11-a0dd-48c5-9d14-c7aeb8162471"
+      Hint: Text
+      Value: Discover why millions of traders trust Plus500. Read authentic reviews and testimonials from our global community of successful traders.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T210424Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210420Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "712939eb-0eb9-423b-86aa-9abc991b0b6c"
+      Hint: SecondaryCTA
+      Value: <link text='Explore' linktype='internal' url='/aboutus' anchor='' title='' target='' />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "619dfb0e-ee76-4f84-bc68-2ee7c14e1c8a"
+    - ID: "b6d4b7c3-17df-4094-af7c-8da7ca791b05"
+      Hint: Title
+      Value: What Our Traders Say
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "c3117e11-a0dd-48c5-9d14-c7aeb8162471"
+      Hint: Text
+      Value: Discover why millions of traders trust Plus500. Read authentic reviews and testimonials from our global community of successful traders.
+    - ID: "cd09ba59-7704-44ce-b4c3-76df2f7d7197"
+      Hint: PrimaryCTA
+      Value: <link text='Learn More' linktype='internal' url='/aboutus' anchor='' title='' target='' />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T221318Z
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210420Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c7d654d8-2531-43f9-8a03-c8b42885a6f7"
+    - ID: "b6d4b7c3-17df-4094-af7c-8da7ca791b05"
+      Hint: Title
+      Value: Ce Spun Traderii Noștri
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "c3117e11-a0dd-48c5-9d14-c7aeb8162471"
+      Hint: Text
+      Value: Descoperă de ce milioane de traderi au încredere în Plus500. Citește recenzii autentice și mărturii de la comunitatea noastră globală de traderi de succes.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211643Z
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210420Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e0612a40-2bba-4802-880d-053bd43d27d1"
+    - ID: "b6d4b7c3-17df-4094-af7c-8da7ca791b05"
+      Hint: Title
+      Value: 我们的交易者怎么说
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "c3117e11-a0dd-48c5-9d14-c7aeb8162471"
+      Hint: Text
+      Value: 了解为什么数百万交易者信任Plus500。阅读来自我们全球成功交易者社区的真实评论和推荐。
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211644Z

@@ -1,0 +1,30 @@
+﻿---
+ID: "42d5b25e-4d32-488f-badc-2c0c7ab812c0"
+Parent: "1637e4b5-eb93-48ab-b1bf-1fc243e6d23a"
+Template: "78f8f102-70a0-4217-9906-74105c8055f0"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/TreeLists/MainMenu/US/Learn/Get started/Trade with Us"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T184910Z
+    - ID: "52fd60e1-7a84-4b1f-9c60-4034796a9a9a"
+      Hint: Title
+      Value: Trade with Us
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7ac47434-21b9-4e30-852f-a3320dfc9ddc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T191401Z
+    - ID: "ddfb3978-1bb5-46a9-8820-45401f7ef14c"
+      Hint: GeneralLink
+      Value: |
+        <link class="" id="{337A8294-2854-4FD6-87AB-99FE6AC0C145}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="" url="/plus-five-hundred/plus-five-hundred/US/Home/Homer" />

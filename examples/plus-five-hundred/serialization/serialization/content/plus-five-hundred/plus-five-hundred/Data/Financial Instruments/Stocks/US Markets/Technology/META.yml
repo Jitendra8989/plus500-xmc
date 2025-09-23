@@ -1,0 +1,100 @@
+﻿---
+ID: "43366f90-7635-4416-95bf-e64e2d19250c"
+Parent: "f1f07f6c-8f96-4e88-8bb6-f3edd528612f"
+Template: "2fa906ae-c67b-45f4-94d3-bc8ccce5896c"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/Financial Instruments/Stocks/US Markets/Technology/META"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "08dc091c-9442-42a5-9ec9-c9b3a9eae55b"
+      Hint: Market Status
+      Value: Open
+    - ID: "10d26ec7-f043-4aa7-a813-7bca5def0dce"
+      Hint: Symbol
+      Value: META
+    - ID: "149282af-8085-44c3-ab4d-a4aff7401e9a"
+      Hint: Current Price
+      Value: 325.6
+    - ID: "16d0e294-cb28-4c63-bfc9-988880393b80"
+      Hint: Currency
+      Value: USD
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T162554Z
+    - ID: "318ab5d7-709b-42e4-9b61-d47c13f1b686"
+      Hint: Founded
+      Value: "04/01/1976 00:00:00"
+    - ID: "32e5d8a6-ecaf-4f95-897a-9551dd50d917"
+      Hint: Employees
+      Value: 180000
+    - ID: "35580ef6-2a5d-4562-8840-d8608fdc6412"
+      Hint: Min Trade Size
+      Value: 1
+    - ID: "37faef9d-9853-4582-acb0-215ae2ac0444"
+      Hint: Description
+      Value: "Technology stock: Meta Platforms, Inc."
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "56e9f834-e17f-412f-bef6-7721acf08fe6"
+      Hint: Market Cap
+      Value: 850000000000
+    - ID: "5a66335c-478a-4161-afb1-ce7895af840b"
+      Hint: Name
+      Value: Meta Platforms, Inc.
+    - ID: "5b4f727e-e6e2-4b23-a94a-e522e29c88fb"
+      Hint: Leverage
+      Value: "1:5"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a1cc4a8e-a229-42c2-820b-1829a3606f3f"
+    - ID: "91cb1a67-46e9-417c-a0a2-fe8a20cb8af9"
+      Hint: EPS
+      Value: 6.15
+    - ID: "956d70e3-4226-4dd1-b767-2fa4855f2c02"
+      Hint: Industry
+      Value: Software & Services
+    - ID: "9d3c8529-a4b1-4c0d-b23d-bae6ee5cdc5c"
+      Hint: Asset Type
+      Value: Stocks
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "c044da6b-81ed-42e8-ab14-9b3899d085f4"
+      Hint: Sector
+      Value: Technology
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T162555Z
+    - ID: "dab7c722-9aa2-4a59-b3f5-2ccfbf1a5722"
+      Hint: Dividend Yield
+      Value: 0
+    - ID: "de077a8b-001c-4e06-b368-5ac4a334f461"
+      Hint: Country
+      Value: United States
+    - ID: "e27508fe-c35d-49bd-87ab-a64deaa63463"
+      Hint: CEO
+      Value: Mark Zuckerberg
+    - ID: "e6906f0b-1f45-41c5-b234-c693acc22b6f"
+      Hint: Region
+      Value: Americas
+    - ID: "f1515982-5771-4e1f-b91c-12882583570c"
+      Hint: Company
+      Value: Meta Platforms, Inc.
+    - ID: "faefc0a9-ffcc-4039-b680-47641d29d5c3"
+      Hint: Volume
+      Value: 25000000
+    - ID: "fb62dae4-7ae3-4dc1-bd32-594b4ee36c4c"
+      Hint: Exchange
+      Value: NASDAQ
+    - ID: "fdabf22c-f1e3-4a7a-ae78-286893e504ca"
+      Hint: PE Ratio
+      Value: 24.7

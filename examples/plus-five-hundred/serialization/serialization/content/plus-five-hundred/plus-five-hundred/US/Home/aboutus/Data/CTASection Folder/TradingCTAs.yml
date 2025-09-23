@@ -1,0 +1,167 @@
+﻿---
+ID: "d5c159e8-da8e-4168-9e6f-9f72940cc9c6"
+Parent: "b062813c-66ac-437e-a900-fa479264628d"
+Template: "23299fdc-4d46-4d49-922d-a6a4f0e91880"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/CTASection Folder/TradingCTAs"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8ec1ead9-9707-47ad-bbee-a066afc3b523"
+    - ID: "b6d4b7c3-17df-4094-af7c-8da7ca791b05"
+      Hint: Title
+      Value: ابدأ رحلة التداول الخاصة بك
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "c3117e11-a0dd-48c5-9d14-c7aeb8162471"
+      Hint: Text
+      Value: انضم إلى ملايين المتداولين حول العالم. اختر من التداول بأموال حقيقية، أو حساب تجريبي خالٍ من المخاطر، أو استكشف مكافآتنا وعروضنا الحصرية.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211642Z
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b24be755-7012-4826-b006-5d6c5a58e680"
+    - ID: "b6d4b7c3-17df-4094-af7c-8da7ca791b05"
+      Hint: Title
+      Value: Start Your Trading Journey
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "c3117e11-a0dd-48c5-9d14-c7aeb8162471"
+      Hint: Text
+      Value: "Join millions of traders worldwide. Choose from real money trading, risk-free demo account, or explore our exclusive bonuses and promotions."
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T210425Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "712939eb-0eb9-423b-86aa-9abc991b0b6c"
+      Hint: SecondaryCTA
+      Value: <link text='Explore' linktype='internal' url='/aboutus' anchor='' title='' target='' />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c1ca4776-c0de-42a7-a046-e6e1d65ba764"
+    - ID: "b6d4b7c3-17df-4094-af7c-8da7ca791b05"
+      Hint: Title
+      Value: Start Your Trading Journey
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "c3117e11-a0dd-48c5-9d14-c7aeb8162471"
+      Hint: Text
+      Value: "Join millions of traders worldwide. Choose from real money trading, risk-free demo account, or explore our exclusive bonuses and promotions."
+    - ID: "cd09ba59-7704-44ce-b4c3-76df2f7d7197"
+      Hint: PrimaryCTA
+      Value: <link text='Learn More' linktype='internal' url='/aboutus' anchor='' title='' target='' />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T221318Z
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d7b2e04d-5df1-4e09-8101-b706d9565a7d"
+    - ID: "b6d4b7c3-17df-4094-af7c-8da7ca791b05"
+      Hint: Title
+      Value: "Începe-ți Călătoria de Tranzacționare"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "c3117e11-a0dd-48c5-9d14-c7aeb8162471"
+      Hint: Text
+      Value: "Alătură-te milioanelor de traderi din întreaga lume. Alege din tranzacționarea cu bani reali, contul demo fără risc, sau explorează bonusurile și promoțiile noastre exclusive."
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211643Z
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a65189b2-40c8-4459-a95c-814a49b054cb"
+    - ID: "b6d4b7c3-17df-4094-af7c-8da7ca791b05"
+      Hint: Title
+      Value: 开始您的交易之旅
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "c3117e11-a0dd-48c5-9d14-c7aeb8162471"
+      Hint: Text
+      Value: 加入全球数百万交易者的行列。选择真金白银交易、无风险模拟账户，或探索我们的专属奖金和促销活动。
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211644Z

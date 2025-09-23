@@ -1,0 +1,46 @@
+﻿---
+ID: "5c47b2c8-2893-477b-8940-57ade5eabe18"
+Parent: "69e32d7c-521a-4e52-a17e-8803475159f7"
+Template: "78f8f102-70a0-4217-9906-74105c8055f0"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/TreeLists/Language Navigator"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T143341Z
+    - ID: "6ea8d8e7-98bf-4e7b-aa80-0b7328609fad"
+      Hint: TreeList
+      Value: "{9CB0F51D-22EF-4596-9218-708BC2833FE4}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4440051d-0642-45a3-acd9-3dc131592862"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T143353Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T075642Z
+    - ID: "52fd60e1-7a84-4b1f-9c60-4034796a9a9a"
+      Hint: Title
+      Value: Market
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e904f4c7-0962-4c56-b24b-47b496fc2e52"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T080148Z

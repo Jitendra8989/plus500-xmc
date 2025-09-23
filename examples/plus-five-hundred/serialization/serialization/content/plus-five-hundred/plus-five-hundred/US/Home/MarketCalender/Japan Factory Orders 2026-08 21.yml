@@ -1,0 +1,66 @@
+﻿---
+ID: "f452de02-fac4-4352-a249-c2eeb7427d96"
+Parent: "a30c5de6-ad24-4412-a674-ae5fd0cd6774"
+Template: "3f8d6542-9e46-49d9-94df-6136bbbe5ba3"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/MarketCalender/Japan Factory Orders 2026-08 21"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{F1D0D450-C8F4-48BC-AC6B-04A761FF66E5}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0797cdb9-70fb-402c-a4c1-9653017b53dc"
+      Hint: Expected Impact
+      Value: 5
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T173434Z
+    - ID: "275271a1-2846-4535-868e-83c5b5989c5d"
+      Hint: Country
+      Value: Japan
+    - ID: "28e554ee-f2aa-4280-8b35-75352c26be58"
+      Hint: Visibility Window
+      Value: 20260811T000000Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Japan Factory Orders
+    - ID: "6eca7290-27dd-441b-93c4-7fd830fde048"
+      Hint: Event Title
+      Value: Japan Factory Orders
+    - ID: "7d995be6-9f02-4914-a217-d27df53767a0"
+      Hint: Regulatory Disclaimer
+      Value: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.
+    - ID: "7dcd86e8-35d3-4a97-9c1a-8bb1e29395db"
+      Hint: Title
+      Value: Japan Factory Orders
+    - ID: "80342272-1cd7-4477-8e47-128ac61604fd"
+      Hint: Associated Market
+      Value: "{D0CF25AC-42D8-4E1E-8A4F-BC490FC2EA04}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c86f621c-7457-486e-8cce-67738daed1b0"
+    - ID: "b0ff6ff6-ae84-4a39-bc1d-11ef5d82462d"
+      Hint: Promo Link
+      Value: |
+        <link text="Trade Now" linktype="external" url="https://www.plus500.com/en-us/trading/forex" anchor="" target="" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9521ebc-34ca-4b98-8607-8e1722c2dbfb"
+      Hint: Description
+      Value: The Factory Orders provides key insights into Japan's economic performance and market conditions.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T173435Z
+    - ID: "ebcf859d-e99d-47cc-856c-d4af2db66a8e"
+      Hint: Event Date And Time
+      Value: 20260818T150000Z
+    - ID: "ebd38016-6e39-4353-934a-719b06faecd5"
+      Hint: Reference Link
+      Value: |
+        <link text="Official Source" linktype="external" url="https://www.centralbank.gov" anchor="" target="" />

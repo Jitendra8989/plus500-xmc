@@ -1,0 +1,188 @@
+/* Modern elevation system from React reference */
+.no-default-hover-elevate {}
+.no-default-active-elevate {}
+
+.toggle-elevate::before,
+.toggle-elevate-2::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0px;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.toggle-elevate.toggle-elevated::before {
+  background-color: var(--elevate-2);
+}
+
+.border.toggle-elevate::before {
+  inset: -1px;
+}
+
+.hover-elevate:not(.no-default-hover-elevate),
+.active-elevate:not(.no-default-active-elevate),
+.hover-elevate-2:not(.no-default-hover-elevate),
+.active-elevate-2:not(.no-default-active-elevate) {
+  position: relative;
+  z-index: 0;
+}
+
+.hover-elevate:not(.no-default-hover-elevate)::after,
+.active-elevate:not(.no-default-active-elevate)::after,
+.hover-elevate-2:not(.no-default-hover-elevate)::after,
+.active-elevate-2:not(.no-default-active-elevate)::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0px;
+  border-radius: inherit;
+  z-index: 999;
+}
+
+.hover-elevate:hover:not(.no-default-hover-elevate)::after,
+.active-elevate:active:not(.no-default-active-elevate)::after {
+  background-color: var(--elevate-1);
+}
+
+.hover-elevate-2:hover:not(.no-default-hover-elevate)::after,
+.active-elevate-2:active:not(.no-default-active-elevate)::after {
+  background-color: var(--elevate-2);
+}
+
+.border.hover-elevate:not(.no-hover-interaction-elevate)::after,
+.border.active-elevate:not(.no-active-interaction-elevate)::after,
+.border.hover-elevate-2:not(.no-hover-interaction-elevate)::after,
+.border.active-elevate-2:not(.no-active-interaction-elevate)::after {
+  inset: -1px;
+}
+
+/* Modern buttons */
+.button-default, .default {
+  @apply default-link-button bg-bg-submenu-active text-text-basic hover-elevate;
+}
+
+.button-success, .success {
+  @apply default-link-button bg-btn-green-light text-text-white hover:text-text-white hover:bg-btn-green hover-elevate;
+}
+
+.button-warning, .warning {
+  @apply default-link-button bg-btn-red text-text-white hover:text-text-white hover:bg-btn-red-active hover-elevate;
+}
+
+/* Dark mode support */
+.dark {
+  --button-outline: rgba(255,255,255, .10);
+  --badge-outline: rgba(255,255,255, .05);
+  --opaque-button-border-intensity: 9;
+  --elevate-1: rgba(255,255,255, .04);
+  --elevate-2: rgba(255,255,255, .09);
+  --background: 222 84% 5%;
+  --foreground: 210 40% 98%;
+  --border: 217 33% 17%;
+  --card: 217 33% 8%;
+  --card-foreground: 210 40% 98%;
+  --card-border: 217 33% 20%;
+  --primary: 214 100% 32%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 217 33% 20%;
+  --secondary-foreground: 210 40% 85%;
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 217 33% 22%;
+  --accent-foreground: 210 40% 85%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --input: 210 40% 75%;
+  --ring: 214 100% 31%;
+  --shadow-2xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.1);
+  --shadow-xs: 0px 1px 3px 0px hsl(0 0% 0% / 0.15);
+  --shadow-sm: 0px 1px 2px 0px hsl(0 0% 0% / 0.12), 0px 1px 3px 0px hsl(0 0% 0% / 0.15);
+  --shadow: 0px 1px 3px 0px hsl(0 0% 0% / 0.15), 0px 1px 2px 0px hsl(0 0% 0% / 0.12);
+  --shadow-md: 0px 4px 6px -1px hsl(0 0% 0% / 0.15), 0px 2px 4px -1px hsl(0 0% 0% / 0.12);
+  --shadow-lg: 0px 10px 15px -3px hsl(0 0% 0% / 0.15), 0px 4px 6px -2px hsl(0 0% 0% / 0.1);
+  --shadow-xl: 0px 20px 25px -5px hsl(0 0% 0% / 0.15), 0px 10px 10px -5px hsl(0 0% 0% / 0.08);
+  --shadow-2xl: 0px 25px 50px -12px hsl(0 0% 0% / 0.3);
+}
+
+/* base richtext */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-text-heading-color;
+}
+h1,
+h2 {
+  @apply m-[10px_0];
+}
+h3,
+h4,
+p {
+  @apply m-[5px_0];
+}
+h5,
+h6 {
+  @apply m-[5px_0_0];
+}
+strong {
+  @apply font-bold;
+}
+ul,
+ol {
+  @apply py-[5px] ml-[10px];
+}
+li {
+  @apply text-font-normal ml-[15px];
+}
+ul {
+  li {
+    @apply list-disc list-inside;
+  }
+}
+ol {
+  li {
+    @apply list-decimal list-inside;
+  }
+}
+a {
+  @apply text-text-red underline text-[1em] hover:text-text-basic-active;
+}
+table {
+  @apply h-auto! border-2 border-solid border-border-gray;
+  &,
+  tr,
+  th,
+  td {
+    @apply border-2 border-solid border-border-gray bg-bg-basic-color border-collapse align-middle;
+  }
+  tr,
+  th,
+  td {
+    @apply p-[5px];
+  }
+  caption {
+    @apply bg-bg-light-gray overflow-hidden text-font-big font-bold text-[1.2em] p-[10px] ml-0;
+  }
+  tr {
+    @apply border-none;
+  }
+  th,
+  td {
+    @apply border-t-2 border-l-2;
+  }
+  th {
+    @apply bg-bg-lighter-gray text-font-normal font-bold p-[7px];
+    &:first-child {
+      @apply border-l-0;
+    }
+  }
+  td {
+    &:first-child {
+      @apply border-l-0;
+    }
+  }
+}

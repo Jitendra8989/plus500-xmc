@@ -1,0 +1,50 @@
+﻿---
+ID: "515773f7-596c-40fa-a7b0-2d2f82a41bf3"
+Parent: "4ab002bf-bd8a-47c5-861d-99d4e66f816d"
+Template: "78f8f102-70a0-4217-9906-74105c8055f0"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/TreeLists/MainMenu/US/Company/Indices"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T143659Z
+    - ID: "52fd60e1-7a84-4b1f-9c60-4034796a9a9a"
+      Hint: Title
+      Value: المؤشرات
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "64c607e8-3bd8-4f56-88a9-19227c7348b3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T143927Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T075749Z
+    - ID: "52fd60e1-7a84-4b1f-9c60-4034796a9a9a"
+      Hint: Title
+      Value: Indices
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1f7de4ec-4b46-4fe1-b3aa-219c7f4e5413"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T155114Z
+    - ID: "ddfb3978-1bb5-46a9-8820-45401f7ef14c"
+      Hint: GeneralLink
+      Value: |
+        <link class="" id="{860A353E-F5B0-42FD-849F-BAF5E0C616C6}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="Indices" url="/plus-five-hundred/plus-five-hundred/RO/Home" />

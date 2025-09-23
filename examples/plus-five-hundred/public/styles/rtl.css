@@ -1,0 +1,311 @@
+/* ========================================
+   🌍 RTL (Right-to-Left) SUPPORT FOR ARABIC
+   ======================================== */
+
+/* Base RTL Styles */
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+}
+
+/* ========================================
+   HEADER RTL STYLES
+   ======================================== */
+html[dir="rtl"] .header .headerWrapper {
+  direction: rtl;
+}
+
+html[dir="rtl"] .header .logo {
+  order: 3;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+html[dir="rtl"] .header .nav {
+  order: 2;
+}
+
+html[dir="rtl"] .header .ctaSection {
+  order: 1;
+}
+
+html[dir="rtl"] .header .mainMenu {
+  direction: rtl;
+}
+
+html[dir="rtl"] .header .navSubmenu {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .header .languageNav {
+  border-left: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: 0;
+  margin-right: 1rem;
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+/* ========================================
+   HERO SECTION RTL STYLES
+   ======================================== */
+html[dir="rtl"] .heroSectionSplit {
+  direction: rtl;
+}
+
+html[dir="rtl"] .heroSectionSplit--imageLeft .heroContent {
+  order: 1;
+  text-align: right;
+}
+
+html[dir="rtl"] .heroSectionSplit--imageLeft .heroImageWrapper {
+  order: 2;
+}
+
+html[dir="rtl"] .heroSectionSplit--imageRight .heroContent {
+  order: 2;
+  text-align: right;
+}
+
+html[dir="rtl"] .heroSectionSplit--imageRight .heroImageWrapper {
+  order: 1;
+}
+
+html[dir="rtl"] .heroActions {
+  justify-content: flex-start;
+}
+
+html[dir="rtl"] .heroFeatures li::before {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .heroFeatures li {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+/* ========================================
+   FEATURE SECTION RTL STYLES
+   ======================================== */
+html[dir="rtl"] .featureSection .educationContainer {
+  direction: rtl;
+}
+
+html[dir="rtl"] .featureSection .educationHeader {
+  text-align: right;
+}
+
+html[dir="rtl"] .featureSection .featuresGrid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .featureSection .featureCard {
+  text-align: right;
+}
+
+html[dir="rtl"] .featureSection .featureIcon {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .featureSection .arrowIcon {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .featureSection .protectionContainer {
+  direction: rtl;
+}
+
+html[dir="rtl"] .featureSection .protectionContent {
+  text-align: right;
+}
+
+/* ========================================
+   FOOTER RTL STYLES
+   ======================================== */
+html[dir="rtl"] .footer .footerTop {
+  direction: rtl;
+}
+
+html[dir="rtl"] .footer .linkSections {
+  direction: rtl;
+}
+
+html[dir="rtl"] .footer .linkSection {
+  text-align: right;
+}
+
+html[dir="rtl"] .footer .brandSection {
+  text-align: right;
+}
+
+html[dir="rtl"] .footer .socialLinks {
+  justify-content: flex-start;
+}
+
+html[dir="rtl"] .footer .corporateGrid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .footer .corporateLegal {
+  direction: rtl;
+}
+
+html[dir="rtl"] .footer .corporateRegion {
+  text-align: left;
+}
+
+html[dir="rtl"] .footer .footerMinimal {
+  direction: rtl;
+}
+
+html[dir="rtl"] .footer .copyright {
+  order: 1;
+}
+
+html[dir="rtl"] .footer .essentialLinks {
+  order: 2;
+  justify-content: flex-start;
+}
+
+html[dir="rtl"] .footer .copyrightText {
+  text-align: left;
+}
+
+/* ========================================
+   RESPONSIVE RTL ADJUSTMENTS
+   ======================================== */
+@media (max-width: 768px) {
+  html[dir="rtl"] .header .nav {
+    direction: rtl;
+  }
+
+  html[dir="rtl"] .header .navMenu {
+    text-align: center;
+  }
+
+  html[dir="rtl"] .heroActions {
+    justify-content: center;
+  }
+
+  html[dir="rtl"] .footer .corporateRegion {
+    text-align: right;
+  }
+
+  html[dir="rtl"] .footer .copyrightText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  html[dir="rtl"] .heroFeatures ul {
+    text-align: center;
+  }
+
+  html[dir="rtl"] .heroFeatures li {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  html[dir="rtl"] .heroFeatures li::before {
+    position: relative;
+    right: auto;
+    margin-left: 0.5rem;
+  }
+}
+
+/* ========================================
+   TEXT AND TYPOGRAPHY RTL
+   ======================================== */
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+  text-align: right;
+}
+
+html[dir="rtl"] p {
+  text-align: right;
+}
+
+html[dir="rtl"] .heroTitle,
+html[dir="rtl"] .heroSubtitle,
+html[dir="rtl"] .heroDescription {
+  text-align: right;
+}
+
+html[dir="rtl"] .heroSectionCentered .heroTitle,
+html[dir="rtl"] .heroSectionCentered .heroSubtitle,
+html[dir="rtl"] .heroSectionCentered .heroDescription {
+  text-align: center;
+}
+
+/* ========================================
+   BUTTON AND CTA RTL
+   ======================================== */
+html[dir="rtl"] .heroActions {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .ctaPrimary,
+html[dir="rtl"] .ctaSecondary {
+  text-align: center;
+}
+
+/* ========================================
+   ANIMATION RTL ADJUSTMENTS
+   ======================================== */
+html[dir="rtl"] .animatedLine {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .geometricLine {
+  transform: scaleX(-1);
+}
+
+/* Flip floating elements positions for RTL */
+html[dir="rtl"] .floatingPlus:nth-child(6) {
+  left: auto;
+  right: 20%;
+}
+
+html[dir="rtl"] .floatingPlus:nth-child(7) {
+  left: 20%;
+  right: auto;
+}
+
+html[dir="rtl"] .animatedCircle:nth-child(1) {
+  left: auto;
+  right: 10%;
+}
+
+html[dir="rtl"] .animatedCircle:nth-child(2) {
+  left: 15%;
+  right: auto;
+}
+
+/* ========================================
+   ACCESSIBILITY RTL SUPPORT
+   ======================================== */
+html[dir="rtl"] *:focus {
+  outline-offset: 2px;
+}
+
+/* High contrast mode RTL support */
+@media (prefers-contrast: high) {
+  html[dir="rtl"] .header--transparent .mainMenu a,
+  html[dir="rtl"] .header--transparent .ctaSecondary {
+    text-shadow: none;
+    background: rgba(0, 0, 0, 0.8);
+  }
+}

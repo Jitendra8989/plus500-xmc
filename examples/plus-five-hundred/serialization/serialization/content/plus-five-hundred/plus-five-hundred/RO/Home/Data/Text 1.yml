@@ -1,0 +1,75 @@
+﻿---
+ID: "33fae174-4b59-4496-94c6-4973307b17ed"
+Parent: "5049a4de-73e4-4511-9f64-7be9787b1fb7"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/RO/Home/Data/Text 1"
+BranchID: "bf982a12-b7d1-46d0-b750-cb3bc8f89988"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{3DC11FDE-F4BF-4799-A50A-0A8C64A3622D}"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250920T093858Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <div class="ck-content"><pre class="tw-data-text tw-text-large tw-ta" style="-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 250);border-style:none;color:rgb(31, 31, 31);font-family:inherit;font-size:28px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;line-height:32px;margin:-2px 0px;orphans:2;outline:0px;overflow-wrap:break-word;overflow:hidden;padding:2px 0.14em 2px 0px;position:relative;resize:none;text-align:right;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;unicode-bidi:isolate;white-space:pre-wrap;widows:2;width:270px;word-spacing:0px;" data-placeholder="Translation" id="tw-target-text" role="text" tabindex="-1" data-ved="2ahUKEwi5283KheePAxXX87sIHQo4LXsQ3ewLegQIDBAW" dir="rtl" aria-label="Translated text: اكتشف آلاف العقود مقابل الفروقات على الأدوات المالية الأكثر شعبية في العالم واحصل على أسعار مجانية في الوقت الفعلي لاستكشاف فرص التداول التي لا نهاية لها."><span class="Y2IQFc" style="outline:0px;" lang="ar" tabindex="-1">اكتشف آلاف العقود مقابل الفروقات على الأدوات المالية الأكثر شعبية في العالم واحصل على أسعار مجانية في الوقت الفعلي لاستكشاف فرص التداول التي لا نهاية لها.</span></pre></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b4f3a596-296b-4b8d-aed2-8b9b2a508b81"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250920T093858Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250920T091445Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <div class="ck-content"><h4>+++500 Discover thousands of CFDs on the world’s most popular financial instruments and get free real-time quotes to explore endless trading opportunities.</h4></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4b75510a-654e-4028-8140-735e8c9dca98"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250920T113038Z

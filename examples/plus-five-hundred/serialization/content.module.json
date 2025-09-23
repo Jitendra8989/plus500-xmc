@@ -1,0 +1,27 @@
+{
+  "namespace": "plus-five-hundred",
+  "items": {
+    "includes": [
+      {
+        "name": "content",
+        "path": "/sitecore/content/plus-five-hundred",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "templates",
+        "path": "/sitecore/templates/Project/plus-five-hundred",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "media",
+        "path": "/sitecore/media library/Project/plus-five-hundred",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "renderings",
+        "path": "/sitecore/layout/Renderings/Project/plus-five-hundred",
+        "allowedPushOperations": "createUpdateAndDelete"
+      }
+    ]
+  }
+}

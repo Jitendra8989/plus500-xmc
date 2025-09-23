@@ -1,0 +1,60 @@
+﻿---
+ID: "9cb0f51d-22ef-4596-9218-708bc2833fe4"
+Parent: "5c47b2c8-2893-477b-8940-57ade5eabe18"
+Template: "78f8f102-70a0-4217-9906-74105c8055f0"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/TreeLists/Language Navigator/All languages"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T143400Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "6ea8d8e7-98bf-4e7b-aa80-0b7328609fad"
+      Hint: TreeList
+      Value: |
+        {89DF24EA-55B4-49EA-B7A9-5A8831113DC7}
+        {3EFBA7A0-0CDC-4290-98A5-4AEC5E52A93A}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dee9cc2a-8654-4ab2-b7f8-b3fb050c3031"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T143408Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T075749Z
+    - ID: "52fd60e1-7a84-4b1f-9c60-4034796a9a9a"
+      Hint: Title
+      Value: en
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4a0fa19c-1082-462f-9909-e9e0540b0f56"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T155112Z
+    - ID: "ddfb3978-1bb5-46a9-8820-45401f7ef14c"
+      Hint: GeneralLink
+      Value: |
+        <link class="" id="{860A353E-F5B0-42FD-849F-BAF5E0C616C6}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="Forex" url="/plus-five-hundred/plus-five-hundred/RO/Home" />

@@ -1,0 +1,534 @@
+/* Stock Dashboard Component Styles */
+.stockDashboard {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  min-height: 100vh;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.title {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 4rem;
+  font-size: 5rem;
+  font-weight: 800;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #a855f7 0%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Search Container */
+.searchContainer {
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.searchBox {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.symbolInput {
+  flex-grow: 1;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.symbolInput:focus {
+  border-color: #a855f7;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.15);
+  transform: translateY(-2px);
+}
+
+.symbolInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.6rem;
+}
+
+.searchButton {
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 100%);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
+}
+
+.searchButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.6);
+  background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+}
+
+.searchButton:active {
+  transform: translateY(-1px);
+}
+
+/* Search Results */
+.searchResults {
+  position: absolute;
+  top: 100%;
+  left: 2rem;
+  right: 180px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: 0.8rem;
+}
+
+.searchItem {
+  padding: 1.3rem 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.searchItem:last-child {
+  border-bottom: none;
+}
+
+.searchItem:hover {
+  background: rgba(168, 85, 247, 0.15);
+  transform: translateX(6px);
+}
+
+.searchItem strong {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.searchItem span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Widget Grid */
+.widgetGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 2.5rem;
+}
+
+.widget {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  padding: 3rem;
+  border-radius: 28px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-height: 350px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.widget:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(168, 85, 247, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.widget h2 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  color: #ffffff;
+  border-bottom: 3px solid rgba(168, 85, 247, 0.4);
+  padding-bottom: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.widgetContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.widgetSpan2 {
+  grid-column: span 2;
+}
+
+.widgetSpan3 {
+  grid-column: span 3;
+}
+
+/* Quote Styles */
+.quotePrice {
+  font-size: 5.5rem;
+  font-weight: 800;
+  margin: 1.5rem 0;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #a855f7 0%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.quoteChange {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+.positive {
+  color: #059669;
+  background: rgba(5, 150, 105, 0.15);
+  border: 1px solid rgba(5, 150, 105, 0.2);
+}
+
+.negative {
+  color: #dc2626;
+  background: rgba(220, 38, 38, 0.15);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+.quoteDetails {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 1.5rem;
+}
+
+/* Profile Styles */
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background: rgba(168, 85, 247, 0.12);
+  border-radius: 20px;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.profileLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  border: 3px solid rgba(168, 85, 247, 0.3);
+  object-fit: contain;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(168, 85, 247, 0.2);
+}
+
+.profileHeader h3 {
+  margin: 0 0 0.8rem 0;
+  font-size: 2.2rem;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.profileHeader p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.profileDetails p {
+  margin: 1.5rem 0;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.profileDetails strong {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+  min-width: 180px;
+  font-size: 1.4rem;
+}
+
+.profileDetails a {
+  color: #c084fc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.profileDetails a:hover {
+  color: #a855f7;
+  text-decoration: underline;
+}
+
+/* News Styles */
+.newsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.newsItem {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.newsItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.15);
+}
+
+.newsItem a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  transition: color 0.2s ease;
+}
+
+.newsItem a:hover {
+  color: #c084fc;
+}
+
+.newsItem small {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* Loading and Error States */
+.loader {
+  text-align: center;
+  padding: 4rem;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 600;
+  background: rgba(220, 38, 38, 0.12);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .widgetSpan3 {
+    grid-column: span 2;
+  }
+
+  .widgetGrid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .stockDashboard {
+    padding: 2rem 1rem;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .widgetGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .widget {
+    padding: 2.5rem;
+    min-height: 300px;
+  }
+
+  .widget h2 {
+    font-size: 2rem;
+  }
+
+  .widgetSpan2,
+  .widgetSpan3 {
+    grid-column: span 1;
+  }
+
+  .searchBox {
+    padding: 1.8rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .symbolInput,
+  .searchButton {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .searchResults {
+    left: 1.8rem;
+    right: 1.8rem;
+  }
+
+  .quotePrice {
+    font-size: 4rem;
+  }
+
+  .quoteChange {
+    font-size: 1.6rem;
+  }
+
+  .quoteDetails {
+    font-size: 1.3rem;
+  }
+
+  .profileHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .profileHeader h3 {
+    font-size: 2rem;
+  }
+
+  .profileHeader p {
+    font-size: 1.3rem;
+  }
+
+  .profileDetails strong {
+    min-width: auto;
+    font-size: 1.3rem;
+  }
+
+  .profileDetails p {
+    font-size: 1.3rem;
+  }
+
+  .newsItem a {
+    font-size: 1.3rem;
+  }
+
+  .newsItem small {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stockDashboard {
+    padding: 1.5rem 1rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .widget {
+    padding: 2rem;
+    min-height: 280px;
+  }
+
+  .widget h2 {
+    font-size: 1.8rem;
+  }
+
+  .searchBox {
+    padding: 1.5rem;
+  }
+
+  .symbolInput,
+  .searchButton {
+    font-size: 1.4rem;
+  }
+
+  .quotePrice {
+    font-size: 3.2rem;
+  }
+
+  .quoteChange {
+    font-size: 1.4rem;
+  }
+
+  .profileLogo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profileHeader h3 {
+    font-size: 1.8rem;
+  }
+
+  .newsItem {
+    padding: 1.5rem;
+  }
+
+  .newsItem a {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,66 @@
+﻿---
+ID: "71128d13-6711-4e47-95ee-596378b9711f"
+Parent: "a30c5de6-ad24-4412-a674-ae5fd0cd6774"
+Template: "3f8d6542-9e46-49d9-94df-6136bbbe5ba3"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/MarketCalender/Germany PMI Report 2026-08 1624"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{1629F2D6-D74D-4825-A8D6-B77558D1740E}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0797cdb9-70fb-402c-a4c1-9653017b53dc"
+      Hint: Expected Impact
+      Value: 4
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T175500Z
+    - ID: "275271a1-2846-4535-868e-83c5b5989c5d"
+      Hint: Country
+      Value: Germany
+    - ID: "28e554ee-f2aa-4280-8b35-75352c26be58"
+      Hint: Visibility Window
+      Value: 20260802T000000Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Germany PMI Report
+    - ID: "6eca7290-27dd-441b-93c4-7fd830fde048"
+      Hint: Event Title
+      Value: Germany PMI Report
+    - ID: "7d995be6-9f02-4914-a217-d27df53767a0"
+      Hint: Regulatory Disclaimer
+      Value: CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.
+    - ID: "7dcd86e8-35d3-4a97-9c1a-8bb1e29395db"
+      Hint: Title
+      Value: Germany PMI Report
+    - ID: "80342272-1cd7-4477-8e47-128ac61604fd"
+      Hint: Associated Market
+      Value: "{46A7F3BB-CF5E-4F96-8939-70971D8022BA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "58168e06-c663-488d-a35e-e211ba6c4b35"
+    - ID: "b0ff6ff6-ae84-4a39-bc1d-11ef5d82462d"
+      Hint: Promo Link
+      Value: |
+        <link text="Trade Now" linktype="external" url="https://www.plus500.com/en-us/trading/forex" anchor="" target="" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9521ebc-34ca-4b98-8607-8e1722c2dbfb"
+      Hint: Description
+      Value: The PMI Report provides key insights into Germany's economic performance and market conditions.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T175500Z
+    - ID: "ebcf859d-e99d-47cc-856c-d4af2db66a8e"
+      Hint: Event Date And Time
+      Value: 20260809T080000Z
+    - ID: "ebd38016-6e39-4353-934a-719b06faecd5"
+      Hint: Reference Link
+      Value: |
+        <link text="Official Source" linktype="external" url="https://www.centralbank.gov" anchor="" target="" />

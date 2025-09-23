@@ -1,0 +1,90 @@
+﻿---
+ID: "fd311ce2-f284-4b88-8f5a-3aaee92973ac"
+Parent: "df5fcd8a-c61d-463b-b6cf-81025063daa1"
+Template: "4006a8a8-7e76-4710-912c-faad11c6eed0"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/Homer/Home/Data/FeatureSection"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2035eea1-ef9a-4a5c-a8f9-e9ace3162c40"
+      Hint: SectionSubtitle
+      Value: إليك معاينة للأشياء التي يمكنك تعلمها عند التسجيل.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T101335Z
+    - ID: "5125b8bb-bab5-48b3-a55f-f3d2de9f11b2"
+      Hint: SectionTitle
+      Value: كن مستثمراً أفضل أثناء التنقل، مباشرة في التطبيق
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5f0d0a47-afc8-4b7a-aaf0-9c02ca10d332"
+      Hint: FeatureItems
+      Value: |
+        {02C9A2FE-45BC-4B18-9709-A0DE4ED62DDC}
+        {17F01722-77E2-4D7D-A9B7-C22E27B300D0}
+        {6FF29B96-4187-434B-9D35-4CA463B99455}
+        {E0CEA7CB-36F2-4B09-8031-16F4B52CAAA1}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "60c17c1b-229c-4759-ac2c-92c094a78b8c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T191358Z
+    - ID: "f95dea8a-fe98-494f-9e06-7e11f93e91b8"
+      Hint: SectionCTA
+      Value: |
+        <link class="" id="{017D6C8F-3B32-46C9-8DD6-50B2169DCE32}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="تداول معنا" url="/plus-five-hundred/plus-five-hundred/US/Home" />
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2035eea1-ef9a-4a5c-a8f9-e9ace3162c40"
+      Hint: SectionSubtitle
+      Value: Here's a preview of the things you can learn when you sign up.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T101335Z
+    - ID: "5125b8bb-bab5-48b3-a55f-f3d2de9f11b2"
+      Hint: SectionTitle
+      Value: Become a better investor on the go, right in the app
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5f0d0a47-afc8-4b7a-aaf0-9c02ca10d332"
+      Hint: FeatureItems
+      Value: |
+        {02C9A2FE-45BC-4B18-9709-A0DE4ED62DDC}
+        {17F01722-77E2-4D7D-A9B7-C22E27B300D0}
+        {6FF29B96-4187-434B-9D35-4CA463B99455}
+        {E0CEA7CB-36F2-4B09-8031-16F4B52CAAA1}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "23120861-6c32-4fc2-afad-a8ee4912f156"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T191358Z
+    - ID: "f95dea8a-fe98-494f-9e06-7e11f93e91b8"
+      Hint: SectionCTA
+      Value: |
+        <link class="" id="{017D6C8F-3B32-46C9-8DD6-50B2169DCE32}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="Trade with us" url="/plus-five-hundred/plus-five-hundred/US/Home" />

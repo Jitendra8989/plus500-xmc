@@ -1,0 +1,237 @@
+﻿---
+ID: "860a353e-f5b0-42fd-849f-baf5e0c616c6"
+Parent: "8fe8132b-bc33-43c1-9a22-27455408b115"
+Template: "fe7814e9-0d70-4916-a415-97a7b8ab41b8"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/RO/Home"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{442FD687-C2A2-431D-A4C3-AF913C2A5D08}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "daf1cadc-edf9-41d4-9f84-314aba83870a"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{EF48A806-5551-4CB0-8163-82B500599EDA}"
+          p:before="*"
+          s:ds="local:/Data/Text 1"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:par="?Styles=%7b65DFA438-CF1A-454B-A4D3-0FEB86C7CFCB%7d&amp;FieldNames=%7b992B05A7-CFB2-435C-AC0B-F6C6AB8EF4B0%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d%7c%7b3DC91543-36F8-452A-BACD-F98B0C21BCF9%7d%7c%7b6F83979B-4C3F-4EEC-8C64-F8DA29D83961%7d%7c%7b959FDFBB-4691-4A17-816F-7A5330B8216A%7d%7c%7b271DE3B1-089F-4977-95EC-B5E51446FC01%7d%7c%7b1B189E02-FFC9-4ADC-84E5-D2AB5F6EC0FB%7d%7c%7b175CB6DA-CF89-4D56-888C-EB79F514D12F%7d%7c%7b94BCE55D-68FC-4020-A364-176EF1AAAFFB%7d%7c%7bF4BC7C4C-175F-4EA4-A6D9-EFCD92507276%7d%7c%7b7DF615F7-0A53-42E1-A164-2B36D6126314%7d%7c%7b1FEC5EDD-5489-43F1-8C19-A092206E130D%7d%7c%7bB706790E-8CB2-4A93-B341-6E7171734B61%7d"
+          s:ph="headless-main" />
+        <r
+          uid="{694CDEFE-C63B-4F44-8FC7-A61E0D8F2074}"
+          p:after="r[@uid='{EF48A806-5551-4CB0-8163-82B500599EDA}']"
+          s:ds="local:/Data/Image 1"
+          s:id="{AB2EDBA0-3960-4F12-B765-579DC231894A}"
+          s:par="?DynamicPlaceholderId=2&amp;FieldNames=%7b58FDBEA9-1143-46C4-9C28-44B1A4B38E16%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d"
+          s:ph="headless-main" />
+        <r
+          uid="{72A2ECB8-3134-4B58-ABA9-946F812D1E62}"
+          p:after="r[@uid='{694CDEFE-C63B-4F44-8FC7-A61E0D8F2074}']"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="?Styles=%7bCA2F36E7-8A06-4B6D-9994-22DE83873396%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{C3CBD9DE-C45C-472A-B4C8-4CE1E4603BAF}"
+          p:after="r[@uid='{72A2ECB8-3134-4B58-ABA9-946F812D1E62}']"
+          s:ds="local:/Data/Text 2"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:par="?Styles=%7bD012B0F4-B0FD-4D37-B784-D7810CE61068%7d&amp;FieldNames=%7b992B05A7-CFB2-435C-AC0B-F6C6AB8EF4B0%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d%7c%7b959FDFBB-4691-4A17-816F-7A5330B8216A%7d%7c%7b271DE3B1-089F-4977-95EC-B5E51446FC01%7d%7c%7b1B189E02-FFC9-4ADC-84E5-D2AB5F6EC0FB%7d"
+          s:ph="/headless-main/container-1" />
+        <r
+          uid="{772E11EF-9EAB-450B-AC6A-B26FD87247F4}"
+          p:after="r[@uid='{C3CBD9DE-C45C-472A-B4C8-4CE1E4603BAF}']"
+          s:ds="local:/Data/PromoLeft"
+          s:id="{2492BAC4-DA07-4C86-87F0-9873D40E2276}"
+          s:par="?Styles=%7b811389E4-9417-44EC-8B67-79908E8BE0B1%7d&amp;FieldNames=%7bEBA8097C-5BFD-4604-9082-C86A3691B7A2%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d%7c%7b81225C08-5783-4BED-A86A-AB2B87198885%7d%7c%7b41E4B2ED-E813-46F9-8455-C26C88E78D47%7d%7c%7b1D84575C-B71C-40B2-BE7E-65503BCD666E%7d"
+          s:ph="/headless-main/container-1" />
+        <r
+          uid="{269B0D8F-8AF2-4055-A9A1-0C994E31BE14}"
+          p:after="*[1=2]"
+          s:ds="local:/Data/PromoRight"
+          s:id="{2492BAC4-DA07-4C86-87F0-9873D40E2276}"
+          s:par="?Styles=%7b811389E4-9417-44EC-8B67-79908E8BE0B1%7d&amp;FieldNames=%7bEBA8097C-5BFD-4604-9082-C86A3691B7A2%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d%7c%7b81225C08-5783-4BED-A86A-AB2B87198885%7d%7c%7b41E4B2ED-E813-46F9-8455-C26C88E78D47%7d%7c%7b1D84575C-B71C-40B2-BE7E-65503BCD666E%7d"
+          s:ph="/headless-main/container-1" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F558BEC9-C602-4D7A-B9A1-D0411C946EA4}"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250923T041007Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\jitendra.soni@dcxtransform.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\jitendra.soni@dcxtransform.ae
+    - ID: "7dcd86e8-35d3-4a97-9c1a-8bb1e29395db"
+      Hint: Title
+      Value: "الاتجاهات الجديدة في التمويل: الرقمنة والاستثمار المستدام في الصين ورومانيا"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4c5b1a37-8d4f-4743-88fe-743a1b57db1e"
+    - ID: "aed346d5-7550-4988-ac9f-581848bbff0a"
+      Hint: Content
+      Value: |
+        <p data-start="155" data-end="726">مع استمرار تطور الاقتصاد العالمي، يشهد كل من الصين ورومانيا تغييرات عميقة في طرق التمويل وإدارة الأموال. أدى انتشار التقنيات الرقمية إلى جعل الاستثمار أكثر سهولة وشفافية، بينما أصبح الاستثمار المستدام اتجاهاً رئيسياً يجذب المزيد من المستثمرين الذين يهتمون بالمسؤولية الاجتماعية والبيئية. ففي الصين، ساهمت المدفوعات عبر الهاتف المحمول والتكنولوجيا المالية في تعزيز الشمول المالي، أما في رومانيا فقد فتحت السياسات الأوروبية والتحول الأخضر فرصاً جديدة أمام المستثمرين. تستعرض هذه المقالة الاتجاهات الحديثة في مجال التمويل في كلا البلدين وتوضح تأثيرها على الأفراد والشركات.</p>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\jitendra.soni@dcxtransform.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250923T041025Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{C24B2CF5-BEB6-4700-B05F-A98507636323}"
+              p:before="*"
+              s:ds="local:/Data/HeroSection"
+              s:id="{093F9ED8-FC95-4249-8A05-B93ECF734381}"
+              s:par="ColorScheme&amp;FieldNames=%7BE7F8A9B0-C1D2-3E4F-5A6B-7C8D9E0F1A2B%7D"
+              s:ph="headless-main" />
+            <r
+              uid="{EF48A806-5551-4CB0-8163-82B500599EDA}"
+              s:par="Styles=%7B65DFA438-CF1A-454B-A4D3-0FEB86C7CFCB%7D&amp;FieldNames=%7B992B05A7-CFB2-435C-AC0B-F6C6AB8EF4B0%7D&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B3DC91543-36F8-452A-BACD-F98B0C21BCF9%7D%7C%7B6F83979B-4C3F-4EEC-8C64-F8DA29D83961%7D%7C%7B959FDFBB-4691-4A17-816F-7A5330B8216A%7D%7C%7B271DE3B1-089F-4977-95EC-B5E51446FC01%7D%7C%7B1B189E02-FFC9-4ADC-84E5-D2AB5F6EC0FB%7D%7C%7B175CB6DA-CF89-4D56-888C-EB79F514D12F%7D%7C%7B94BCE55D-68FC-4020-A364-176EF1AAAFFB%7D%7C%7BF4BC7C4C-175F-4EA4-A6D9-EFCD92507276%7D%7C%7B7DF615F7-0A53-42E1-A164-2B36D6126314%7D%7C%7B1FEC5EDD-5489-43F1-8C19-A092206E130D%7D%7C%7BB706790E-8CB2-4A93-B341-6E7171734B61%7D" />
+            <r
+              uid="{694CDEFE-C63B-4F44-8FC7-A61E0D8F2074}"
+              s:par="DynamicPlaceholderId=2&amp;FieldNames=%7B58FDBEA9-1143-46C4-9C28-44B1A4B38E16%7D&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D" />
+            <r
+              uid="{72A2ECB8-3134-4B58-ABA9-946F812D1E62}"
+              s:par="Styles=%7BCA2F36E7-8A06-4B6D-9994-22DE83873396%7D&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;DynamicPlaceholderId=1" />
+            <r
+              uid="{C3CBD9DE-C45C-472A-B4C8-4CE1E4603BAF}"
+              s:par="Styles=%7BD012B0F4-B0FD-4D37-B784-D7810CE61068%7D&amp;FieldNames=%7B992B05A7-CFB2-435C-AC0B-F6C6AB8EF4B0%7D&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B959FDFBB-4691-4A17-816F-7A5330B8216A%7D%7C%7B271DE3B1-089F-4977-95EC-B5E51446FC01%7D%7C%7B1B189E02-FFC9-4ADC-84E5-D2AB5F6EC0FB%7D" />
+            <r
+              uid="{772E11EF-9EAB-450B-AC6A-B26FD87247F4}"
+              s:par="Styles=%7B811389E4-9417-44EC-8B67-79908E8BE0B1%7D&amp;FieldNames=%7BEBA8097C-5BFD-4604-9082-C86A3691B7A2%7D&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B81225C08-5783-4BED-A86A-AB2B87198885%7D%7C%7B41E4B2ED-E813-46F9-8455-C26C88E78D47%7D%7C%7B1D84575C-B71C-40B2-BE7E-65503BCD666E%7D" />
+            <r
+              uid="{269B0D8F-8AF2-4055-A9A1-0C994E31BE14}"
+              s:par="Styles=%7B811389E4-9417-44EC-8B67-79908E8BE0B1%7D&amp;FieldNames=%7BEBA8097C-5BFD-4604-9082-C86A3691B7A2%7D&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D%7C%7B81225C08-5783-4BED-A86A-AB2B87198885%7D%7C%7B41E4B2ED-E813-46F9-8455-C26C88E78D47%7D%7C%7B1D84575C-B71C-40B2-BE7E-65503BCD666E%7D" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250920T091411Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Home
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "7dcd86e8-35d3-4a97-9c1a-8bb1e29395db"
+      Hint: Title
+      Value: Home
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c6ace41d-9dc1-4445-81e8-22f2fc6fb617"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T155111Z
+- Language: "ro-RO"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250923T040935Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\jitendra.soni@dcxtransform.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\jitendra.soni@dcxtransform.ae
+    - ID: "7dcd86e8-35d3-4a97-9c1a-8bb1e29395db"
+      Hint: Title
+      Value: 金融理财的新趋势：中国与罗马尼亚的数字化与可持续投资
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f43e192d-1dd9-4dee-ad93-062132530edb"
+    - ID: "aed346d5-7550-4988-ac9f-581848bbff0a"
+      Hint: Content
+      Value: 随着全球经济不断发展，中国与罗马尼亚的金融理财方式也在经历深刻变化。数字化技术的广泛应用使投资变得更加便捷与透明，而可持续投资逐渐成为主流，吸引越来越多关注社会与环境责任的投资者。在中国，移动支付与金融科技推动了普惠金融的发展；在罗马尼亚，欧盟政策和绿色转型为投资者提供了新机遇。本文将探讨两国在金融理财领域的新趋势，并分析其对个人与企业的影响。
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\jitendra.soni@dcxtransform.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250923T040945Z
+- Language: "zh-CN"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "a26b6ef8-b609-427c-85d6-0baa66ad53c7"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 主页
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250923T040950Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\jitendra.soni@dcxtransform.ae
+    - ID: "7dcd86e8-35d3-4a97-9c1a-8bb1e29395db"
+      Hint: Title
+      Value: 金融理财的新趋势：数字化与可持续投资
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b9161e99-7d7c-4429-9f19-a296857b56f9"
+    - ID: "aed346d5-7550-4988-ac9f-581848bbff0a"
+      Hint: Content
+      Value: 随着全球经济不断发展，金融理财方式正在发生深刻变化。数字化技术的应用使投资变得更加便捷和透明，而可持续投资逐渐成为主流，吸引越来越多关注社会与环境责任的投资者。本文将探讨当今金融理财的新趋势，并分析其对个人与企业的影响。
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\jitendra.soni@dcxtransform.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250923T041003Z

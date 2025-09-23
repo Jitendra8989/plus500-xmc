@@ -1,0 +1,740 @@
+/* ========================================
+   🎯 HERO SECTION - MATCHING HEROBANNER DESIGN
+   ======================================== */
+
+/* Base Hero Section */
+.heroSection {
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+  overflow: hidden;
+}
+
+.heroContainer {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 5vw, 3rem);
+  position: relative;
+  z-index: 3;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  gap: clamp(40px, 8vw, 80px);
+}
+
+/* Content Section */
+.heroContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+}
+
+.heroMedia {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================================
+   BADGES
+   ======================================== */
+.heroBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.badge,
+.badgeText p {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* REDUCED TYPOGRAPHY SIZES */
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.heroSubtitle {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+/* Desktop scaling - REDUCED SIZES */
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* ========================================
+   Media Styles
+   ======================================== */
+
+.heroMedia {
+  grid-area: media;
+}
+
+.mediaImage {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.heroActions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+/* PRIMARY BUTTON - Compact size */
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #1e40af, #3b82f6);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: auto;
+}
+
+.ctaPrimary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.ctaPrimary:hover {
+  background: linear-gradient(45deg, #1e3a8a, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px 0 rgba(59, 130, 246, 0.6);
+}
+
+/* SECONDARY BUTTON - Compact size */
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: auto;
+}
+
+.ctaSecondary:hover {
+  background: white;
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================
+   TextOnly Layout (Minimalist centered layout)
+   ======================================== */
+.heroSection--textOnly {
+  background: white;
+  min-height: 35vh; /* Reduced from 40vh */
+  padding: 1.5rem 0; /* Reduced from 4rem 0 */
+  display: flex;
+  align-items: center;
+}
+
+.heroSection--textOnly .heroContainer {
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 1rem clamp(1rem, 5vw, 3rem) !important; /* Reduced top/bottom padding */
+  min-height: auto !important;
+  margin: 0 auto !important; /* Horizontal center */
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.heroSection--textOnly .heroContent {
+  max-width: 1000px !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+  margin: 0 auto !important; /* Horizontal center */
+  width: 100% !important;
+  text-align: center !important; /* Force center alignment */
+}
+
+.heroSection--textOnly .heroTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  line-height: 1.1 !important;
+  margin: 0 auto !important; /* Horizontal center */
+  text-shadow: none !important;
+  max-width: 100% !important;
+  text-align: center !important; /* Force center alignment */
+}
+
+.heroSection--textOnly .heroSubtitle {
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem) !important;
+  font-weight: 400 !important;
+  color: #64748b !important;
+  line-height: 1.6 !important;
+  margin: 0 auto !important; /* Horizontal center */
+  text-align: center !important; /* Force center alignment */
+}
+
+.heroSection--textOnly .heroBadges {
+  justify-content: center !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.75rem !important;
+  margin: 0 auto !important; /* Horizontal center */
+  text-align: center !important;
+}
+
+.heroSection--textOnly .heroActions {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  align-items: center !important; /* Horizontal center for flex items */
+  justify-content: center !important;
+  margin: 0 auto !important; /* Horizontal center */
+  text-align: center !important;
+}
+
+.heroSection--textOnly .badge,
+.heroSection--textOnly .badgeText p {
+  background: #f1f5f9;
+  color: #475569;
+  border-color: #cbd5e1;
+}
+
+/* ========================================
+   MINIMAL VARIANT - BLUE BACKGROUND
+   ======================================== */
+
+/* 🎯 HIGHEST PRIORITY: Minimal theme overrides EVERYTHING */
+.heroSection.heroSection--minimal,
+.heroSection--minimal {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%) !important;
+  min-height: 50vh !important;
+  padding: 3rem 0 !important;
+}
+
+/* TextOnly + Minimal = BLUE BACKGROUND - HIGHEST SPECIFICITY */
+.heroSection--textOnly.heroSection--minimal {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%) !important;
+  min-height: 50vh !important;
+  padding: 3rem 0 !important;
+}
+
+.heroSection--minimal .heroContainer,
+.heroSection.heroSection--minimal .heroContainer,
+.heroSection--textOnly.heroSection--minimal .heroContainer {
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 1rem clamp(1rem, 5vw, 3rem) !important; /* Reduced top/bottom padding */
+  min-height: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 auto !important; /* Horizontal center */
+  width: 100% !important;
+}
+
+.heroSection--minimal .heroContent,
+.heroSection.heroSection--minimal .heroContent,
+.heroSection--textOnly.heroSection--minimal .heroContent {
+  max-width: 1000px !important;
+  align-items: center !important;
+  gap: 2rem !important;
+  margin: 0 auto !important; /* Horizontal center */
+  width: 100% !important;
+  text-align: center !important; /* Force center alignment */
+}
+
+/* White text for minimal theme - FORCE OVERRIDE */
+.heroSection--minimal .heroTitle,
+.heroSection.heroSection--minimal .heroTitle,
+.heroSection--textOnly.heroSection--minimal .heroTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-weight: 700 !important;
+  color: white !important;
+  line-height: 1.1 !important;
+  margin: 0 auto !important; /* Horizontal center */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  max-width: 100% !important;
+  text-align: center !important; /* Force center alignment */
+}
+
+.heroSection--minimal .heroSubtitle,
+.heroSection.heroSection--minimal .heroSubtitle,
+.heroSection--textOnly.heroSection--minimal .heroSubtitle {
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem) !important;
+  font-weight: 400 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  line-height: 1.6 !important;
+  margin: 0 auto !important; /* Horizontal center */
+  text-align: center !important; /* Force center alignment */
+}
+
+.heroSection--minimal .heroBadges,
+.heroSection.heroSection--minimal .heroBadges,
+.heroSection--textOnly.heroSection--minimal .heroBadges {
+  justify-content: center !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.75rem !important;
+  margin: 0 auto !important; /* Horizontal center */
+  text-align: center !important;
+}
+
+.heroSection--minimal .heroActions,
+.heroSection.heroSection--minimal .heroActions,
+.heroSection--textOnly.heroSection--minimal .heroActions {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  align-items: center !important; /* Horizontal center for flex items */
+  justify-content: center !important;
+  margin: 0 auto !important; /* Horizontal center */
+  text-align: center !important;
+}
+
+.heroSection--minimal .badgeText p,
+.heroSection--minimal .badge,
+.heroSection.heroSection--minimal .badgeText p,
+.heroSection.heroSection--minimal .badge,
+.heroSection--textOnly.heroSection--minimal .badgeText p,
+.heroSection--textOnly.heroSection--minimal .badge {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: white !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Button styling for minimal - white primary button */
+.heroSection.heroSection--minimal .ctaPrimary,
+.heroSection--minimal.heroSection--textOnly .ctaPrimary,
+.heroSection--textOnly.heroSection--minimal .ctaPrimary {
+  background: white !important;
+  color: #2563eb !important;
+  border-color: white !important;
+}
+
+.heroSection.heroSection--minimal .ctaPrimary:hover,
+.heroSection--minimal.heroSection--textOnly .ctaPrimary:hover,
+.heroSection--textOnly.heroSection--minimal .ctaPrimary:hover {
+  background: #2563eb !important;
+  color: white !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 8px 25px 0 rgba(37, 99, 235, 0.6) !important;
+}
+
+/* Secondary button for minimal */
+.heroSection.heroSection--minimal .ctaSecondary,
+.heroSection--minimal.heroSection--textOnly .ctaSecondary,
+.heroSection--textOnly.heroSection--minimal .ctaSecondary {
+  background: transparent !important;
+  color: white !important;
+  border-color: white !important;
+}
+
+.heroSection.heroSection--minimal .ctaSecondary:hover,
+.heroSection--minimal.heroSection--textOnly .ctaSecondary:hover,
+.heroSection--textOnly.heroSection--minimal .ctaSecondary:hover {
+  background: #2563eb !important;
+  color: white !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 8px 25px 0 rgba(37, 99, 235, 0.6) !important;
+}
+
+/* ========================================
+   Media Layouts
+   ======================================== */
+
+/* Media Left */
+.heroSection--mediaLeft .heroContainer {
+  flex-direction: row;
+}
+
+.heroSection--mediaLeft .heroContent {
+  order: 2;
+}
+
+.heroSection--mediaLeft .heroMedia {
+  order: 1;
+}
+
+/* Media Right */
+.heroSection--mediaRight .heroContainer {
+  flex-direction: row;
+}
+
+/* Background Image */
+.heroSection--backgroundImage {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%);
+}
+
+.backgroundMedia {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media (min-width: 640px) {
+  .heroActions {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    min-width: auto;
+  }
+
+  /* TextOnly actions centering for desktop */
+  .heroSection--textOnly .heroActions {
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  /* Minimal actions centering for desktop */
+  .heroSection--minimal .heroActions,
+  .heroSection.heroSection--minimal .heroActions,
+  .heroSection--textOnly.heroSection--minimal .heroActions {
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    flex-direction: row !important; /* Row layout on desktop */
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection--mediaLeft .heroContainer,
+  .heroSection--mediaRight .heroContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .heroContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* TextOnly variant responsive - tablet */
+  .heroSection--textOnly {
+    padding: 1rem 0; /* Reduced */
+    min-height: 30vh; /* Reduced */
+  }
+
+  .heroSection--textOnly .heroActions {
+    align-items: center !important; /* Horizontal center */
+    justify-content: center !important;
+    margin: 0 auto !important; /* Horizontal center */
+    text-align: center !important;
+  }
+
+  /* Minimal variant responsive - tablet */
+  .heroSection--minimal {
+    padding: 1.5rem 0; /* Reduced */
+    min-height: 35vh; /* Reduced */
+  }
+
+  .heroSection--minimal .heroContainer {
+    padding: 0.5rem 1rem; /* Reduced */
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+
+  .heroSection--minimal .heroActions {
+    align-items: center !important; /* Horizontal center */
+    justify-content: center !important;
+    margin: 0 auto !important; /* Horizontal center */
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroActions {
+    flex-direction: column;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    width: auto;
+    min-width: auto;
+  }
+
+  /* TextOnly variant responsive - mobile */
+  .heroSection--textOnly {
+    padding: 0.75rem 0; /* Reduced */
+    min-height: 25vh; /* Reduced */
+  }
+
+  .heroSection--textOnly .heroActions {
+    align-items: center !important; /* Horizontal center */
+    justify-content: center !important;
+    margin: 0 auto !important; /* Horizontal center */
+    text-align: center !important;
+  }
+
+  .heroSection--textOnly .ctaPrimary,
+  .heroSection--textOnly .ctaSecondary {
+    max-width: 300px; /* Prevent buttons from being too wide */
+    margin: 0 auto; /* Horizontal center */
+  }
+
+  /* Minimal variant responsive - mobile */
+  .heroSection--minimal {
+    padding: 1rem 0; /* Reduced */
+    min-height: 30vh; /* Reduced */
+  }
+
+  .heroSection--minimal .heroActions {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center !important; /* Horizontal center */
+    justify-content: center !important;
+    margin: 0 auto !important; /* Horizontal center */
+    text-align: center !important;
+  }
+
+  .heroSection--minimal .ctaPrimary,
+  .heroSection--minimal .ctaSecondary {
+    width: 100%;
+    min-width: auto;
+    max-width: 300px; /* Prevent buttons from being too wide */
+  }
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   Accessibility
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  .ctaPrimary,
+  .ctaSecondary {
+    transition: none;
+  }
+
+  .ctaPrimary:hover,
+  .ctaSecondary:hover {
+    transform: none;
+  }
+}
+
+/* 🚀 FINAL OVERRIDE - ABSOLUTE HIGHEST PRIORITY FOR MINIMAL THEME */
+/* This rule must be at the very end to override everything above */
+.heroSection--minimal,
+.heroSection.heroSection--minimal,
+.heroSection--textOnly.heroSection--minimal,
+section.heroSection--minimal,
+section.heroSection--textOnly.heroSection--minimal {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%) !important;
+  min-height: 40vh !important; /* Reduced from 50vh */
+  padding: 2rem 0 !important; /* Reduced from 3rem 0 */
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Force text colors for minimal theme */
+.heroSection--minimal .heroTitle,
+.heroSection--textOnly.heroSection--minimal .heroTitle {
+  color: white !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.heroSection--minimal .heroSubtitle,
+.heroSection--textOnly.heroSection--minimal .heroSubtitle {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* 🎯 FINAL OVERRIDE - TEXTONLY CENTERING - ABSOLUTE HIGHEST PRIORITY */
+/* This rule must override everything for TextOnly centering */
+.heroSection--textOnly,
+.heroSection.heroSection--textOnly,
+section.heroSection--textOnly {
+  text-align: center !important;
+}
+
+/* Target the component-content wrapper */
+.heroSection--textOnly :global(.component-content) {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.heroSection--textOnly .heroContainer,
+.heroSection.heroSection--textOnly .heroContainer,
+section.heroSection--textOnly .heroContainer {
+  justify-content: center !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}
+
+.heroSection--textOnly .heroContent,
+.heroSection.heroSection--textOnly .heroContent,
+section.heroSection--textOnly .heroContent {
+  margin: 0 auto !important;
+  width: 100% !important;
+  text-align: center !important;
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.heroSection--textOnly .heroTitle,
+.heroSection.heroSection--textOnly .heroTitle,
+section.heroSection--textOnly .heroTitle {
+  text-align: center !important;
+  margin: 0 auto !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.heroSection--textOnly .heroSubtitle,
+.heroSection.heroSection--textOnly .heroSubtitle,
+section.heroSection--textOnly .heroSubtitle {
+  text-align: center !important;
+  margin: 0 auto !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.heroSection--textOnly .heroActions,
+.heroSection.heroSection--textOnly .heroActions,
+section.heroSection--textOnly .heroActions {
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  width: 100% !important;
+}
+
+/* 🚨 ULTIMATE OVERRIDE - CSS MODULES SAFE */
+/* Target using attribute selectors to bypass CSS Modules */
+.heroSection--textOnly :global(h1),
+.heroSection--textOnly :global([class*="heroTitle"]) {
+  text-align: center !important;
+  margin: 0 auto !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.heroSection--textOnly :global(p),
+.heroSection--textOnly :global([class*="heroSubtitle"]) {
+  text-align: center !important;
+  margin: 0 auto !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+/* 🔥 NUCLEAR APPROACH - Force all children to center */
+.heroSection--textOnly :global(*) {
+  text-align: center !important;
+}
+
+.heroSection--textOnly :global(div) {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}

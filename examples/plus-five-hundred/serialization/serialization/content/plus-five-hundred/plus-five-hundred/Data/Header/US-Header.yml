@@ -1,0 +1,110 @@
+﻿---
+ID: "c8ddfa68-2484-49c9-83fb-f13ddcf2c06d"
+Parent: "1122f4c7-2289-4fd0-8c8c-03f3b2c5d31b"
+Template: "4df607de-cbb1-43eb-9090-62664d66e5b8"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/Header/US-Header"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T073720Z
+    - ID: "431f82f3-1a91-4f8a-9f91-997e6a9371d0"
+      Hint: MainMenu
+      Value: |
+        {4AB002BF-BD8A-47C5-861D-99D4E66F816D}
+        {0BA6E645-24E8-4F15-8AC0-C9DE8F6CE184}
+        {62EB1031-09AA-4F40-9165-9ECE51D6444E}
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "593e2b83-930d-477e-9bbe-74a86f27a70f"
+      Hint: SecondaryCTA
+      Value: |
+        <link text="تسجيل الدخول" linktype="external" url="https://app.plus500.com/" anchor="" target="" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "67fcf165-75e9-4893-9416-9ea552c99c99"
+      Hint: LanguageNavigator
+      Value: |
+        {89DF24EA-55B4-49EA-B7A9-5A8831113DC7}
+        {3EFBA7A0-0CDC-4290-98A5-4AEC5E52A93A}
+    - ID: "69e6f278-b359-4853-90ad-83cd34509e81"
+      Hint: PrimaryCTA
+      Value: |
+        <link text="تداول معنا" linktype="external" url="https://app.plus500.com/" anchor="" target="_blank" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bf3dad86-8df8-4be4-a931-86130ab53c36"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "cb48393a-a192-47c9-b29f-ba818158401c"
+      Hint: Logo
+      Value: |
+        <image mediaid="{59FF5C67-F326-46B7-94EA-E630FE905353}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T155113Z
+    - ID: "f1123f7b-32c2-466f-a6a6-64efd4642943"
+      Hint: LogoCTA
+      Value: |
+        <link class="" id="{860A353E-F5B0-42FD-849F-BAF5E0C616C6}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="" url="/plus-five-hundred/plus-five-hundred/RO/Home" />
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T073720Z
+    - ID: "431f82f3-1a91-4f8a-9f91-997e6a9371d0"
+      Hint: MainMenu
+      Value: |
+        {4AB002BF-BD8A-47C5-861D-99D4E66F816D}
+        {0BA6E645-24E8-4F15-8AC0-C9DE8F6CE184}
+        {62EB1031-09AA-4F40-9165-9ECE51D6444E}
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "593e2b83-930d-477e-9bbe-74a86f27a70f"
+      Hint: SecondaryCTA
+      Value: |
+        <link text="Login" linktype="external" url="https://app.plus500.com/" anchor="" target="" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "67fcf165-75e9-4893-9416-9ea552c99c99"
+      Hint: LanguageNavigator
+      Value: |
+        {89DF24EA-55B4-49EA-B7A9-5A8831113DC7}
+        {3EFBA7A0-0CDC-4290-98A5-4AEC5E52A93A}
+    - ID: "69e6f278-b359-4853-90ad-83cd34509e81"
+      Hint: PrimaryCTA
+      Value: |
+        <link text="Trade Us" linktype="external" url="https://app.plus500.com/" anchor="" target="_blank" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "668f5c96-9a59-4f0d-b660-8c3fa40618d5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "cb48393a-a192-47c9-b29f-ba818158401c"
+      Hint: Logo
+      Value: |
+        <image mediaid="{59FF5C67-F326-46B7-94EA-E630FE905353}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T083055Z
+    - ID: "f1123f7b-32c2-466f-a6a6-64efd4642943"
+      Hint: LogoCTA
+      Value: |
+        <link linktype="external" url="/en-us" anchor="" target="" />

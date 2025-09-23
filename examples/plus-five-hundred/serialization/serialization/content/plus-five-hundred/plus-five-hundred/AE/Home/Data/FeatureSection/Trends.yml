@@ -1,0 +1,45 @@
+﻿---
+ID: "e77dafcb-8e46-4b28-97e8-6011866ac9de"
+Parent: "07e9c011-3940-4569-84b6-af1c19b51d0f"
+Template: "583c7e8c-59b6-474a-9ada-6fe72a3ec1b8"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/AE/Home/Data/FeatureSection/Trends"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0a887b1c-5edb-41f4-bc5f-ae91fbb33452"
+      Hint: PrimaryCTA
+      Value: |
+        <link class="" id="{860A353E-F5B0-42FD-849F-BAF5E0C616C6}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="Know the trends" url="/plus-five-hundred/plus-five-hundred/RO/Home" />
+    - ID: "130d94fb-4260-4770-ba6b-317759743da9"
+      Hint: SubTitle
+      Value: Learn to identify patterns and make informed decisions
+    - ID: "2079f1eb-bb20-4859-8e1b-2d836eb1dfc3"
+      Hint: Title
+      Value: Understanding market trends
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T101736Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "751da837-c7aa-4a39-9d47-546f0a24d356"
+      Hint: Image
+      Value: |
+        <image mediaid="3d7f1e05-5725-4994-986e-554ac6f79f2b" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f11a4a7b-0094-455a-81fb-0b89cf94ae91"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T155113Z

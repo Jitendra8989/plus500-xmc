@@ -1,0 +1,161 @@
+﻿---
+ID: "c1fcb29d-c253-4f94-b132-5ae4b28ca6b5"
+Parent: "7419f22f-f2fa-4274-a71b-6f4a754eb812"
+Template: "281c28df-6fe1-4f22-91f1-059bf961073d"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/VisionPurposeValues Folder/VisionValues"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "243fb84e-975c-4468-a0d8-de170acf5e08"
+      Hint: Heading
+      Value: رؤيتنا وهدفنا وقيمنا
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210420Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "6931109e-0933-4aca-a6cb-35a285cfd77d"
+      Hint: Blocks
+      Value: "الرؤية: إضفاء الطابع الديمقراطي على التداول من خلال جعل الأسواق المالية في متناول الجميع|الهدف: تمكين الأفراد من السيطرة على مستقبلهم المالي من خلال تقنية التداول المبتكرة|القيم: الشفافية، الابتكار، الأمان، نجاح العملاء، التميز التنظيمي"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9f346e31-6bb5-426c-8311-60e6789cc72e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211641Z
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "243fb84e-975c-4468-a0d8-de170acf5e08"
+      Hint: Heading
+      Value: Our Vision, Purpose & Values
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210420Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "6931109e-0933-4aca-a6cb-35a285cfd77d"
+      Hint: Blocks
+      Value: "Vision: To democratize trading by making financial markets accessible to everyone|Purpose: Empowering individuals to take control of their financial future through innovative trading technology|Values: Transparency, Innovation, Security, Customer Success, Regulatory Excellence"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "db63e069-1d14-4748-abfc-5c2e8d74e763"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T210424Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "243fb84e-975c-4468-a0d8-de170acf5e08"
+      Hint: Heading
+      Value: Our Vision, Purpose & Values
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210420Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "6931109e-0933-4aca-a6cb-35a285cfd77d"
+      Hint: Blocks
+      Value: "Vision: To democratize trading by making financial markets accessible to everyone|Purpose: Empowering individuals to take control of their financial future through innovative trading technology|Values: Transparency, Innovation, Security, Customer Success, Regulatory Excellence"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ebfeeef1-c33e-403b-b157-e7db80fc09d4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211639Z
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "243fb84e-975c-4468-a0d8-de170acf5e08"
+      Hint: Heading
+      Value: Viziunea, Scopul și Valorile Noastre
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210420Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "6931109e-0933-4aca-a6cb-35a285cfd77d"
+      Hint: Blocks
+      Value: "Viziune: Să democratizăm tranzacționarea făcând piețele financiare accesibile tuturor|Scop: Să împuternicim indivizii să-și preia controlul asupra viitorului financiar prin tehnologia inovatoare de tranzacționare|Valori: Transparență, Inovație, Securitate, Succes pentru Clienți, Excelență Regulamentară"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "be81800b-aad1-4b18-9080-e7e8fb61fd78"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211643Z
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "243fb84e-975c-4468-a0d8-de170acf5e08"
+      Hint: Heading
+      Value: 我们的愿景、目标与价值观
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210420Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "6931109e-0933-4aca-a6cb-35a285cfd77d"
+      Hint: Blocks
+      Value: 愿景：通过让每个人都能接触到金融市场来实现交易的民主化|目标：通过创新的交易技术赋予个人掌控其金融未来的能力|价值观：透明度、创新、安全性、客户成功、监管卓越
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c7b2cdb6-3c7a-4d09-8a00-81396c697b74"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211644Z

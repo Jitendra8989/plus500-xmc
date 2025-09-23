@@ -1,0 +1,82 @@
+﻿---
+ID: "1232e092-a937-4868-adde-144f3761210f"
+Parent: "6f363c42-6e44-44a2-84af-83908fb3d692"
+Template: "f3be4e3d-2f8b-49ce-a9c4-e13a7b36791c"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/Financial Instruments/Forex/Major Pairs/EUR-GBP"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "08dc091c-9442-42a5-9ec9-c9b3a9eae55b"
+      Hint: Market Status
+      Value: Open
+    - ID: "10d26ec7-f043-4aa7-a813-7bca5def0dce"
+      Hint: Symbol
+      Value: "EUR-GBP"
+    - ID: "149282af-8085-44c3-ab4d-a4aff7401e9a"
+      Hint: Current Price
+      Value: 0.858
+    - ID: "16d0e294-cb28-4c63-bfc9-988880393b80"
+      Hint: Currency
+      Value: GBP
+    - ID: "1e0669e8-046c-4ee3-ab62-947c10fa9afb"
+      Hint: Spread
+      Value: 0.0002
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T162535Z
+    - ID: "35580ef6-2a5d-4562-8840-d8608fdc6412"
+      Hint: Min Trade Size
+      Value: 1000
+    - ID: "37faef9d-9853-4582-acb0-215ae2ac0444"
+      Hint: Description
+      Value: "Major currency pair: Euro / British Pound"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5a66335c-478a-4161-afb1-ce7895af840b"
+      Hint: Name
+      Value: Euro / British Pound
+    - ID: "5b4f727e-e6e2-4b23-a94a-e522e29c88fb"
+      Hint: Leverage
+      Value: "1:500"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d72afe01-5281-46ad-a6e5-a7925cef1353"
+    - ID: "952518ce-1380-4b7e-b262-566ec2624eeb"
+      Hint: Central Bank Rate
+      Value: 5.25
+    - ID: "98ee6575-b6e7-4226-8b19-e35def818720"
+      Hint: Quote Currency
+      Value: GBP
+    - ID: "9d3c8529-a4b1-4c0d-b23d-bae6ee5cdc5c"
+      Hint: Asset Type
+      Value: Forex
+    - ID: "adfcaeae-5a7b-4e90-83db-5dfb68888d2b"
+      Hint: Pip Size
+      Value: 0.0001
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T162535Z
+    - ID: "dd2c78c2-6b88-481c-8ee2-7de1e54d99b6"
+      Hint: Base Currency
+      Value: EUR
+    - ID: "de077a8b-001c-4e06-b368-5ac4a334f461"
+      Hint: Country
+      Value: Global
+    - ID: "e6906f0b-1f45-41c5-b234-c693acc22b6f"
+      Hint: Region
+      Value: Global
+    - ID: "fb62dae4-7ae3-4dc1-bd32-594b4ee36c4c"
+      Hint: Exchange
+      Value: Interbank Market

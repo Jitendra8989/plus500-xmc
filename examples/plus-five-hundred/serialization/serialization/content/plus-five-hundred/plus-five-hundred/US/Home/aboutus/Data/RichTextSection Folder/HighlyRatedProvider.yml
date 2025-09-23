@@ -1,0 +1,161 @@
+﻿---
+ID: "79b810f8-0d52-44cd-b27c-6d9f0fa6c937"
+Parent: "36a9a204-a26a-409f-ad5c-7eb4a2874922"
+Template: "fcb27369-56ee-424c-a07f-062bad2b2476"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/RichTextSection Folder/HighlyRatedProvider"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d92717e1-e6c9-45ab-877b-f55141cf4c81"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: <p>تحصل Plus500 باستمرار على اعتراف كمنصة تداول رائدة من قبل خبراء الصناعة والعملاء على حد سواء. التزامنا بالابتكار وتجربة المستخدم جعلنا نحصل على العديد من الجوائز والتقييمات العالية عبر متاجر التطبيقات.</p>
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: مقدم تداول عالي التقييم
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211640Z
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c3aec79c-729a-462f-bcf8-72ab00dafb80"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: "<p>Plus500 is consistently recognized as a leading trading platform by industry experts and customers alike. Our commitment to innovation and user experience has earned us numerous awards and high ratings across app stores.</p><p><strong>Download our award-winning mobile app:</strong></p><p><a href='https://apps.apple.com/app/plus500' target='_blank'>Download on App Store</a> | <a href='https://play.google.com/store/apps/details?id=com.plus500' target='_blank'>Get it on Google Play</a></p><p>Join millions of traders who trust Plus500 for their CFD trading needs.</p>"
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: "Highly-Rated Trading Provider"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T210423Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "905d15ae-56ad-4d18-a59e-2fe5abc14984"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: "<p>Plus500 is consistently recognized as a leading trading platform by industry experts and customers alike. Our commitment to innovation and user experience has earned us numerous awards and high ratings across app stores.</p><p><strong>Download our award-winning mobile app:</strong></p><p><a href='https://apps.apple.com/app/plus500' target='_blank'>Download on App Store</a> | <a href='https://play.google.com/store/apps/details?id=com.plus500' target='_blank'>Get it on Google Play</a></p><p>Join millions of traders who trust Plus500 for their CFD trading needs.</p>"
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: "Highly-Rated Trading Provider"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211638Z
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "931ad7d0-69e7-478a-99ee-f281f4c11d53"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: "<p>Plus500 este recunoscut în mod constant ca o platformă de tranzacționare de top de către experții din industrie și clienți deopotrivă. Angajamentul nostru față de inovație și experiența utilizatorului ne-a adus numeroase premii și evaluări ridicate în magazinele de aplicații.</p>"
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: Furnizor de Tranzacționare Foarte Apreciat
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211643Z
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "14d30153-43fc-4696-a7e4-f379950671e1"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: "<p>Plus500持续被行业专家和客户认可为领先的交易平台。我们对创新和用户体验的承诺为我们赢得了众多奖项和应用商店的高评分。</p><p><strong>下载我们屡获殊荣的移动应用：</strong></p><p><a href='https://apps.apple.com/app/plus500' target='_blank'>在App Store下载</a> | <a href='https://play.google.com/store/apps/details?id=com.plus500' target='_blank'>在Google Play获取</a></p>"
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: 备受推崇的交易平台
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211644Z

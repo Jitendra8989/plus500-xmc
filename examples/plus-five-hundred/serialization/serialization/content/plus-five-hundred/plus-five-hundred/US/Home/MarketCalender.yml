@@ -1,0 +1,70 @@
+﻿---
+ID: "a30c5de6-ad24-4412-a674-ae5fd0cd6774"
+Parent: "017d6c8f-3b32-46c9-8dd6-50b2169dce32"
+Template: "14415dcd-8824-4a33-8266-eb756dbfc398"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/MarketCalender"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{D3090133-7C77-46F6-B3A8-AD7583B004BF}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "f6f26c92-f7e7-4692-9c30-ccb2fd3aaa29"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{C84FB3D8-510B-4BD3-83E4-9ED06B421EC8}"
+          p:before="*"
+          s:ds="{06364543-3C84-4EA2-8F51-F7BE21DAEB81}"
+          s:id="{B8AAFC4B-07C0-4E25-9D81-D56A03C665F2}"
+          s:par="IsTransparent&amp;IsSticky&amp;GridParameters&amp;FieldNames=%7B06FA62C3-8AF1-4D25-944C-A4D0249F713C%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="/headless-header" />
+        <r
+          uid="{FFCB5E26-9F88-4B8A-A236-4F096CB7FE9E}"
+          p:after="r[@uid='{C84FB3D8-510B-4BD3-83E4-9ED06B421EC8}']"
+          s:ds="{57307CD0-4D2D-457F-A56F-1F1C748DFF76}"
+          s:id="{8102CD66-6ADF-48A5-9E6C-7DC46596CAC3}"
+          s:par="IsTransparent&amp;IsSticky&amp;GridParameters&amp;FieldNames=%7B635A6C06-57E3-461F-B7C7-3B922DCA045F%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:ph="/headless-footer" />
+        <r
+          uid="{F48F49E1-396E-400B-A805-C3740C898DA9}"
+          p:after="*[1=2]"
+          s:ds=""
+          s:id="{141C2E46-A88F-418E-B3CE-327FCEA9D1AC}"
+          s:par="CSSStyles"
+          s:ph="/headless-main" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1169d65c-4dbe-4c69-8d87-ca9e789b9014"
+      Hint: Title
+      Value: US MarketCalender
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T053348Z
+    - ID: "3ba84ae7-e710-4f92-a097-a13425cfa3bb"
+      Hint: Description
+      Value: US Market Calender specific to US
+    - ID: "7dcd86e8-35d3-4a97-9c1a-8bb1e29395db"
+      Hint: Title
+      Value: MarketCalender
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "53a89ecd-2a86-4d5b-a8d1-d28e525403d0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T121434Z

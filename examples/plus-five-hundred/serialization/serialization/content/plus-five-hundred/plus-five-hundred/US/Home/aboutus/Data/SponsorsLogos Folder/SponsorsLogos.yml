@@ -1,0 +1,161 @@
+﻿---
+ID: "fdab31ee-a436-48b2-88af-a1cc6233e232"
+Parent: "578c4e85-f03f-4274-9be6-28895cc1a5f0"
+Template: "f45f1980-5e70-4aa1-bf6a-c7a47b99d4f8"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/SponsorsLogos Folder/SponsorsLogos"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "64e96b33-4959-4025-ad48-fa998606aa61"
+      Hint: Heading
+      Value: شراكاتنا ورعاياتنا
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6aedafc3-2b82-4dca-b3b7-cdcf73c20404"
+    - ID: "b156f3fc-ebb9-48e1-85b7-0020c6d7a028"
+      Hint: Logos
+      Value: "أتلتيكو مدريد - الشريك الرسمي|بي إس سي يونغ بويز - الراعي الرسمي|أتالانتا بي سي - الشريك الرسمي|بوروسيا دورتموند - شريك التداول|شيكاغو بولز - الشريك الرسمي|فالنسيا سي إف - الراعي الرسمي"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211642Z
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "64e96b33-4959-4025-ad48-fa998606aa61"
+      Hint: Heading
+      Value: Our Partners & Sponsorships
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c25b1dad-ff78-459f-8988-371c1c15a2f6"
+    - ID: "b156f3fc-ebb9-48e1-85b7-0020c6d7a028"
+      Hint: Logos
+      Value: "Atletico Madrid - Official Partner|BSC Young Boys - Official Sponsor|Atalanta BC - Official Partner|Borussia Dortmund - Trading Partner|Chicago Bulls - Official Partner|Valencia CF - Official Sponsor"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T210425Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "64e96b33-4959-4025-ad48-fa998606aa61"
+      Hint: Heading
+      Value: Our Partners & Sponsorships
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ddd67184-9982-41dc-90fd-ed4483afe8fc"
+    - ID: "b156f3fc-ebb9-48e1-85b7-0020c6d7a028"
+      Hint: Logos
+      Value: "Atletico Madrid - Official Partner|BSC Young Boys - Official Sponsor|Atalanta BC - Official Partner|Borussia Dortmund - Trading Partner|Chicago Bulls - Official Partner|Valencia CF - Official Sponsor"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211639Z
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "64e96b33-4959-4025-ad48-fa998606aa61"
+      Hint: Heading
+      Value: Partenerii și Sponsorizările Noastre
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9e5f8649-ccc4-41d6-a5c5-9daf8a061f2e"
+    - ID: "b156f3fc-ebb9-48e1-85b7-0020c6d7a028"
+      Hint: Logos
+      Value: "Atletico Madrid - Partener Oficial|BSC Young Boys - Sponsor Oficial|Atalanta BC - Partener Oficial|Borussia Dortmund - Partener de Tranzacționare|Chicago Bulls - Partener Oficial|Valencia CF - Sponsor Oficial"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211643Z
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210422Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "64e96b33-4959-4025-ad48-fa998606aa61"
+      Hint: Heading
+      Value: 我们的合作伙伴与赞助
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dd413bc5-5ca0-4f0b-b962-8b694815e326"
+    - ID: "b156f3fc-ebb9-48e1-85b7-0020c6d7a028"
+      Hint: Logos
+      Value: "马德里竞技 - 官方合作伙伴|伯尔尼年轻人 - 官方赞助商|亚特兰大 - 官方合作伙伴|多特蒙德 - 交易合作伙伴|芝加哥公牛 - 官方合作伙伴|瓦伦西亚 - 官方赞助商"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211644Z

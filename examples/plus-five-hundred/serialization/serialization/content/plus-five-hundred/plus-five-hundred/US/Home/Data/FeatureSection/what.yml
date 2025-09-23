@@ -1,0 +1,48 @@
+﻿---
+ID: "6ff29b96-4187-434b-9d35-4ca463b99455"
+Parent: "664f978a-ade0-4ee8-9940-96275b24f97f"
+Template: "583c7e8c-59b6-474a-9ada-6fe72a3ec1b8"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/Data/FeatureSection/what"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0a887b1c-5edb-41f4-bc5f-ae91fbb33452"
+      Hint: PrimaryCTA
+      Value: |
+        <link class="" id="{860A353E-F5B0-42FD-849F-BAF5E0C616C6}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="Learn more" url="/plus-five-hundred/plus-five-hundred/RO/Home" />
+    - ID: "130d94fb-4260-4770-ba6b-317759743da9"
+      Hint: SubTitle
+      Value: The decisions you make today could help you grow your wealth
+    - ID: "2079f1eb-bb20-4859-8e1b-2d836eb1dfc3"
+      Hint: Title
+      Value: "What's the stock market?"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T101736Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "751da837-c7aa-4a39-9d47-546f0a24d356"
+      Hint: Image
+      Value: |
+        <image mediaid="c23ec2b1-9b7e-4190-ad43-0c1821a0b637" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "51e57a36-13f7-421e-b4d6-754243d8cacd"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T155114Z

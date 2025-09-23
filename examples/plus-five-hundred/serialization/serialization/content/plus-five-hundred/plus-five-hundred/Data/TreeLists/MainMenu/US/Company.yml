@@ -1,0 +1,58 @@
+﻿---
+ID: "4ab002bf-bd8a-47c5-861d-99d4e66f816d"
+Parent: "4ceadf21-1bbd-4468-ace4-5ae436ad1794"
+Template: "78f8f102-70a0-4217-9906-74105c8055f0"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/TreeLists/MainMenu/US/Company"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T143627Z
+    - ID: "52fd60e1-7a84-4b1f-9c60-4034796a9a9a"
+      Hint: Title
+      Value: الشركة
+    - ID: "6ea8d8e7-98bf-4e7b-aa80-0b7328609fad"
+      Hint: TreeList
+      Value: |
+        {6B63839E-9504-42F1-8564-DBD1F66C3B35}
+        {515773F7-596C-40FA-A7B0-2D2F82A41BF3}
+        {C4572229-7755-48B3-8FA7-252D4395B5E9}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "265bb403-c5d9-4933-9735-0c6f76d4c3f7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T143639Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T075642Z
+    - ID: "52fd60e1-7a84-4b1f-9c60-4034796a9a9a"
+      Hint: Title
+      Value: Company
+    - ID: "6ea8d8e7-98bf-4e7b-aa80-0b7328609fad"
+      Hint: TreeList
+      Value: |
+        {6B63839E-9504-42F1-8564-DBD1F66C3B35}
+        {C4572229-7755-48B3-8FA7-252D4395B5E9}
+        {515773F7-596C-40FA-A7B0-2D2F82A41BF3}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1a652952-dadd-4c31-8daa-0f5c28b3bcb4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T084331Z

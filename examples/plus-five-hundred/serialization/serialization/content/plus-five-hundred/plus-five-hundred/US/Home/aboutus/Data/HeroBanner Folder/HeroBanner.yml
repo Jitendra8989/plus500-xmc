@@ -1,0 +1,170 @@
+﻿---
+ID: "0f5bc7d2-a499-4b5d-aa82-5245c0d30fe0"
+Parent: "8281c6ec-1eb5-48a4-8ef9-b9866e840f95"
+Template: "3076e6ff-e83d-4a89-9d76-2225f74b8291"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/HeroBanner Folder/HeroBanner"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09cbad15-6613-4c30-a061-ae9d93170528"
+      Hint: Subtitle
+      Value: نقود مستقبل التداول عبر الإنترنت منذ عام 2008
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210418Z
+    - ID: "30d3db9f-d844-4b3d-90ce-b85a9dd311b6"
+      Hint: Title
+      Value: حول Plus500
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b3e41a39-6bfa-44fb-a9a7-895b5b31a716"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211639Z
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09cbad15-6613-4c30-a061-ae9d93170528"
+      Hint: Subtitle
+      Value: Leading the future of online trading since 2008
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210418Z
+    - ID: "30d3db9f-d844-4b3d-90ce-b85a9dd311b6"
+      Hint: Title
+      Value: About Plus500
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1562f567-5e0c-4349-812c-134cecfa6481"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T210423Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09cbad15-6613-4c30-a061-ae9d93170528"
+      Hint: Subtitle
+      Value: Leading the future of online trading since 2008
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210418Z
+    - ID: "2845c768-2161-4326-87c9-e612328d0a30"
+      Hint: Media
+      Value: 
+    - ID: "2fcf5b82-fc96-4528-8f33-13edf2f29deb"
+      Hint: SecondaryCTA
+      Value: 
+    - ID: "30d3db9f-d844-4b3d-90ce-b85a9dd311b6"
+      Hint: Title
+      Value: About Plus500
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e9de85e8-7670-4709-a25c-197a2e7ee774"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T232854Z
+    - ID: "dba41249-36e6-4cba-bc9d-e6de3a16367a"
+      Hint: PrimaryCTA
+      Value: 
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09cbad15-6613-4c30-a061-ae9d93170528"
+      Hint: Subtitle
+      Value: Conducem viitorul tranzacționării online din 2008
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210418Z
+    - ID: "30d3db9f-d844-4b3d-90ce-b85a9dd311b6"
+      Hint: Title
+      Value: Despre Plus500
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6d9f7f95-4f43-4e1e-b2f2-af7ed4ce9b19"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211642Z
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09cbad15-6613-4c30-a061-ae9d93170528"
+      Hint: Subtitle
+      Value: 自2008年以来引领在线交易的未来
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210418Z
+    - ID: "30d3db9f-d844-4b3d-90ce-b85a9dd311b6"
+      Hint: Title
+      Value: 关于Plus500
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "34c32736-65eb-44f9-affd-82305f8575a0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211643Z

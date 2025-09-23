@@ -1,0 +1,34 @@
+﻿---
+ID: "1641d244-bd0a-47d7-966d-cc9cde6ff98d"
+Parent: "017d6c8f-3b32-46c9-8dd6-50b2169dce32"
+Template: "fe7814e9-0d70-4916-a415-97a7b8ab41b8"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/Referencepage"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{6A126C6A-53AE-4C0D-84AD-363E6DB8D1D5}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T203842Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: AboutUs
+    - ID: "7dcd86e8-35d3-4a97-9c1a-8bb1e29395db"
+      Hint: Title
+      Value: AboutUs
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d60b8333-1371-4c77-ad89-6ad42c1655c1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T203936Z

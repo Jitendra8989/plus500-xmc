@@ -1,0 +1,161 @@
+﻿---
+ID: "bcbfcaa9-8226-4732-a819-51b52205db12"
+Parent: "36a9a204-a26a-409f-ad5c-7eb4a2874922"
+Template: "fcb27369-56ee-424c-a07f-062bad2b2476"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/RichTextSection Folder/WhoWeAre"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1282622b-f278-4e93-9777-2315f423e631"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: <p>Plus500 Ltd هي شركة رائدة في مجال التكنولوجيا المالية والشركة الأم لمنصة Plus500 Trading Platform. تأسست في عام 2008 من قبل ستة رواد أعمال، ونمت لتصبح واحدة من أكبر مقدمي العقود مقابل الفروقات في العالم.</p><p>مهمتنا هي جعل التداول في متناول الجميع وشفافاً وآمناً. نخدم أكثر من 25 مليون مستخدم مسجل في أكثر من 50 دولة، ونقدم التداول في آلاف الأدوات المالية بما في ذلك الأسهم والعملات الأجنبية والسلع وصناديق الاستثمار المتداولة والخيارات والعملات المشفرة.</p>
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: من نحن
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211640Z
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "efc2729f-09c4-4f65-a36c-5d7fb4fed9e5"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: "<p>Plus500 Ltd is a leading fintech company and the parent company of Plus500 Trading Platform. Founded in 2008 by six entrepreneurs, we have grown to become one of the world's largest CFD providers.</p><p>Our mission is to make trading accessible, transparent, and secure for everyone. We serve over 25 million registered users across more than 50 countries, offering trading in thousands of financial instruments including shares, forex, commodities, ETFs, options, and cryptocurrencies.</p><p>Headquartered in Israel with offices in London, Cyprus, Singapore, and Australia, we are regulated by top-tier financial authorities and listed on the London Stock Exchange Main Market.</p>"
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: Who We Are
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T210423Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ef971a5a-0326-415d-9b0a-0fe282276c24"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: "<p>Plus500 Ltd is a leading fintech company and the parent company of Plus500 Trading Platform. Founded in 2008 by six entrepreneurs, we have grown to become one of the world's largest CFD providers.</p><p>Our mission is to make trading accessible, transparent, and secure for everyone. We serve over 25 million registered users across more than 50 countries, offering trading in thousands of financial instruments including shares, forex, commodities, ETFs, options, and cryptocurrencies.</p><p>Headquartered in Israel with offices in London, Cyprus, Singapore, and Australia, we are regulated by top-tier financial authorities and listed on the London Stock Exchange Main Market.</p>"
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: Who We Are
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211638Z
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8801fa3c-2790-4f37-a82b-9f3de679e4e0"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: <p>Plus500 Ltd este o companie fintech de top și compania mamă a Plus500 Trading Platform. Fondată în 2008 de șase antreprenori, am crescut să devenim unul dintre cei mai mari furnizori de CFD din lume.</p><p>Misiunea noastră este să facem tranzacționarea accesibilă, transparentă și sigură pentru toată lumea. Servim peste 25 de milioane de utilizatori înregistrați în peste 50 de țări, oferind tranzacționare în mii de instrumente financiare.</p>
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: Cine Suntem
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211642Z
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210419Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8c0d26c7-4bf7-4f87-99c4-c6eab1837bcb"
+    - ID: "9d6c83db-15bc-4468-a7f1-49ed36727c2e"
+      Hint: Body
+      Value: <p>Plus500 Ltd是一家领先的金融科技公司，也是Plus500交易平台的母公司。公司成立于2008年，由六位企业家创立，现已发展成为世界上最大的差价合约提供商之一。</p><p>我们的使命是让每个人都能获得便捷、透明和安全的交易体验。我们为50多个国家的超过2500万注册用户提供服务，提供数千种金融工具的交易，包括股票、外汇、商品、ETF、期权和加密货币。</p>
+    - ID: "af57c684-16cb-44ad-bac6-1eb47ae80074"
+      Hint: Heading
+      Value: 我们是谁
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211644Z

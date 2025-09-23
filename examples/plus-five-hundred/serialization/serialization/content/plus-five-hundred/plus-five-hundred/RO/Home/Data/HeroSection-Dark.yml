@@ -1,0 +1,45 @@
+﻿---
+ID: "a1b2c3d4-e5f6-7890-abcd-123456789002"
+Parent: "5049a4de-73e4-4511-9f64-7be9787b1fb7"
+Template: "d3701fac-9f1d-44aa-8326-3dc4c4e08238"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/RO/Home/Data/HeroSection-Dark"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0a887b1c-5edb-41f4-bc5f-ae91fbb33452"
+      Hint: PrimaryCTA
+      Value: |
+        <link linktype="external" id="" anchor="" querystring="" target="" class="" text="Open Account" title="" url="#open-account"/>
+    - ID: "130d94fb-4260-4770-ba6b-317759743da9"
+      Hint: SubTitle
+      Value: "Experience institutional-grade trading technology with Plus500. Advanced charting, real-time analytics, and risk management tools designed for serious traders."
+    - ID: "2079f1eb-bb20-4859-8e1b-2d836eb1dfc3"
+      Hint: Title
+      Value: Professional Trading Platform
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250920T200100Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "751da837-c7aa-4a39-9d47-546f0a24d356"
+      Hint: Image
+      Value: |
+        <image mediaid="ed58f498-634e-4835-a077-549af5fa9605" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b52c3be7-9c80-4e92-a2e0-864c6b822137"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250920T200100Z

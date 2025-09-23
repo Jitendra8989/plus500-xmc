@@ -1,0 +1,161 @@
+﻿---
+ID: "12f0620b-5440-4e1c-b604-1e88c3bc0ec4"
+Parent: "ccebc3d1-dc08-4b7d-a71b-c820c29752fd"
+Template: "0132ceb2-4b89-4076-9525-8890da665866"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/Timeline Folder/CompanyTimeline"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210421Z
+    - ID: "3e0b7a86-43fc-4202-8166-44a4e4dc2670"
+      Hint: Items
+      Value: "2008: تأسيس Plus500 من قبل ستة رواد أعمال في إسرائيل|2010: إطلاق منصة تداول العقود مقابل الفروقات المبتكرة|2013: الإدراج في سوق بورصة لندن AIM|2014: الانتقال إلى السوق الرئيسي لبورصة لندن، الوصول إلى مليون عميل|2016: التوسع في الأسواق الأسترالية والقبرصية|2018: إطلاق Plus500 Invest لتداول الأسهم الحقيقية|2020: الوصول إلى 20 مليون مستخدم مسجل عالمياً|2022: تحقيق أكثر من 25 مليون مستخدم مسجل|2024: استمرار الابتكار في تقنية التداول وتجربة المستخدم"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "90776b94-2515-42be-bb22-e3ae5acd8588"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211641Z
+    - ID: "fcdd2172-ae6a-428f-9652-44b35664bdd4"
+      Hint: Heading
+      Value: "رحلتنا: المعالم الرئيسية"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210421Z
+    - ID: "3e0b7a86-43fc-4202-8166-44a4e4dc2670"
+      Hint: Items
+      Value: "2008: Plus500 founded by six entrepreneurs in Israel|2010: Launch of innovative CFD trading platform|2013: Listed on London Stock Exchange AIM market|2014: Moved to LSE Main Market, reached 1 million customers|2016: Expanded to Australian and Cyprus markets|2018: Launched Plus500 Invest for real stock trading|2020: Reached 20 million registered users globally|2022: Achieved over 25 million registered users|2024: Continued innovation in trading technology and user experience"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5a435ba9-ff8e-47e3-8a8b-13ceef925445"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T210424Z
+    - ID: "fcdd2172-ae6a-428f-9652-44b35664bdd4"
+      Hint: Heading
+      Value: "Our Journey: Key Milestones"
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210421Z
+    - ID: "3e0b7a86-43fc-4202-8166-44a4e4dc2670"
+      Hint: Items
+      Value: "2008: Plus500 founded by six entrepreneurs in Israel|2010: Launch of innovative CFD trading platform|2013: Listed on London Stock Exchange AIM market|2014: Moved to LSE Main Market, reached 1 million customers|2016: Expanded to Australian and Cyprus markets|2018: Launched Plus500 Invest for real stock trading|2020: Reached 20 million registered users globally|2022: Achieved over 25 million registered users|2024: Continued innovation in trading technology and user experience"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "068670fb-6df1-42f7-ba3f-601912486c0c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211639Z
+    - ID: "fcdd2172-ae6a-428f-9652-44b35664bdd4"
+      Hint: Heading
+      Value: "Our Journey: Key Milestones"
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210421Z
+    - ID: "3e0b7a86-43fc-4202-8166-44a4e4dc2670"
+      Hint: Items
+      Value: "2008: Plus500 fondată de șase antreprenori în Israel|2010: Lansarea platformei inovatoare de tranzacționare CFD|2013: Cotată pe piața AIM a Bursei de Valori din Londra|2014: Mutarea pe Piața Principală LSE, a atins 1 milion de clienți|2016: Extinderea pe piețele din Australia și Cipru|2018: Lansarea Plus500 Invest pentru tranzacționarea de acțiuni reale|2020: A ajuns la 20 de milioane de utilizatori înregistrați la nivel global|2022: A realizat peste 25 de milioane de utilizatori înregistrați|2024: Continuarea inovației în tehnologia de tranzacționare și experiența utilizatorului"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c0411ed1-ef9c-47fc-9560-48c1b2fb0619"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211643Z
+    - ID: "fcdd2172-ae6a-428f-9652-44b35664bdd4"
+      Hint: Heading
+      Value: "Călătoria Noastră: Momentele Cheie"
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210421Z
+    - ID: "3e0b7a86-43fc-4202-8166-44a4e4dc2670"
+      Hint: Items
+      Value: 2008年：Plus500由六位企业家在以色列创立|2010年：推出创新的差价合约交易平台|2013年：在伦敦证券交易所AIM市场上市|2014年：转入伦敦证交所主板市场，达到100万客户|2016年：扩展到澳大利亚和塞浦路斯市场|2018年：推出Plus500 Invest进行真实股票交易|2020年：全球注册用户达到2000万|2022年：注册用户超过2500万|2024年：在交易技术和用户体验方面持续创新
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6d0e76bd-66cf-4cd0-a73a-6d487cf9372e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211644Z
+    - ID: "fcdd2172-ae6a-428f-9652-44b35664bdd4"
+      Hint: Heading
+      Value: 我们的历程：关键里程碑

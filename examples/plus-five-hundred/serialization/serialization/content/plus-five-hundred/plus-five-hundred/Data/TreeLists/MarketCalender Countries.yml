@@ -1,0 +1,70 @@
+﻿---
+ID: "a974e967-7ca1-4ac3-9db1-82b0062054ff"
+Parent: "69e32d7c-521a-4e52-a17e-8803475159f7"
+Template: "78f8f102-70a0-4217-9906-74105c8055f0"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Data/TreeLists/MarketCalender Countries"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T075642Z
+    - ID: "52fd60e1-7a84-4b1f-9c60-4034796a9a9a"
+      Hint: Title
+      Value: وسائل التواصل الاجتماعي
+    - ID: "6ea8d8e7-98bf-4e7b-aa80-0b7328609fad"
+      Hint: TreeList
+      Value: |
+        {E93BA985-DAC7-4FFF-897F-0D9C47346B18}
+        {2454A0D0-6B34-4F7E-AC7B-9BD6A9CA9050}
+        {2896698F-1DFE-42F2-827B-0EDE648F6F21}
+        {F1C13543-0240-40D7-8599-52DB94EC326C}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ebd32a60-de31-4fb8-be5c-76143da2543a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T094345Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250921T075642Z
+    - ID: "52fd60e1-7a84-4b1f-9c60-4034796a9a9a"
+      Hint: Title
+      Value: Market
+    - ID: "6ea8d8e7-98bf-4e7b-aa80-0b7328609fad"
+      Hint: TreeList
+      Value: |
+        {5E678901-F234-5678-9012-345678901234}
+        {4D567890-E123-4567-8901-234567890123}
+        {9F872E23-A5F5-4EB2-A426-1B9D10436AF4}
+        {6F789012-1345-6789-0123-456789012345}
+        {2B345678-C901-2345-6789-012345678901}
+        {67AC6DE5-6D55-43E4-B800-AC1114D2450E}
+        {82901234-3567-8901-2345-678901234567}
+        {3C456789-D012-3456-7890-123456789012}
+        {0A123456-1789-0123-4567-890123456789}
+        {93012345-4678-9012-3456-789012345678}
+        {71890123-2456-7890-1234-567890123456}
+        {1EE0EF63-4131-428B-9191-1F3203C90475}
+        {1A234567-B890-1234-5678-901234567890}
+        {908EF403-50B6-46BC-A63C-EFF8830E9366}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2bf8d064-0e59-431e-80b7-c8283b7de3b4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T055438Z

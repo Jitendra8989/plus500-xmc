@@ -1,0 +1,161 @@
+﻿---
+ID: "ab1c509e-4d31-4e77-8f39-6cd9848d1d9f"
+Parent: "ffb75cfa-fe82-4100-9736-bc4a98a2a35a"
+Template: "65a5f214-1af1-4763-b4ed-01e14d931542"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/OfficeComplaintsInfo Folder/OfficeInfo"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210421Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ac758ed9-33df-4e86-9c6f-83134ee8c1bd"
+    - ID: "994df98b-1c7b-493a-aff2-c86883af2341"
+      Hint: Complaints
+      Value: نحن ملتزمون بحل أي شكاوى بشكل عادل وفعال. إذا كان لديك شكوى، يرجى الاتصال بفريق خدمة العملاء لدينا أولاً. إذا لم يكن بالإمكان حل الأمر، يمكنك التصعيد إلى أمين المظالم المالي المختص في دائرة اختصاصك.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211641Z
+    - ID: "fc737647-289b-45ca-b589-732a75207036"
+      Hint: Offices
+      Value: "المقر الرئيسي: حيفا، إسرائيل - 1 شارع هيردان، خليج حيفا|مكتب لندن: 78 كورنهيل، لندن EC3V 3QQ، المملكة المتحدة|مكتب قبرص: 1 شارع سيافي، 3042 ليماسول، قبرص|مكتب سنغافورة: 1 رافلز بليس، #20-61 ون رافلز بليس تاور 2، سنغافورة 048616|مكتب أستراليا: المستوى 5، 20 شارع بوند، سيدني NSW 2000، أستراليا"
+- Language: "ar-SA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210421Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a1495fc6-a2b7-4e03-bf5c-4b1d5351137f"
+    - ID: "994df98b-1c7b-493a-aff2-c86883af2341"
+      Hint: Complaints
+      Value: We are committed to resolving any complaints fairly and efficiently. If you have a complaint, please contact our Customer Service team first. If the matter cannot be resolved, you may escalate to the relevant financial ombudsman in your jurisdiction.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T210425Z
+    - ID: "fc737647-289b-45ca-b589-732a75207036"
+      Hint: Offices
+      Value: "Headquarters: Haifa, Israel - 1 Hayarden Street, Haifa Bay|London Office: 78 Cornhill, London EC3V 3QQ, United Kingdom|Cyprus Office: 1 Siafi Street, 3042 Limassol, Cyprus|Singapore Office: 1 Raffles Place, #20-61 One Raffles Place Tower 2, Singapore 048616|Australia Office: Level 5, 20 Bond Street, Sydney NSW 2000, Australia"
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210421Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e19dd0f8-29f0-46ea-ac22-5bf27382ae89"
+    - ID: "994df98b-1c7b-493a-aff2-c86883af2341"
+      Hint: Complaints
+      Value: We are committed to resolving any complaints fairly and efficiently. If you have a complaint, please contact our Customer Service team first. If the matter cannot be resolved, you may escalate to the relevant financial ombudsman in your jurisdiction.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211639Z
+    - ID: "fc737647-289b-45ca-b589-732a75207036"
+      Hint: Offices
+      Value: "Headquarters: Haifa, Israel - 1 Hayarden Street, Haifa Bay|London Office: 78 Cornhill, London EC3V 3QQ, United Kingdom|Cyprus Office: 1 Siafi Street, 3042 Limassol, Cyprus|Singapore Office: 1 Raffles Place, #20-61 One Raffles Place Tower 2, Singapore 048616|Australia Office: Level 5, 20 Bond Street, Sydney NSW 2000, Australia"
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210421Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6349d0b7-c370-4072-b9cc-26dd8b6700d7"
+    - ID: "994df98b-1c7b-493a-aff2-c86883af2341"
+      Hint: Complaints
+      Value: Ne angajăm să rezolvăm orice plângeri în mod echitabil și eficient. Dacă aveți o plângere, vă rugăm să contactați mai întâi echipa noastră de Servicii pentru Clienți. Dacă problema nu poate fi rezolvată, puteți escalada la ombudsmanul financiar relevant din jurisdicția dumneavoastră.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211643Z
+    - ID: "fc737647-289b-45ca-b589-732a75207036"
+      Hint: Offices
+      Value: "Sediul Central: Haifa, Israel - 1 Hayarden Street, Haifa Bay|Biroul din Londra: 78 Cornhill, London EC3V 3QQ, Regatul Unit|Biroul din Cipru: 1 Siafi Street, 3042 Limassol, Cipru|Biroul din Singapore: 1 Raffles Place, #20-61 One Raffles Place Tower 2, Singapore 048616|Biroul din Australia: Level 5, 20 Bond Street, Sydney NSW 2000, Australia"
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T210421Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "66abb36b-995c-42f2-be51-490c78e88d64"
+    - ID: "994df98b-1c7b-493a-aff2-c86883af2341"
+      Hint: Complaints
+      Value: 我们致力于公平有效地解决任何投诉。如果您有投诉，请首先联系我们的客户服务团队。如果问题无法解决，您可以向您所在司法管辖区的相关金融申诉专员升级。
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T211644Z
+    - ID: "fc737647-289b-45ca-b589-732a75207036"
+      Hint: Offices
+      Value: "总部：以色列海法 - 海法湾约旦河街1号|伦敦办事处：英国伦敦EC3V 3QQ康希尔街78号|塞浦路斯办事处：塞浦路斯利马索尔3042西亚菲街1号|新加坡办事处：新加坡048616莱佛士坊1号莱佛士坊一号大厦2座#20-61|澳大利亚办事处：澳大利亚新南威尔士州悉尼邦德街20号5层2000"

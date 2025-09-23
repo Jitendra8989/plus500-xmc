@@ -1,0 +1,67 @@
+﻿---
+ID: "403eeb61-b1d4-4463-8f0c-af44032595a4"
+Parent: "017d6c8f-3b32-46c9-8dd6-50b2169dce32"
+Template: "fe7814e9-0d70-4916-a415-97a7b8ab41b8"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{831ADCE7-B6F9-4746-8174-FC16660A8A99}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "5572e9e6-532c-4dec-ad3a-68395822e4ad"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{E859758B-1257-4EE9-B29E-8520E0B17D8A}"
+          p:before="*"
+          s:ds="local:/Data/HeroBanner Folder/HeroBanner DataSource"
+          s:id="{3A1A86F3-572E-4799-B669-0D7BB583C0ED}"
+          s:par="VariationOverride&amp;GridParameters&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="/headless-main" />
+        <r
+          uid="{652B95CD-F8EA-498A-A27B-558DE68006E7}"
+          p:after="*[1=2]"
+          s:ds="local:/Data/HeroBanner Folder/HeroBanner"
+          s:id="{3A1A86F3-572E-4799-B669-0D7BB583C0ED}"
+          s:par="VariationOverride&amp;GridParameters&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:ph="/headless-main" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "af3da346-d86f-4f53-9505-a17c98314237"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: About Us
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T205950Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: aboutus
+    - ID: "7dcd86e8-35d3-4a97-9c1a-8bb1e29395db"
+      Hint: Title
+      Value: "About Plus500 - Leading CFD Trading Platform"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a8084d51-8258-4703-b78d-b850e5cf7591"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T233114Z

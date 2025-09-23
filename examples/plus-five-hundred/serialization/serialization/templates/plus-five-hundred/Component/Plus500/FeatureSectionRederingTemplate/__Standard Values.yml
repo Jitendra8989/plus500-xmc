@@ -1,0 +1,27 @@
+﻿---
+ID: "efbdc333-2945-4cdd-8acf-4c42aec04130"
+Parent: "e60e4e76-e084-4ce8-b8ba-4f289ea7feef"
+Template: "e60e4e76-e084-4ce8-b8ba-4f289ea7feef"
+Path: "/sitecore/templates/Project/plus-five-hundred/Component/Plus500/FeatureSectionRederingTemplate/__Standard Values"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b826c3b3-0ef5-41f3-acc0-eb598b7a7b5d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T101026Z

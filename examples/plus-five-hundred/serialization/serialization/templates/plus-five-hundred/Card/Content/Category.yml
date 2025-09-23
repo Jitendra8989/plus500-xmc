@@ -1,0 +1,16 @@
+﻿---
+ID: "b4d6f8a2-7e95-4c37-9b61-e3f7a9d2c4b6"
+Parent: "e1f2a3b4-c5d6-7890-1234-567890fedcba"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/plus-five-hundred/Card/Content/Category"
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1

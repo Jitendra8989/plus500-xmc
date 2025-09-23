@@ -1,0 +1,76 @@
+﻿---
+ID: "d6f45709-b56e-4da6-9597-9d8f0e97b221"
+Parent: "017d6c8f-3b32-46c9-8dd6-50b2169dce32"
+Template: "fe7814e9-0d70-4916-a415-97a7b8ab41b8"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/Instruments"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{705D7FC1-9BFA-4C45-8B9F-2FB90BAE92DE}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "3875ecc7-595f-46cb-9ce4-113700df0fea"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{AD8BB695-9EA1-4B18-B626-CE8A4215CBAE}"
+          p:before="*"
+          s:ds="{06364543-3C84-4EA2-8F51-F7BE21DAEB81}"
+          s:id="{B8AAFC4B-07C0-4E25-9D81-D56A03C665F2}"
+          s:par="IsTransparent&amp;IsSticky&amp;GridParameters&amp;FieldNames=%7B06FA62C3-8AF1-4D25-944C-A4D0249F713C%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="/headless-header" />
+        <r
+          uid="{79D61B18-2D6B-4014-B64D-DD68D1DAC209}"
+          p:after="*[1=2]"
+          s:ds="{57307CD0-4D2D-457F-A56F-1F1C748DFF76}"
+          s:id="{8102CD66-6ADF-48A5-9E6C-7DC46596CAC3}"
+          s:par="IsTransparent&amp;IsSticky&amp;GridParameters&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:ph="/headless-footer" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{8717A72D-F4F4-4086-B0F7-A8B14996B0CD}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{8F735654-F6C4-4F9C-BB66-587D863D4430}"
+              s:par="CSSStyles"
+              s:ph="/headless-main" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T094013Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: TradingData
+    - ID: "7dcd86e8-35d3-4a97-9c1a-8bb1e29395db"
+      Hint: Title
+      Value: 🔴 TradingData
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "53300e0a-e974-4b0d-a59b-5abae980704f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T121509Z

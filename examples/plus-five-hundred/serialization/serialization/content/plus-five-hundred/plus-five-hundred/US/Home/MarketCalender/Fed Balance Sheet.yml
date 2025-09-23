@@ -1,0 +1,42 @@
+﻿---
+ID: "b07db3a4-fb2d-4e05-aaa7-22bcc827235e"
+Parent: "a30c5de6-ad24-4412-a674-ae5fd0cd6774"
+Template: "3f8d6542-9e46-49d9-94df-6136bbbe5ba3"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/MarketCalender/Fed Balance Sheet"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{95A5F200-D576-4B6E-B079-17DB4C23078E}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T090402Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Fed Balance Sheet
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\om-mcp-user
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\om-mcp-user
+    - ID: "7dcd86e8-35d3-4a97-9c1a-8bb1e29395db"
+      Hint: Title
+      Value: Fed Balance Sheet
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "49439638-b1d8-4f3b-96ce-5cf0aa84bb36"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\om-mcp-user
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T090402Z

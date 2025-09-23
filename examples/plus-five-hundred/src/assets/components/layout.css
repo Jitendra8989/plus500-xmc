@@ -1,0 +1,174 @@
+/* Modern layout system */
+.min-h-screen {
+  @apply min-h-screen;
+}
+
+.flex-col {
+  @apply flex flex-col;
+}
+
+.flex-1 {
+  @apply flex-1;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.grid {
+  @apply grid;
+}
+
+.grid-cols-1 {
+  @apply grid-cols-1;
+}
+
+.grid-cols-2 {
+  @apply grid-cols-2;
+}
+
+.grid-cols-3 {
+  @apply grid-cols-3;
+}
+
+.grid-cols-4 {
+  @apply grid-cols-4;
+}
+
+.grid-cols-6 {
+  @apply grid-cols-6;
+}
+
+.gap-4 {
+  @apply gap-4;
+}
+
+.gap-6 {
+  @apply gap-6;
+}
+
+.gap-8 {
+  @apply gap-8;
+}
+
+.space-x-2 > * + * {
+  @apply ml-2;
+}
+
+.space-x-4 > * + * {
+  @apply ml-4;
+}
+
+.space-x-6 > * + * {
+  @apply ml-6;
+}
+
+.space-x-8 > * + * {
+  @apply ml-8;
+}
+
+.space-y-2 > * + * {
+  @apply mt-2;
+}
+
+.space-y-4 > * + * {
+  @apply mt-4;
+}
+
+.space-y-6 > * + * {
+  @apply mt-6;
+}
+
+.space-y-8 > * + * {
+  @apply mt-8;
+}
+
+/* Responsive grid utilities */
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    @apply grid-cols-2;
+  }
+
+  .md\:grid-cols-4 {
+    @apply grid-cols-4;
+  }
+
+  .md\:flex-row {
+    @apply flex-row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-4 {
+    @apply grid-cols-4;
+  }
+
+  .lg\:grid-cols-6 {
+    @apply grid-cols-6;
+  }
+
+  .lg\:col-span-2 {
+    @apply col-span-2;
+  }
+
+  .lg\:col-span-4 {
+    @apply col-span-4;
+  }
+
+  .lg\:flex {
+    @apply flex;
+  }
+
+  .lg\:hidden {
+    @apply hidden;
+  }
+}
+
+/* Background utilities */
+.cover-background {
+  > .component-content {
+    @apply bg-no-repeat bg-cover;
+  }
+}
+.fix-background {
+  > .component-content {
+    @apply bg-no-repeat bg-cover bg-top-left bg-fixed;
+  }
+}
+.parallax-background {
+  > .component-content {
+    @apply bg-no-repeat bg-cover bg-position-[50%_0] bg-fixed max-mobile-large:bg-scroll;
+  }
+}
+
+/* background color  */
+.container-gray-background {
+  @apply bg-bg-light-gray;
+}
+.container-clean-background {
+  @apply bg-bg-basic-color;
+}
+.container-dark-background {
+  @apply bg-bg-black-active;
+}
+.container-color-background {
+  @apply bg-bg-blue;
+}
+
+/* indent */
+.indent {
+  margin: 0 40px;
+  &.col-xxl-12,
+  &.col-xl-12,
+  &.col-lg-12,
+  &.col-md-12,
+  &.col-12 {
+    width: calc(100% - 80px);
+  }
+}
+.indent-top {
+  margin-top: 20px;
+}
+.indent-bottom {
+  margin-bottom: 2px;
+}

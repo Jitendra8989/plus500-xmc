@@ -1,0 +1,84 @@
+﻿---
+ID: "3a8c000f-7a58-4c2d-b5b2-5e0440c04799"
+Parent: "b62c4da1-b6e6-43cd-a176-bf5f0d7ccde5"
+Template: "d3701fac-9f1d-44aa-8326-3dc4c4e08238"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/Home/Data/Style HeroSection_var3"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0a887b1c-5edb-41f4-bc5f-ae91fbb33452"
+      Hint: PrimaryCTA
+      Value: |
+        <link class="" querystring="" id="017d6c8f-3b32-46c9-8dd6-50b2169dce32" anchor="" target="" title="" linktype="internal" text="" url="/plus-five-hundred/plus-five-hundred/US/Home" />
+    - ID: "130d94fb-4260-4770-ba6b-317759743da9"
+      Hint: SubTitle
+      Value: اكتشف منصة التداول المتطورة
+    - ID: "2079f1eb-bb20-4859-8e1b-2d836eb1dfc3"
+      Hint: Title
+      Value: تعرف على نظام التداول النشط الخاص بك
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250920T210229Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "751da837-c7aa-4a39-9d47-546f0a24d356"
+      Hint: Image
+      Value: |
+        <image mediaid="9481762b-7383-4ca3-930c-7476e21b3e4e" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5d9345bd-f3e3-4469-9241-d4b8355f16db"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T191401Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0a887b1c-5edb-41f4-bc5f-ae91fbb33452"
+      Hint: PrimaryCTA
+      Value: |
+        <link linktype="external" url="https://app.plus500.com/" target="_blank" text="Trade with us" title="" class=""/>
+    - ID: "130d94fb-4260-4770-ba6b-317759743da9"
+      Hint: SubTitle
+      Value: Here is the sub title
+    - ID: "2079f1eb-bb20-4859-8e1b-2d836eb1dfc3"
+      Hint: Title
+      Value: Meet your active trading ecosystem
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250920T210229Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "751da837-c7aa-4a39-9d47-546f0a24d356"
+      Hint: Image
+      Value: |
+        <image mediaid="9481762b-7383-4ca3-930c-7476e21b3e4e" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "20ceaf5d-2206-4a07-83e8-ed1b387956e0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250921T190818Z

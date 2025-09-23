@@ -1,0 +1,32 @@
+﻿---
+ID: "a9f3d7e5-6c84-4b52-9f36-c2d8a5f7e9b3"
+Parent: "5049a4de-73e4-4511-9f64-7be9787b1fb7"
+Template: "b7e8c5a9-4f23-46d1-8e91-c2d4a8b5f7e1"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/RO/Home/Data/Sample Card"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "a3d5f7e9-2b84-4c16-9e73-d8f6a2c4b9e7"
+      Hint: Title
+      Value: Professional Development Workshop
+    - ID: "b4d6f8a2-7e95-4c37-9b61-e3f7a9d2c4b6"
+      Hint: Category
+      Value: Professional Development
+    - ID: "c8f2d4e6-5a73-4b91-8d25-f7e9a1c3d5b8"
+      Hint: Description
+      Value: |
+        <p>Join our comprehensive professional development workshop designed to enhance your skills and advance your career. Learn from industry experts and network with like-minded professionals.</p>
+        <p>This intensive 2-day workshop covers leadership, communication, and strategic thinking.</p>
+    - ID: "d8e2f4c6-9a73-4b15-8e94-f2d6a8b4c7e9"
+      Hint: Date
+      Value: 20241215T090000Z
+    - ID: "e7b9d1f3-6c84-4a52-9f36-a8d2c5e7b9f4"
+      Hint: Image
+      Value: |
+        <image mediaid="{sample-image-guid}" alt="Professional workshop session" />
+    - ID: "f9c3e5a7-8d94-4b63-a1e8-d6f2a9c3e5b7"
+      Hint: Call to Action
+      Value: |
+        <link text="Register Now" url="/events/workshop" linktype="internal" />

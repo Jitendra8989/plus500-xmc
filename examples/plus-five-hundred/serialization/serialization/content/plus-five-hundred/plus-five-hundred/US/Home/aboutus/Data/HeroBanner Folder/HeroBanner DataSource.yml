@@ -1,0 +1,192 @@
+﻿---
+ID: "a64d1262-c2ef-496c-8dc8-23bf6bce342b"
+Parent: "8281c6ec-1eb5-48a4-8ef9-b9866e840f95"
+Template: "3076e6ff-e83d-4a89-9d76-2225f74b8291"
+Path: "/sitecore/content/plus-five-hundred/plus-five-hundred/US/Home/aboutus/Data/HeroBanner Folder/HeroBanner DataSource"
+Languages:
+- Language: "ar-AE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09cbad15-6613-4c30-a061-ae9d93170528"
+      Hint: Subtitle
+      Value: منصة التداول الحائزة على جوائز والموثوقة من ملايين المستخدمين حول العالم
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T222445Z
+    - ID: "2845c768-2161-4326-87c9-e612328d0a30"
+      Hint: Media
+      Value: "<image mediaid='{FE5D7FDF-89C0-4D99-9AA3-B5FDB301BD85}' alt='منصة بلس فايف هندرد للتداول' height='600' width='1200' />"
+    - ID: "2fcf5b82-fc96-4528-8f33-13edf2f29deb"
+      Hint: SecondaryCTA
+      Value: <link text='تعلم المزيد' linktype='internal' url='/about' anchor='' title='اكتشف ميزات منصتنا' target='_self' />
+    - ID: "30d3db9f-d844-4b3d-90ce-b85a9dd311b6"
+      Hint: Title
+      Value: حوّل مستقبلك المالي مع بلس فايف هندرد
+    - ID: "42def97b-87e2-4611-bd96-141bb0818700"
+      Hint: Badges
+      Value: 🏆 الرائد في الصناعة 2024<br/>⭐ تقييم 5 نجوم<br/>🔒 منظم وآمن<br/>📈 أكثر من 2 مليون مستخدم
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "7fa18d70-52e2-4bab-8459-2b15ae0409aa"
+      Hint: Theme
+      Value: Background image
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "82cfd614-429f-468d-ad69-f422b7a9f425"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T223756Z
+    - ID: "dba41249-36e6-4cba-bc9d-e6de3a16367a"
+      Hint: PrimaryCTA
+      Value: <link text='ابدأ التداول الآن' linktype='internal' url='/register' anchor='' title='افتح حساب التداول الخاص بك اليوم' target='_self' />
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09cbad15-6613-4c30-a061-ae9d93170528"
+      Hint: Subtitle
+      Value: "Award-winning trading platform trusted by millions worldwide"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T222445Z
+    - ID: "2845c768-2161-4326-87c9-e612328d0a30"
+      Hint: Media
+      Value: |
+        <image mediaid="{1E6C6EB2-814D-49CC-86F9-F772373864A2}" />
+    - ID: "2fcf5b82-fc96-4528-8f33-13edf2f29deb"
+      Hint: SecondaryCTA
+      Value: 
+    - ID: "30d3db9f-d844-4b3d-90ce-b85a9dd311b6"
+      Hint: Title
+      Value: Transform Your Financial Future with Plus Five Hundred
+    - ID: "42def97b-87e2-4611-bd96-141bb0818700"
+      Hint: Badges
+      Value: "🏆 Industry Leader 2024<br/>⭐ 5-Star Rating<br/>🔒 Regulated & Secure<br/>📈 Over 2 Million Users"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "7fa18d70-52e2-4bab-8459-2b15ae0409aa"
+      Hint: Theme
+      Value: 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "69d3c9cc-8596-4d1a-99b0-0c95d51d12d6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T232559Z
+    - ID: "dba41249-36e6-4cba-bc9d-e6de3a16367a"
+      Hint: PrimaryCTA
+      Value: |
+        <link text="register" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{64D86DB0-CAC6-4748-A976-2E9767C79C10}" />
+- Language: ro
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09cbad15-6613-4c30-a061-ae9d93170528"
+      Hint: Subtitle
+      Value: Platformă de tranzacționare premiată, de încredere pentru milioane în întreaga lume
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T222445Z
+    - ID: "2845c768-2161-4326-87c9-e612328d0a30"
+      Hint: Media
+      Value: "<image mediaid='{FE5D7FDF-89C0-4D99-9AA3-B5FDB301BD85}' alt='Platforma de tranzacționare Plus Five Hundred' height='600' width='1200' />"
+    - ID: "2fcf5b82-fc96-4528-8f33-13edf2f29deb"
+      Hint: SecondaryCTA
+      Value: <link text='Află mai multe' linktype='internal' url='/about' anchor='' title='Descoperă caracteristicile platformei noastre' target='_self' />
+    - ID: "30d3db9f-d844-4b3d-90ce-b85a9dd311b6"
+      Hint: Title
+      Value: "Transformă-ți viitorul financiar cu Plus Five Hundred"
+    - ID: "42def97b-87e2-4611-bd96-141bb0818700"
+      Hint: Badges
+      Value: 🏆 Lider în industrie 2024<br/>⭐ Rating 5 stele<br/>🔒 Reglementat și sigur<br/>📈 Peste 2 milioane utilizatori
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "7fa18d70-52e2-4bab-8459-2b15ae0409aa"
+      Hint: Theme
+      Value: Background image
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "07c1b151-4ce5-4c09-be03-2063c7d1c3c0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T223757Z
+    - ID: "dba41249-36e6-4cba-bc9d-e6de3a16367a"
+      Hint: PrimaryCTA
+      Value: <link text='Începe să tranzacționezi acum' linktype='internal' url='/register' anchor='' title='Deschide contul tău de tranzacționare astăzi' target='_self' />
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09cbad15-6613-4c30-a061-ae9d93170528"
+      Hint: Subtitle
+      Value: 全球数百万用户信赖的获奖交易平台
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250922T222445Z
+    - ID: "2845c768-2161-4326-87c9-e612328d0a30"
+      Hint: Media
+      Value: "<image mediaid='{FE5D7FDF-89C0-4D99-9AA3-B5FDB301BD85}' alt='Plus Five Hundred交易平台' height='600' width='1200' />"
+    - ID: "2fcf5b82-fc96-4528-8f33-13edf2f29deb"
+      Hint: SecondaryCTA
+      Value: <link text='了解更多' linktype='internal' url='/about' anchor='' title='发现我们平台的功能' target='_self' />
+    - ID: "30d3db9f-d844-4b3d-90ce-b85a9dd311b6"
+      Hint: Title
+      Value: 与Plus Five Hundred一起改变您的金融未来
+    - ID: "42def97b-87e2-4611-bd96-141bb0818700"
+      Hint: Badges
+      Value: 🏆 2024行业领导者<br/>⭐ 5星评级<br/>🔒 受监管且安全<br/>📈 超过200万用户
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "7fa18d70-52e2-4bab-8459-2b15ae0409aa"
+      Hint: Theme
+      Value: Background image
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b92d0ad-5667-4eba-afda-ff44c43a868c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\andiappan.ravi@omnia.ae
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250922T223757Z
+    - ID: "dba41249-36e6-4cba-bc9d-e6de3a16367a"
+      Hint: PrimaryCTA
+      Value: <link text='立即开始交易' linktype='internal' url='/register' anchor='' title='今天开设您的交易账户' target='_self' />

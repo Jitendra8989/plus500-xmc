@@ -1,0 +1,69 @@
+# This file should be copied to .env.local and modified with your environment variables to connect to your remote Sitecore instance.
+ 
+ 
+SITECORE_EDGE_CONTEXT_ID=7KMLyD39rv5jUREDjj2Fwr
+NEXT_PUBLIC_SITECORE_EDGE_CONTEXT_ID=7KMLyD39rv5jUREDjj2Fwr
+NEXT_PUBLIC_DEFAULT_SITE_NAME=plus-five-hundred-US
+SITECORE_EDITING_SECRET=1nq6F05J6NDN2ETMK4Wlmr
+SITECORE_SITE_NAME=plus-five-hundred-US
+ 
+# To secure the Sitecore editor endpoint exposed by your Next.js app
+# (`/api/editing/render` by default), a secret token is used. This (client-side)
+ 
+ 
+# Your Sitecore site name.
+# The value of the variable represents the default/configured site.
+ 
+ 
+# Your default app language.
+NEXT_PUBLIC_DEFAULT_LANGUAGE=en
+
+# Default routing configuration
+NEXT_PUBLIC_DEFAULT_SITE=plus-five-hundred-US
+NEXT_PUBLIC_DEFAULT_REGION=us
+
+# Available languages (comma-separated)
+NEXT_PUBLIC_AVAILABLE_LANGUAGES=ar,en,cn,ro
+
+# Available regions (comma-separated)
+NEXT_PUBLIC_AVAILABLE_REGIONS=us,ae,ro
+
+# Language mappings for GraphQL queries (format: lang1=code1,lang2=code2)
+# Maps URL language codes to GraphQL language codes
+NEXT_PUBLIC_LANGUAGE_MAPPINGS=ar=ar-AE,ro=ro-RO,en=en,cn=cn
+ 
+# Your unified Sitecore Edge Context Id for server-side use.
+# This will be used over any Sitecore Preview / Delivery Edge variables (above).
+ 
+ 
+# Your Sitecore Edge Context Id for client-side use.
+# Will be used as a fallback if separate SITECORE_EDGE_CONTEXT_ID value is not provided
+ 
+ 
+# An optional Sitecore Personalize scope identifier.
+# This can be used to isolate personalization data when multiple XM Cloud Environments share a Personalize tenant.
+# This should match the PAGES_PERSONALIZE_SCOPE environment variable for your connected XM Cloud Environment.
+NEXT_PUBLIC_PERSONALIZE_SCOPE=
+ 
+# Timeout (ms) for Sitecore CDP requests to respond within. Default is 400.
+PERSONALIZE_MIDDLEWARE_CDP_TIMEOUT=
+ 
+# Timeout (ms) for Sitecore Experience Edge requests to respond within. Default is 400.
+PERSONALIZE_MIDDLEWARE_EDGE_TIMEOUT=
+ 
+# Sitecore Content SDK npm packages utilize the debug module for debug logging.
+# https://www.npmjs.com/package/debug
+# Set the DEBUG environment variable to 'content-sdk:*' to see all logs:
+DEBUG=content-sdk:*
+# Or be selective and show for example only layout service logs:
+#DEBUG=content-sdk:layout
+# Or everything BUT layout service logs:
+#DEBUG=content-sdk:*,-content-sdk:layout
+ 
+# Client ID and Secret used for Design Library functionality
+SITECORE_AUTH_CLIENT_ID=
+SITECORE_AUTH_CLIENT_SECRET=
+
+# Finnhub API Key for Stock Dashboard
+NEXT_PUBLIC_FINNHUB_API_KEY=d38hk21r01qlbdj5ismgd38hk21r01qlbdj5isn0
+
