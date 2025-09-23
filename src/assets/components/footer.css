@@ -1,3 +1,238 @@
+/* Modern footer styles based on React reference */
+.footer {
+  @apply bg-[hsl(var(--background))] border-t border-[hsl(var(--border))];
+}
+
+.footer--default {
+  @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
+}
+
+.footer--minimal {
+  @apply bg-[hsl(var(--muted))] text-[hsl(var(--muted-foreground))];
+}
+
+.footer--brand {
+  @apply bg-[hsl(var(--card))] text-[hsl(var(--card-foreground))];
+}
+
+.footer--corporate {
+  @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
+}
+
+.footerContainer {
+  @apply container mx-auto px-6 py-16;
+}
+
+/* Top section with brand and links */
+.footerTop {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12;
+}
+
+.brandSection {
+  @apply lg:col-span-2;
+}
+
+.footerLogo {
+  @apply mb-4;
+}
+
+.logoLink {
+  @apply hover-elevate rounded;
+}
+
+.logoImage {
+  @apply object-contain;
+}
+
+.brandTitle {
+  @apply text-2xl font-bold text-[hsl(var(--primary))] mb-6;
+}
+
+.linkSections {
+  @apply lg:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-8;
+}
+
+.linkSection {
+  @apply space-y-4;
+}
+
+.sectionHeader {
+  @apply font-semibold mb-4 text-[hsl(var(--foreground))];
+}
+
+.linkList {
+  @apply space-y-3 list-none m-0 p-0;
+}
+
+.linkItem {
+  @apply m-0;
+}
+
+.footerLink {
+  @apply text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors no-underline hover-elevate;
+}
+
+.footerText {
+  @apply text-[hsl(var(--muted-foreground))];
+}
+
+.socialSection {
+  @apply space-y-4;
+}
+
+.socialLinks {
+  @apply flex space-x-4;
+}
+
+.socialLink {
+  @apply text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors hover-elevate rounded p-2;
+}
+
+.socialIcon {
+  @apply text-lg;
+}
+
+/* Bottom section with legal info */
+.footerBottom {
+  @apply space-y-8;
+}
+
+.legalSection {
+  @apply border-t border-[hsl(var(--border))] pt-8;
+}
+
+.legalText {
+  @apply text-sm text-[hsl(var(--muted-foreground))];
+}
+
+.riskWarningSection {
+  @apply border-t border-[hsl(var(--border))] pt-8 mb-8;
+}
+
+.riskWarningBox {
+  @apply bg-[hsl(var(--muted))]/20 p-6 rounded-lg;
+}
+
+.riskWarningText {
+  @apply text-xs text-[hsl(var(--muted-foreground))] leading-relaxed;
+}
+
+.regionalInfo {
+  @apply border-t border-[hsl(var(--border))] pt-8 flex flex-col md:flex-row justify-between items-center gap-4;
+}
+
+.entityInfo,
+.regulatorInfo,
+.licenseInfo,
+.countryInfo {
+  @apply text-sm text-[hsl(var(--muted-foreground))];
+}
+
+.entityLabel,
+.regulatorLabel,
+.licenseLabel,
+.countryLabel {
+  @apply font-medium mr-2;
+}
+
+/* Minimal footer variant */
+.footerMinimal {
+  @apply flex flex-col md:flex-row justify-between items-center py-8;
+}
+
+.essentialLinks {
+  @apply mb-4 md:mb-0;
+}
+
+.minimalSection {
+  @apply flex space-x-6;
+}
+
+.minimalLink {
+  @apply text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors no-underline hover-elevate;
+}
+
+.copyright {
+  @apply text-sm text-[hsl(var(--muted-foreground))];
+}
+
+.copyrightText {
+  @apply text-sm;
+}
+
+/* Brand footer variant */
+.footerBrand {
+  @apply text-center space-y-8;
+}
+
+.brandCentered {
+  @apply space-y-6;
+}
+
+.brandLogo {
+  @apply flex justify-center;
+}
+
+.brandLogoImage {
+  @apply object-contain;
+}
+
+.brandTitleLarge {
+  @apply text-3xl font-bold text-[hsl(var(--primary))];
+}
+
+.brandLinks {
+  @apply flex flex-col md:flex-row justify-center items-center gap-8;
+}
+
+.brandLinkSection {
+  @apply text-center;
+}
+
+.brandLegal {
+  @apply border-t border-[hsl(var(--border))] pt-8;
+}
+
+.brandLegalText {
+  @apply text-sm text-[hsl(var(--muted-foreground))];
+}
+
+/* Corporate footer variant */
+.corporateGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12;
+}
+
+.corporateBrand {
+  @apply lg:col-span-2 space-y-4;
+}
+
+.corporateLogo {
+  @apply object-contain;
+}
+
+.corporateTitle {
+  @apply text-xl font-bold text-[hsl(var(--primary))];
+}
+
+.corporateSection {
+  @apply space-y-4;
+}
+
+.corporateLegal {
+  @apply border-t border-[hsl(var(--border))] pt-8 space-y-6;
+}
+
+.legalFull,
+.regionFull {
+  @apply space-y-4;
+}
+
+.corporateLegalText,
+.corporateRegion {
+  @apply text-sm text-[hsl(var(--muted-foreground))] leading-relaxed;
+}
+
+/* Legacy support */
 footer {
   @apply max-mobile-large:pt-0;
 

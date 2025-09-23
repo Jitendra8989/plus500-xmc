@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, JSX } from 'react';
+import { ComponentProps } from 'lib/component-props';
 import styles from './MarketCalendarGraphql.module.css';
 
 interface MarketEvent {
@@ -41,7 +42,9 @@ interface GraphQLResponse {
   errors?: Array<{ message: string }>;
 }
 
-export const Default = (): JSX.Element => {
+type MarketCalendarGraphqlProps = ComponentProps;
+
+export const Default = (_props: MarketCalendarGraphqlProps): JSX.Element => {
   const [events, setEvents] = useState<MarketEvent[]>([]);
   const [filteredEvents, setFilteredEvents] = useState<MarketEvent[]>([]);
   const [loading, setLoading] = useState(false);
@@ -50,7 +53,7 @@ export const Default = (): JSX.Element => {
     dateFrom: '',
     dateTo: '',
     country: '',
-    impact: '',
+    impact: ''
   });
   const [sortBy, setSortBy] = useState('date');
 
@@ -65,17 +68,14 @@ export const Default = (): JSX.Element => {
     const startDate = new Date('2025-01-01');
     const endDate = new Date('2026-12-31');
 
-    setFilters((prev) => ({
+    setFilters(prev => ({
       ...prev,
       dateFrom: startDate.toISOString().split('T')[0],
-      dateTo: endDate.toISOString().split('T')[0],
+      dateTo: endDate.toISOString().split('T')[0]
     }));
   };
 
-  const makeGraphQLQuery = async (
-    query: string,
-    variables: Record<string, unknown> = {}
-  ): Promise<unknown> => {
+  const makeGraphQLQuery = async (query: string, variables: Record<string, any> = {}): Promise<any> => {
     try {
       const url = new URL(graphqlEndpoint);
       url.searchParams.append('sitecoreContextId', sitecoreContextId);
@@ -84,9 +84,9 @@ export const Default = (): JSX.Element => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Accept: 'application/json',
+          'Accept': 'application/json',
         },
-        body: JSON.stringify({ query, variables }),
+        body: JSON.stringify({ query, variables })
       });
 
       if (!response.ok) {
@@ -129,15 +129,7 @@ export const Default = (): JSX.Element => {
     `;
 
     try {
-      const data = (await makeGraphQLQuery(query, { language: 'en' })) as {
-        item?: {
-          id: string;
-          name: string;
-          children?: {
-            results: GraphQLEvent[];
-          };
-        };
-      };
+      const data = await makeGraphQLQuery(query, { language: 'en' });
 
       if (data && data.item && data.item.children && data.item.children.results) {
         const processedEvents = processEvents(data.item.children.results);
@@ -154,31 +146,29 @@ export const Default = (): JSX.Element => {
   };
 
   const processEvents = (rawEvents: GraphQLEvent[]): MarketEvent[] => {
-    return rawEvents
-      .map((event) => {
-        const fields: Record<string, string> = {};
-        if (event.fields) {
-          event.fields.forEach((field) => {
-            fields[field.name] = field.value;
-          });
-        }
+    return rawEvents.map(event => {
+      const fields: Record<string, string> = {};
+      if (event.fields) {
+        event.fields.forEach(field => {
+          fields[field.name] = field.value;
+        });
+      }
 
-        return {
-          id: event.id,
-          name: event.name,
-          path: event.path,
-          eventTitle: fields['Event Title'] || event.name,
-          eventDateTime: fields['Event Date And Time'] || '',
-          description: fields['Description'] || '',
-          country: fields['Country'] || '',
-          expectedImpact: fields['Expected Impact'] || '1',
-          visibilityWindow: fields['Visibility Window'] || '',
-          referenceLink: fields['Reference Link'] || '',
-          promoLink: fields['Promo Link'] || '',
-          regulatoryDisclaimer: fields['Regulatory Disclaimer'] || '',
-        };
-      })
-      .filter((event) => event.eventDateTime);
+      return {
+        id: event.id,
+        name: event.name,
+        path: event.path,
+        eventTitle: fields['Event Title'] || event.name,
+        eventDateTime: fields['Event Date And Time'] || '',
+        description: fields['Description'] || '',
+        country: fields['Country'] || '',
+        expectedImpact: fields['Expected Impact'] || '1',
+        visibilityWindow: fields['Visibility Window'] || '',
+        referenceLink: fields['Reference Link'] || '',
+        promoLink: fields['Promo Link'] || '',
+        regulatoryDisclaimer: fields['Regulatory Disclaimer'] || ''
+      };
+    }).filter(event => event.eventDateTime);
   };
 
   const parseEventDate = (dateTimeString: string): Date | null => {
@@ -198,7 +188,34 @@ export const Default = (): JSX.Element => {
     }
   };
 
-  const sortEvents = useCallback((eventsToSort: MarketEvent[], sortType: string): MarketEvent[] => {
+  const applyFiltersToEvents = useCallback((eventsToFilter: MarketEvent[] = events) => {
+    let filtered = eventsToFilter.filter(event => {
+      const eventDate = parseEventDate(event.eventDateTime);
+      if (!eventDate) return false;
+
+      // Date filter
+      if (filters.dateFrom && eventDate < new Date(filters.dateFrom)) return false;
+      if (filters.dateTo) {
+        const toDate = new Date(filters.dateTo);
+        toDate.setHours(23, 59, 59);
+        if (eventDate > toDate) return false;
+      }
+
+      // Country filter
+      if (filters.country && event.country !== filters.country) return false;
+
+      // Impact filter
+      if (filters.impact && event.expectedImpact !== filters.impact) return false;
+
+      return true;
+    });
+
+    // Apply sorting
+    filtered = sortEvents(filtered, sortBy);
+    setFilteredEvents(filtered);
+  }, [events, filters, sortBy]);
+
+  const sortEvents = (eventsToSort: MarketEvent[], sortType: string): MarketEvent[] => {
     return [...eventsToSort].sort((a, b) => {
       switch (sortType) {
         case 'date':
@@ -213,46 +230,16 @@ export const Default = (): JSX.Element => {
           return 0;
       }
     });
-  }, []);
-
-  const applyFiltersToEvents = useCallback(
-    (eventsToFilter: MarketEvent[] = events) => {
-      let filtered = eventsToFilter.filter((event) => {
-        const eventDate = parseEventDate(event.eventDateTime);
-        if (!eventDate) return false;
-
-        // Date filter
-        if (filters.dateFrom && eventDate < new Date(filters.dateFrom)) return false;
-        if (filters.dateTo) {
-          const toDate = new Date(filters.dateTo);
-          toDate.setHours(23, 59, 59);
-          if (eventDate > toDate) return false;
-        }
-
-        // Country filter
-        if (filters.country && event.country !== filters.country) return false;
-
-        // Impact filter
-        if (filters.impact && event.expectedImpact !== filters.impact) return false;
-
-        return true;
-      });
-
-      // Apply sorting
-      filtered = sortEvents(filtered, sortBy);
-      setFilteredEvents(filtered);
-    },
-    [events, filters, sortBy, sortEvents]
-  );
+  };
 
   useEffect(() => {
     if (events.length > 0) {
       applyFiltersToEvents();
     }
-  }, [events.length, filters, sortBy, applyFiltersToEvents]);
+  }, [filters, sortBy, applyFiltersToEvents]);
 
   const handleFilterChange = (field: string, value: string) => {
-    setFilters((prev) => ({ ...prev, [field]: value }));
+    setFilters(prev => ({ ...prev, [field]: value }));
   };
 
   const extractUrl = (linkField: string): string => {
@@ -274,21 +261,17 @@ export const Default = (): JSX.Element => {
 
   const renderEventCard = (event: MarketEvent) => {
     const eventDate = parseEventDate(event.eventDateTime);
-    const dateStr = eventDate
-      ? eventDate.toLocaleDateString('en-US', {
-          weekday: 'long',
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-        })
-      : 'Date TBD';
-    const timeStr = eventDate
-      ? eventDate.toLocaleTimeString('en-US', {
-          hour: '2-digit',
-          minute: '2-digit',
-          timeZoneName: 'short',
-        })
-      : '';
+    const dateStr = eventDate ? eventDate.toLocaleDateString('en-US', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }) : 'Date TBD';
+    const timeStr = eventDate ? eventDate.toLocaleTimeString('en-US', {
+      hour: '2-digit',
+      minute: '2-digit',
+      timeZoneName: 'short'
+    }) : '';
 
     const impactLevel = parseInt(event.expectedImpact) || 1;
     const impactText = ['', 'Low', 'Low-Medium', 'Medium', 'High', 'Very High'][impactLevel];
@@ -316,7 +299,11 @@ export const Default = (): JSX.Element => {
           </div>
         </div>
 
-        {event.description && <div className={styles.eventDescription}>{event.description}</div>}
+        {event.description && (
+          <div className={styles.eventDescription}>
+            {event.description}
+          </div>
+        )}
 
         <div className={styles.eventActions}>
           {event.referenceLink && (
@@ -356,9 +343,7 @@ export const Default = (): JSX.Element => {
     <div className={styles.container}>
       <div className={styles.header}>
         <h1 className={styles.headerTitle}>Market Calendar</h1>
-        <p className={styles.headerSubtitle}>
-          Browse upcoming economic events and market-moving announcements
-        </p>
+        <p className={styles.headerSubtitle}>Browse upcoming economic events and market-moving announcements</p>
       </div>
 
       <div className={styles.filters}>
@@ -471,17 +456,16 @@ export const Default = (): JSX.Element => {
           )}
 
           {!loading && !error && filteredEvents.length > 0 && (
-            <div className={styles.eventsGrid}>{filteredEvents.map(renderEventCard)}</div>
+            <div className={styles.eventsGrid}>
+              {filteredEvents.map(renderEventCard)}
+            </div>
           )}
 
           {!loading && !error && events.length === 0 && filteredEvents.length === 0 && (
             <div className={styles.emptyState}>
               <div className={styles.emptyIcon}>📅</div>
               <h3>Market Calendar Ready</h3>
-              <p>
-                Set your filters above and click &quot;Search Events&quot; to find relevant market
-                events
-              </p>
+              <p>Set your filters above and click "Search Events" to find relevant market events</p>
             </div>
           )}
         </div>

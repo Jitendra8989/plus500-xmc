@@ -25,3 +25,6 @@
 .sitecore/*
 # except for component-map
 !.sitecore/component-map.ts
+
+# reference project
+A-REFERENCE-REACTPROJECT/

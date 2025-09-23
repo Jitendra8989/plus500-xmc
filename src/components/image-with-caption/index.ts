@@ -1,0 +1,1 @@
+export { Default, Minimal, Card } from './ImageWithCaption';

@@ -1,3 +1,163 @@
+/* Modern header styles based on React reference */
+.header {
+  @apply sticky top-0 z-50 bg-[hsl(var(--background))];
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.header--default {
+  @apply bg-[hsl(var(--background))];
+}
+
+.header--dark {
+  @apply bg-[hsl(var(--card))] text-[hsl(var(--card-foreground))];
+}
+
+.header--light {
+  @apply bg-white text-gray-900;
+}
+
+.header--primary {
+  @apply bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))];
+}
+
+.header--glass {
+  @apply bg-[hsl(var(--background))]/80;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.header--transparent {
+  @apply bg-transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom: none;
+}
+
+.headerContainer {
+  @apply container mx-auto px-6;
+}
+
+.headerWrapper {
+  @apply flex items-center justify-between h-16;
+}
+
+.logo {
+  @apply flex items-center space-x-2;
+}
+
+.logoLink {
+  @apply hover-elevate rounded;
+}
+
+.logoImage {
+  @apply object-contain;
+}
+
+.nav {
+  @apply hidden lg:flex items-center space-x-8;
+}
+
+.navMenu {
+  @apply lg:flex items-center space-x-8;
+}
+
+.navMenuOpen {
+  @apply lg:hidden overflow-hidden;
+}
+
+.mainMenu {
+  @apply flex items-center space-x-8 list-none m-0 p-0;
+}
+
+.navItem {
+  @apply relative;
+}
+
+.navSubItem {
+  @apply ml-4;
+}
+
+.navLink {
+  @apply text-sm font-medium transition-colors hover:text-[hsl(var(--primary))] no-underline;
+  color: hsl(var(--foreground));
+}
+
+.navLink:hover {
+  color: hsl(var(--primary));
+}
+
+.navLabel {
+  @apply text-sm font-medium;
+  color: hsl(var(--foreground));
+}
+
+.navSubmenu {
+  @apply absolute top-full left-0 pt-2 w-48 list-none m-0 p-0;
+  background: hsl(var(--background));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+}
+
+.ctaSection {
+  @apply hidden lg:flex items-center space-x-4;
+}
+
+.cta {
+  @apply px-4 py-2 rounded-md text-sm font-medium transition-colors no-underline hover-elevate;
+}
+
+.ctaPrimary {
+  @apply bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] hover:bg-[hsl(var(--primary))]/90;
+}
+
+.ctaSecondary {
+  @apply border border-[hsl(var(--border))] bg-transparent text-[hsl(var(--foreground))] hover:bg-[hsl(var(--accent))];
+}
+
+.mobileMenuToggle {
+  @apply lg:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 bg-transparent border-0 cursor-pointer hover-elevate rounded;
+}
+
+.hamburger {
+  @apply w-6 h-0.5 bg-[hsl(var(--foreground))] transition-all duration-300;
+}
+
+.languageNav {
+  @apply ml-4;
+}
+
+.languageSelector {
+  @apply px-3 py-1 rounded border border-[hsl(var(--border))] bg-[hsl(var(--background))] text-[hsl(var(--foreground))] text-sm;
+}
+
+/* Mobile styles */
+@media (max-width: 1023px) {
+  .navMenu {
+    @apply fixed top-16 left-0 right-0 bg-[hsl(var(--background))] border-t border-[hsl(var(--border))] p-4 space-y-4;
+    @apply hidden; /* Hidden by default */
+  }
+
+  .navMenuOpen {
+    @apply block;
+  }
+
+  .mainMenu {
+    @apply flex-col items-start space-x-0 space-y-4;
+  }
+
+  .ctaSection {
+    @apply flex flex-col space-x-0 space-y-2 pt-4;
+  }
+
+  .cta {
+    @apply w-full text-center;
+  }
+}
+
+/* Legacy support */
 .prod-mode {
   #header {
     @apply flex max-mobile-large:pb-0 max-mobile-large:flex-col-reverse;

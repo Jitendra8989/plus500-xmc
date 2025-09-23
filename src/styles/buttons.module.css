@@ -1,0 +1,388 @@
+/* ========================================
+   GLOBAL BUTTON STYLES - Plus500 Design System
+   ======================================== */
+
+/* Base Button Styles */
+.button {
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  text-decoration: none;
+  transition: all 200ms ease;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+}
+
+/* Button States */
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* ========================================
+   PRIMARY VARIANT
+   ======================================== */
+.primary {
+  background: #1d4ed8;
+  color: white;
+  border-color: #1d4ed8;
+  box-shadow: 0 1px 3px rgba(29, 78, 216, 0.3);
+}
+
+.primary:hover:not(:disabled) {
+  background: #1e40af;
+  border-color: #1e40af;
+  box-shadow: 0 2px 6px rgba(29, 78, 216, 0.4);
+  transform: translateY(-1px);
+}
+
+.primary:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(29, 78, 216, 0.3);
+}
+
+/* ========================================
+   SECONDARY VARIANT
+   ======================================== */
+.secondary {
+  background: #ffffff;
+  color: #333333;
+  border-color: #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.secondary:hover:not(:disabled) {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #1f2937;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.secondary:active {
+  background: #f3f4f6;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* ========================================
+   OUTLINE VARIANT
+   ======================================== */
+.outline {
+  background: transparent;
+  color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.outline:hover:not(:disabled) {
+  background: rgba(29, 78, 216, 0.05);
+  color: #1e40af;
+  border-color: #1e40af;
+}
+
+.outline:active {
+  background: rgba(29, 78, 216, 0.1);
+}
+
+/* ========================================
+   GHOST VARIANT
+   ======================================== */
+.ghost {
+  background: transparent;
+  color: #374151;
+  border-color: transparent;
+}
+
+.ghost:hover:not(:disabled) {
+  background: rgba(55, 65, 81, 0.05);
+  color: #1f2937;
+}
+
+.ghost:active {
+  background: rgba(55, 65, 81, 0.1);
+}
+
+/* ========================================
+   DESTRUCTIVE VARIANT
+   ======================================== */
+.destructive {
+  background: #dc2626;
+  color: white;
+  border-color: #dc2626;
+  box-shadow: 0 1px 3px rgba(220, 38, 38, 0.3);
+}
+
+.destructive:hover:not(:disabled) {
+  background: #b91c1c;
+  border-color: #b91c1c;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.4);
+  transform: translateY(-1px);
+}
+
+.destructive:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(220, 38, 38, 0.3);
+}
+
+/* ========================================
+   SIZE VARIANTS
+   ======================================== */
+.small {
+  padding: 6px 12px;
+  font-size: 12px;
+  height: 28px;
+}
+
+.medium {
+  padding: 8px 18px;
+  font-size: 14px;
+  height: 34px;
+}
+
+.large {
+  padding: 12px 24px;
+  font-size: 16px;
+  height: 42px;
+}
+
+/* ========================================
+   ICON BUTTON VARIANTS
+   ======================================== */
+.iconOnly {
+  padding: 8px;
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+}
+
+.iconOnly.small {
+  padding: 6px;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+}
+
+.iconOnly.large {
+  padding: 12px;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+}
+
+.withIcon {
+  gap: 8px;
+}
+
+.withIcon.small {
+  gap: 6px;
+}
+
+.withIcon.large {
+  gap: 10px;
+}
+
+/* ========================================
+   LOADING STATE
+   ======================================== */
+.loading {
+  position: relative;
+  color: transparent;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: button-loading-spin 1s ease infinite;
+}
+
+@keyframes button-loading-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fix loading spinner color for variants */
+.primary.loading::after,
+.destructive.loading::after {
+  border-top-color: white;
+}
+
+.secondary.loading::after,
+.outline.loading::after,
+.ghost.loading::after {
+  border-top-color: currentColor;
+}
+
+/* ========================================
+   DARK THEME VARIANTS
+   ======================================== */
+.darkTheme .primary {
+  background: #1d4ed8;
+  color: white;
+  border-color: #1d4ed8;
+}
+
+.darkTheme .primary:hover:not(:disabled) {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+.darkTheme .secondary {
+  background: #374151;
+  color: #d1d5db;
+  border-color: #6b7280;
+}
+
+.darkTheme .secondary:hover:not(:disabled) {
+  background: #4b5563;
+  border-color: #9ca3af;
+  color: #f9fafb;
+}
+
+.darkTheme .outline {
+  color: #60a5fa;
+  border-color: #60a5fa;
+}
+
+.darkTheme .outline:hover:not(:disabled) {
+  background: rgba(96, 165, 250, 0.1);
+  color: #93c5fd;
+  border-color: #93c5fd;
+}
+
+.darkTheme .ghost {
+  color: #d1d5db;
+}
+
+.darkTheme .ghost:hover:not(:disabled) {
+  background: rgba(209, 213, 219, 0.1);
+  color: #f9fafb;
+}
+
+/* ========================================
+   RESPONSIVE STYLES
+   ======================================== */
+@media (max-width: 1024px) {
+  .button {
+    padding: 6px 14px;
+    height: 30px;
+  }
+  
+  .small {
+    padding: 4px 10px;
+    height: 26px;
+  }
+  
+  .large {
+    padding: 10px 20px;
+    height: 38px;
+  }
+  
+  .iconOnly {
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+  }
+  
+  .iconOnly.small {
+    padding: 4px;
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+  }
+  
+  .iconOnly.large {
+    padding: 10px;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 14px;
+    min-width: 44px; /* Touch target size */
+    min-height: 44px;
+    height: auto;
+    padding: 12px 16px;
+  }
+  
+  .small {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 10px 12px;
+  }
+  
+  .large {
+    min-width: 48px;
+    min-height: 48px;
+    padding: 14px 20px;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY ENHANCEMENTS
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+  
+  .button:hover:not(:disabled) {
+    transform: none;
+  }
+  
+  .loading::after {
+    animation: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .button {
+    border-width: 2px;
+  }
+  
+  .outline {
+    border-width: 2px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .button {
+    background: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+    box-shadow: none !important;
+  }
+}

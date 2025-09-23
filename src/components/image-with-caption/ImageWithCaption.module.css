@@ -1,0 +1,316 @@
+/* ========================================
+   📸 IMAGE WITH CAPTION COMPONENT
+   ======================================== */
+
+/* Base ImageWithCaption */
+.imageWithCaption {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.imageWithCaptionFigure {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.02);
+}
+
+.caption {
+  margin: 0;
+  padding: 0;
+}
+
+.captionText {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #6b7280;
+  text-align: center;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Placeholder for fallback */
+.placeholderImage {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, #e5e7eb 0%, #f3f4f6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #d1d5db;
+}
+
+.placeholderText {
+  font-size: 1rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* ========================================
+   VARIANT: DEFAULT
+   ======================================== */
+.imageWithCaption--default {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.imageWithCaption--default .imageContainer {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.imageWithCaption--default .captionText {
+  font-size: 1rem;
+  color: #374151;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* ========================================
+   VARIANT: MINIMAL
+   ======================================== */
+.imageWithCaption--minimal {
+  margin: 1rem 0;
+}
+
+.imageWithCaption--minimal .imageContainer {
+  border-radius: 4px;
+  box-shadow: none;
+  border: 1px solid #e5e7eb;
+}
+
+.imageWithCaption--minimal .captionText {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  text-align: left;
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+
+.imageWithCaption--minimal .image:hover {
+  transform: none;
+}
+
+/* ========================================
+   VARIANT: CARD
+   ======================================== */
+.imageWithCaption--card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+  max-width: 400px;
+}
+
+.imageWithCaption--card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.imageWithCaption--card .imageContainer {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.imageWithCaption--card .captionText {
+  font-size: 0.875rem;
+  color: #374151;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* ========================================
+   ALIGNMENT MODIFIERS
+   ======================================== */
+
+/* Left Alignment */
+.imageWithCaption--left {
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.imageWithCaption--left .captionText {
+  text-align: left;
+}
+
+/* Center Alignment */
+.imageWithCaption--center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageWithCaption--center .captionText {
+  text-align: center;
+}
+
+/* Right Alignment */
+.imageWithCaption--right {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.imageWithCaption--right .captionText {
+  text-align: right;
+}
+
+/* Full Width */
+.imageWithCaption--full {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.imageWithCaption--full .imageContainer {
+  border-radius: 0;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .imageWithCaption {
+    margin: 1.5rem 0;
+  }
+
+  .imageWithCaption--default {
+    max-width: 100%;
+    margin: 1.5rem auto;
+  }
+
+  .imageWithCaption--card {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .captionText {
+    font-size: 0.875rem;
+  }
+
+  .imageWithCaption--default .captionText {
+    font-size: 0.875rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .imageWithCaption {
+    margin: 1rem 0;
+  }
+
+  .imageWithCaptionFigure {
+    gap: 0.75rem;
+  }
+
+  .imageContainer {
+    border-radius: 6px;
+  }
+
+  .imageWithCaption--card {
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+  }
+
+  .captionText {
+    font-size: 0.75rem;
+  }
+
+  .imageWithCaption--default .captionText {
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .placeholderImage {
+    height: 200px;
+  }
+
+  /* Force center alignment on mobile for better UX */
+  .imageWithCaption--left,
+  .imageWithCaption--right {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imageWithCaption--left .captionText,
+  .imageWithCaption--right .captionText {
+    text-align: center;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  .image,
+  .imageWithCaption--card {
+    transition: none;
+  }
+
+  .image:hover,
+  .imageWithCaption--card:hover {
+    transform: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .imageContainer {
+    border: 2px solid currentColor;
+  }
+
+  .captionText {
+    color: currentColor;
+  }
+
+  .placeholderImage {
+    border-color: currentColor;
+  }
+}
+
+/* Print styles */
+@media print {
+  .imageWithCaption {
+    break-inside: avoid;
+    margin: 1rem 0;
+  }
+
+  .image:hover {
+    transform: none;
+  }
+
+  .imageWithCaption--card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}

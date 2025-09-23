@@ -39,6 +39,7 @@ interface Fields {
   Logo: ImageField;
   LogoCTA: LinkField;
   BrandTitle: Field<string>;
+  BrandDescription: Field<string>;
   LegalText: RichTextField;
   'Region Info': RichTextField;
   LegalEntity?: Field<string>;
@@ -77,19 +78,20 @@ const renderFooterSection = (
           {links.map((link) => (
             <li key={link.id} className={styles.linkItem}>
               {link.fields.GeneralLink?.value?.href ? (
-                <a
-                  href={link.fields.GeneralLink.value.href}
-                  target={link.fields.GeneralLink.value.target || '_self'}
+                <ContentSdkLink
+                  field={link.fields.GeneralLink}
                   className={styles.footerLink}
                 >
                   {link.fields.GeneralLink.value.text ||
                     link.fields.Title?.value ||
                     link.displayName}
-                </a>
+                </ContentSdkLink>
               ) : (
-                <span className={styles.footerText}>
-                  {link.fields.Title?.value || link.displayName}
-                </span>
+                <ContentSdkText
+                  field={link.fields.Title}
+                  className={styles.footerText}
+                  tag="span"
+                />
               )}
             </li>
           ))}
@@ -116,11 +118,19 @@ const renderSocialLinks = (
             href={social.fields.GeneralLink?.value?.href || '#'}
             target={social.fields.GeneralLink?.value?.target || '_blank'}
             className={styles.socialLink}
-            aria-label={social.displayName}
+            aria-label={social.fields.Title?.value || social.displayName}
           >
-            <span className={styles.socialIcon}>
-              {social.fields.Title?.value || social.displayName}
-            </span>
+            {social.fields.Image?.value ? (
+              <img
+                src={social.fields.Image.value}
+                alt={social.fields.Title?.value || social.displayName}
+                className={styles.socialIconImage}
+              />
+            ) : (
+              <span className={styles.socialIcon}>
+                {social.fields.Title?.value || social.displayName}
+              </span>
+            )}
           </a>
         ))}
       </div>
@@ -173,6 +183,14 @@ export const Default = (props: FooterProps): JSX.Element => {
                     tag="h2"
                   />
                 )}
+
+                {props.fields.BrandDescription?.value && (
+                  <ContentSdkText
+                    field={props.fields.BrandDescription}
+                    className={styles.brandDescription}
+                    tag="p"
+                  />
+                )}
               </div>
 
               {/* Link Sections */}
@@ -212,7 +230,7 @@ export const Default = (props: FooterProps): JSX.Element => {
               {props.fields['Region Info']?.value && (
                 <div className={styles.riskWarningSection}>
                   <div className={styles.riskWarningBox}>
-                    <ContentSdkText
+                    <ContentSdkRichText
                       field={props.fields['Region Info']}
                       className={styles.riskWarningText}
                     />
@@ -295,16 +313,15 @@ export const Minimal = (props: FooterProps): JSX.Element => {
                 {props.fields['Section-1-Links'] && props.fields['Section-1-Links'].length > 0 && (
                   <div className={styles.minimalSection}>
                     {props.fields['Section-1-Links'].slice(0, 3).map((link) => (
-                      <a
+                      <ContentSdkLink
                         key={link.id}
-                        href={link.fields.GeneralLink?.value?.href || '#'}
-                        target={link.fields.GeneralLink?.value?.target || '_self'}
+                        field={link.fields.GeneralLink}
                         className={styles.minimalLink}
                       >
                         {link.fields.GeneralLink?.value?.text ||
                           link.fields.Title?.value ||
                           link.displayName}
-                      </a>
+                      </ContentSdkLink>
                     ))}
                   </div>
                 )}

@@ -1,1 +1,1 @@
-export { Default, Dark, Light, Robinhood, Minimal } from './HeroSection';
+export { Default, TextOnly, Minimal, MediaLeft, MediaRight, BackgroundImage } from './HeroSection';
