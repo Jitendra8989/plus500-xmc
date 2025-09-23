@@ -56,13 +56,8 @@ export const Default = (props: HeroSectionProps) => {
   const hasContent = props.fields && Object.keys(props.fields).length > 0;
 
   return (
-    <section
-      className={`component ${containerClass}`}
-      role="banner"
-      data-theme={theme}
-    >
+    <section className={`component ${containerClass}`} role="banner" data-theme={theme}>
       <div className="component-content">
-
         {/* Background Image for BackgroundImage theme and Default */}
         {(theme === 'BackgroundImage' || theme === 'Default') && (
           <div className={styles.backgroundMedia}>
@@ -86,7 +81,7 @@ export const Default = (props: HeroSectionProps) => {
             className={styles.heroContent}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             {/* Badges - Structured or Fallback */}
             {hasContent && props.fields?.Badges?.value ? (
@@ -96,10 +91,7 @@ export const Default = (props: HeroSectionProps) => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <ContentSdkRichText
-                  field={props.fields.Badges}
-                  className={styles.badgeText}
-                />
+                <ContentSdkRichText field={props.fields.Badges} className={styles.badgeText} />
               </motion.div>
             ) : null}
 
@@ -110,11 +102,7 @@ export const Default = (props: HeroSectionProps) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                <ContentSdkText
-                  field={props.fields.Title}
-                  className={styles.heroTitle}
-                  tag="h1"
-                />
+                <ContentSdkText field={props.fields.Title} className={styles.heroTitle} tag="h1" />
               </motion.div>
             ) : (
               <motion.h1
@@ -147,7 +135,8 @@ export const Default = (props: HeroSectionProps) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                Experience advanced trading tools, real-time market data, and professional analysis on our secure platform.
+                Experience advanced trading tools, real-time market data, and professional analysis
+                on our secure platform.
               </motion.p>
             )}
 
@@ -160,13 +149,12 @@ export const Default = (props: HeroSectionProps) => {
             >
               {hasContent ? (
                 <>
-                  {(props.fields?.PrimaryCTA?.value?.href || props.fields?.PrimaryCTA?.value?.text) && (
-                    <ContentSdkLink
-                      field={props.fields.PrimaryCTA}
-                      className={styles.ctaPrimary}
-                    />
+                  {(props.fields?.PrimaryCTA?.value?.href ||
+                    props.fields?.PrimaryCTA?.value?.text) && (
+                    <ContentSdkLink field={props.fields.PrimaryCTA} className={styles.ctaPrimary} />
                   )}
-                  {(props.fields?.SecondaryCTA?.value?.href || props.fields?.SecondaryCTA?.value?.text) && (
+                  {(props.fields?.SecondaryCTA?.value?.href ||
+                    props.fields?.SecondaryCTA?.value?.text) && (
                     <ContentSdkLink
                       field={props.fields.SecondaryCTA}
                       className={styles.ctaSecondary}
@@ -187,16 +175,18 @@ export const Default = (props: HeroSectionProps) => {
           </motion.div>
 
           {/* Media Section for MediaLeft and MediaRight themes */}
-          {(theme === 'MediaLeft' || theme === 'MediaRight') && hasContent && props.fields?.Media?.value && (
-            <div className={styles.heroMedia}>
-              <ContentSdkImage
-                field={props.fields.Media}
-                className={styles.mediaImage}
-                width={600}
-                height={400}
-              />
-            </div>
-          )}
+          {(theme === 'MediaLeft' || theme === 'MediaRight') &&
+            hasContent &&
+            props.fields?.Media?.value && (
+              <div className={styles.heroMedia}>
+                <ContentSdkImage
+                  field={props.fields.Media}
+                  className={styles.mediaImage}
+                  width={600}
+                  height={400}
+                />
+              </div>
+            )}
         </div>
       </div>
     </section>

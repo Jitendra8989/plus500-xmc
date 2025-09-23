@@ -7,7 +7,9 @@ import {
   LinkField,
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
-import styles from './MarketCalenderRegion.module.css';
+import stylesImport from './MarketCalenderRegion.module.css';
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const styles = stylesImport as any;
 
 interface AssociatedMarket {
   id: string;
@@ -96,25 +98,27 @@ const formatDateTime = (dateTimeStr: string): { date: string; time: string; full
 const getCountryFlag = (country: string): string => {
   const flags: { [key: string]: string } = {
     'United States': '🇺🇸',
-    'Germany': '🇩🇪',
+    Germany: '🇩🇪',
     'United Kingdom': '🇬🇧',
-    'Japan': '🇯🇵',
-    'Canada': '🇨🇦',
-    'Australia': '🇦🇺',
-    'France': '🇫🇷',
-    'Italy': '🇮🇹',
-    'China': '🇨🇳',
-    'Switzerland': '🇨🇭',
-    'Spain': '🇪🇸',
-    'Netherlands': '🇳🇱',
-    'Brazil': '🇧🇷',
-    'India': '🇮🇳',
+    Japan: '🇯🇵',
+    Canada: '🇨🇦',
+    Australia: '🇦🇺',
+    France: '🇫🇷',
+    Italy: '🇮🇹',
+    China: '🇨🇳',
+    Switzerland: '🇨🇭',
+    Spain: '🇪🇸',
+    Netherlands: '🇳🇱',
+    Brazil: '🇧🇷',
+    India: '🇮🇳',
   };
   return flags[country] || '🌍';
 };
 
 // Helper function to get impact level details
-const getImpactDetails = (impact: number): { text: string; level: string; stars: number; icon: string } => {
+const getImpactDetails = (
+  impact: number
+): { text: string; level: string; stars: number; icon: string } => {
   const impactLevel = Math.min(Math.max(impact || 0, 0), 5);
   const impactMap = [
     { text: 'No Impact', level: 'none', stars: 0, icon: '○' },
@@ -131,7 +135,7 @@ const getImpactDetails = (impact: number): { text: string; level: string; stars:
 const renderImpactStars = (impactLevel: number): JSX.Element => {
   const stars = [];
   const maxStars = 5;
-  
+
   for (let i = 1; i <= maxStars; i++) {
     stars.push(
       <span
@@ -145,9 +149,9 @@ const renderImpactStars = (impactLevel: number): JSX.Element => {
       </span>
     );
   }
-  
+
   return (
-    <div 
+    <div
       className={styles.impactStars}
       role="img"
       aria-label={`Impact level: ${impactLevel} out of ${maxStars} stars`}
@@ -161,7 +165,7 @@ const renderImpactStars = (impactLevel: number): JSX.Element => {
 // Helper function to get event category
 const getEventCategory = (markets: AssociatedMarket[]): string => {
   if (!markets || markets.length === 0) return 'Economic Data';
-  
+
   // Get the first market's title as category
   const category = markets[0].fields.Title?.value || markets[0].displayName;
   return category || 'Market Event';
@@ -169,9 +173,9 @@ const getEventCategory = (markets: AssociatedMarket[]): string => {
 
 export const Default = (props: MarketCalenderRegionProps): JSX.Element => {
   const [visibleCount, setVisibleCount] = useState(6); // Show 6 cards initially (2 rows × 3 columns)
-  
+
   const handleLoadMore = () => {
-    setVisibleCount(prev => prev + 6); // Load 6 more cards (2 more rows)
+    setVisibleCount((prev) => prev + 6); // Load 6 more cards (2 more rows)
   };
 
   if (props.fields && props.fields.items && props.fields.items.length > 0) {
@@ -203,7 +207,7 @@ export const Default = (props: MarketCalenderRegionProps): JSX.Element => {
           {/* Events Grid */}
           <div className={styles.eventsGrid}>
             {visibleEvents.map((event) => {
-              const { date, time, fullDate } = formatDateTime(event.fields['Event Date And Time']?.value);
+              const { date, time } = formatDateTime(event.fields['Event Date And Time']?.value);
               const impactDetails = getImpactDetails(event.fields['Expected Impact']?.value);
               const category = getEventCategory(event.fields['Associated Market']);
               const country = event.fields.Country?.value || 'International';
@@ -214,7 +218,9 @@ export const Default = (props: MarketCalenderRegionProps): JSX.Element => {
                   {/* Card Header */}
                   <div className={styles.cardHeader}>
                     <div className={styles.impactContainer}>
-                      <div className={`${styles.impactBadge} ${styles[`impact--${impactDetails.level}`]}`}>
+                      <div
+                        className={`${styles.impactBadge} ${styles[`impact--${impactDetails.level}`]}`}
+                      >
                         <span className={styles.impactIcon}>{impactDetails.icon}</span>
                         {impactDetails.text}
                       </div>
@@ -222,18 +228,55 @@ export const Default = (props: MarketCalenderRegionProps): JSX.Element => {
                     </div>
                     <div className={styles.eventMeta}>
                       <span className={styles.eventDate}>
-                        <svg className={styles.calendarIcon} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" strokeWidth="2"/>
-                          <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" strokeWidth="2"/>
-                          <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" strokeWidth="2"/>
-                          <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" strokeWidth="2"/>
+                        <svg
+                          className={styles.calendarIcon}
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            x="3"
+                            y="4"
+                            width="18"
+                            height="18"
+                            rx="2"
+                            ry="2"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          />
+                          <line
+                            x1="16"
+                            y1="2"
+                            x2="16"
+                            y2="6"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          />
+                          <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" strokeWidth="2" />
+                          <line
+                            x1="3"
+                            y1="10"
+                            x2="21"
+                            y2="10"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          />
                         </svg>
                         {date}
                       </span>
                       <span className={styles.eventTime}>
-                        <svg className={styles.clockIcon} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-                          <polyline points="12,6 12,12 16,14" stroke="currentColor" strokeWidth="2"/>
+                        <svg
+                          className={styles.clockIcon}
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+                          <polyline
+                            points="12,6 12,12 16,14"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          />
                         </svg>
                         {time}
                       </span>
@@ -249,36 +292,35 @@ export const Default = (props: MarketCalenderRegionProps): JSX.Element => {
                     <h3 className={styles.eventTitle}>
                       {event.fields['Event Title']?.value || event.fields.Title?.value}
                     </h3>
-                    
+
                     <div className={styles.eventCountry}>
                       <span className={styles.countryFlag}>{countryFlag}</span>
                       <span className={styles.countryName}>{country}</span>
                     </div>
 
                     {event.fields.Description?.value && (
-                      <p className={styles.eventDescription}>
-                        {event.fields.Description.value}
-                      </p>
+                      <p className={styles.eventDescription}>{event.fields.Description.value}</p>
                     )}
 
                     {/* Associated Markets */}
-                    {event.fields['Associated Market'] && event.fields['Associated Market'].length > 0 && (
-                      <div className={styles.associatedMarkets}>
-                        <strong>Markets:</strong>
-                        <div className={styles.marketTags}>
-                          {event.fields['Associated Market'].slice(0, 3).map((market, index) => (
-                            <span key={market.id} className={styles.marketTag}>
-                              {market.fields.Title?.value || market.displayName}
-                            </span>
-                          ))}
-                          {event.fields['Associated Market'].length > 3 && (
-                            <span className={styles.marketTag}>
-                              +{event.fields['Associated Market'].length - 3} more
-                            </span>
-                          )}
+                    {event.fields['Associated Market'] &&
+                      event.fields['Associated Market'].length > 0 && (
+                        <div className={styles.associatedMarkets}>
+                          <strong>Markets:</strong>
+                          <div className={styles.marketTags}>
+                            {event.fields['Associated Market'].slice(0, 3).map((market) => (
+                              <span key={market.id} className={styles.marketTag}>
+                                {market.fields.Title?.value || market.displayName}
+                              </span>
+                            ))}
+                            {event.fields['Associated Market'].length > 3 && (
+                              <span className={styles.marketTag}>
+                                +{event.fields['Associated Market'].length - 3} more
+                              </span>
+                            )}
+                          </div>
                         </div>
-                      </div>
-                    )}
+                      )}
                   </div>
 
                   {/* Card Actions */}
@@ -289,12 +331,23 @@ export const Default = (props: MarketCalenderRegionProps): JSX.Element => {
                         className={`${styles.actionBtn} ${styles.btnPrimary}`}
                       >
                         View Details
-                        <svg className={styles.arrowIcon} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="m9 18 6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <svg
+                          className={styles.arrowIcon}
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m9 18 6-6-6-6"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
                         </svg>
                       </ContentSdkLink>
                     )}
-                    
+
                     {event.fields['Detail Page URL']?.value && (
                       <a
                         href={event.fields['Detail Page URL'].value}
@@ -314,10 +367,7 @@ export const Default = (props: MarketCalenderRegionProps): JSX.Element => {
                     )}
 
                     {event.url && (
-                      <a
-                        href={event.url}
-                        className={`${styles.actionBtn} ${styles.btnSecondary}`}
-                      >
+                      <a href={event.url} className={`${styles.actionBtn} ${styles.btnSecondary}`}>
                         Full Event
                       </a>
                     )}
@@ -330,13 +380,24 @@ export const Default = (props: MarketCalenderRegionProps): JSX.Element => {
           {/* Load More Button */}
           {hasMoreEvents && (
             <div className={styles.loadMoreContainer}>
-              <button 
+              <button
                 onClick={handleLoadMore}
                 className={styles.loadMoreBtn}
                 aria-label="Load more events"
               >
-                <svg className={styles.loadMoreIcon} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m6 9 6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg
+                  className={styles.loadMoreIcon}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </button>
             </div>
@@ -362,9 +423,9 @@ export const Default = (props: MarketCalenderRegionProps): JSX.Element => {
 // Compact variant - Updated to match card design but smaller
 export const Compact = (props: MarketCalenderRegionProps): JSX.Element => {
   const [visibleCount, setVisibleCount] = useState(6); // Show 6 compact cards initially (2 rows × 3 columns)
-  
+
   const handleLoadMore = () => {
-    setVisibleCount(prev => prev + 6); // Load 6 more cards (2 more rows)
+    setVisibleCount((prev) => prev + 6); // Load 6 more cards (2 more rows)
   };
 
   if (props.fields && props.fields.items && props.fields.items.length > 0) {
@@ -404,7 +465,9 @@ export const Compact = (props: MarketCalenderRegionProps): JSX.Element => {
                 <div key={event.id} className={styles.compactCard}>
                   <div className={styles.compactHeader}>
                     <div className={styles.compactImpactContainer}>
-                      <div className={`${styles.impactBadge} ${styles[`impact--${impactDetails.level}`]} ${styles.compactBadge}`}>
+                      <div
+                        className={`${styles.impactBadge} ${styles[`impact--${impactDetails.level}`]} ${styles.compactBadge}`}
+                      >
                         <span className={styles.impactIcon}>{impactDetails.icon}</span>
                         {impactDetails.text}
                       </div>
@@ -418,7 +481,7 @@ export const Compact = (props: MarketCalenderRegionProps): JSX.Element => {
                     <h4 className={styles.compactTitle}>
                       {event.fields['Event Title']?.value || event.fields.Title?.value}
                     </h4>
-                    
+
                     <div className={styles.compactMeta}>
                       <span className={styles.compactDateTime}>
                         {countryFlag} {date} • {time}
@@ -428,10 +491,7 @@ export const Compact = (props: MarketCalenderRegionProps): JSX.Element => {
 
                   <div className={styles.compactActions}>
                     {event.fields['Detail Page URL']?.value && (
-                      <a
-                        href={event.fields['Detail Page URL'].value}
-                        className={styles.compactBtn}
-                      >
+                      <a href={event.fields['Detail Page URL'].value} className={styles.compactBtn}>
                         Details
                       </a>
                     )}
@@ -444,13 +504,24 @@ export const Compact = (props: MarketCalenderRegionProps): JSX.Element => {
           {/* Load More Button */}
           {hasMoreEvents && (
             <div className={styles.loadMoreContainer}>
-              <button 
+              <button
                 onClick={handleLoadMore}
                 className={styles.loadMoreBtn}
                 aria-label="Load more events"
               >
-                <svg className={styles.loadMoreIcon} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m6 9 6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg
+                  className={styles.loadMoreIcon}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </button>
             </div>
@@ -472,9 +543,9 @@ export const Compact = (props: MarketCalenderRegionProps): JSX.Element => {
 // List variant - 2 rows at a time
 export const List = (props: MarketCalenderRegionProps): JSX.Element => {
   const [visibleCount, setVisibleCount] = useState(4); // Show 4 list items initially (2 rows worth)
-  
+
   const handleLoadMore = () => {
-    setVisibleCount(prev => prev + 4); // Load 4 more items (2 more rows worth)
+    setVisibleCount((prev) => prev + 4); // Load 4 more items (2 more rows worth)
   };
 
   if (props.fields && props.fields.items && props.fields.items.length > 0) {
@@ -523,7 +594,9 @@ export const List = (props: MarketCalenderRegionProps): JSX.Element => {
                         {event.fields['Event Title']?.value || event.fields.Title?.value}
                       </h4>
                       <div className={styles.listImpactContainer}>
-                        <div className={`${styles.impactBadge} ${styles[`impact--${impactDetails.level}`]} ${styles.listBadge}`}>
+                        <div
+                          className={`${styles.impactBadge} ${styles[`impact--${impactDetails.level}`]} ${styles.listBadge}`}
+                        >
                           <span className={styles.impactIcon}>{impactDetails.icon}</span>
                           {impactDetails.text}
                         </div>
@@ -532,20 +605,23 @@ export const List = (props: MarketCalenderRegionProps): JSX.Element => {
                         </div>
                       </div>
                     </div>
-                    
+
                     {event.fields.Description?.value && (
                       <p className={styles.listDescription}>{event.fields.Description.value}</p>
                     )}
-                    
+
                     <div className={styles.listMeta}>
-                      <span className={styles.listCountry}>{countryFlag} {country}</span>
-                      {event.fields['Associated Market'] && event.fields['Associated Market'].length > 0 && (
-                        <span className={styles.listMarkets}>
-                          • {event.fields['Associated Market'][0].fields.Title?.value}
-                          {event.fields['Associated Market'].length > 1 &&
-                            ` +${event.fields['Associated Market'].length - 1}`}
-                        </span>
-                      )}
+                      <span className={styles.listCountry}>
+                        {countryFlag} {country}
+                      </span>
+                      {event.fields['Associated Market'] &&
+                        event.fields['Associated Market'].length > 0 && (
+                          <span className={styles.listMarkets}>
+                            • {event.fields['Associated Market'][0].fields.Title?.value}
+                            {event.fields['Associated Market'].length > 1 &&
+                              ` +${event.fields['Associated Market'].length - 1}`}
+                          </span>
+                        )}
                     </div>
                   </div>
 
@@ -567,13 +643,24 @@ export const List = (props: MarketCalenderRegionProps): JSX.Element => {
           {/* Load More Button */}
           {hasMoreEvents && (
             <div className={styles.loadMoreContainer}>
-              <button 
+              <button
                 onClick={handleLoadMore}
                 className={styles.loadMoreBtn}
                 aria-label="Load more events"
               >
-                <svg className={styles.loadMoreIcon} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m6 9 6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg
+                  className={styles.loadMoreIcon}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </button>
             </div>

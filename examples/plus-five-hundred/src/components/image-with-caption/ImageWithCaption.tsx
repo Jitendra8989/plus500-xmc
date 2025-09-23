@@ -24,7 +24,7 @@ type ImageWithCaptionProps = ComponentProps & {
 
 // Base component with shared logic
 const ImageWithCaptionBase = (
-  props: ImageWithCaptionProps, 
+  props: ImageWithCaptionProps,
   variant: 'default' | 'left' | 'right' | 'center' | 'minimal' | 'card',
   customStyles?: string
 ): JSX.Element => {
@@ -32,26 +32,24 @@ const ImageWithCaptionBase = (
 
   const imageAnimation = {
     hidden: { opacity: 0, scale: 0.95 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       scale: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
+      },
     },
   };
 
   const captionAnimation = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: 0.5,
         delay: 0.2,
-        ease: "easeOut"
-      }
+      },
     },
   };
 
@@ -62,15 +60,12 @@ const ImageWithCaptionBase = (
         id={props.params?.RenderingIdentifier}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, margin: '-100px' }}
       >
         <div className="component-content">
           <figure className={styles.imageWithCaptionFigure}>
             {props.fields?.Image?.value && (
-              <motion.div 
-                className={styles.imageContainer}
-                variants={imageAnimation}
-              >
+              <motion.div className={styles.imageContainer} variants={imageAnimation}>
                 <ContentSdkImage
                   field={props.fields.Image}
                   className={styles.image}
@@ -82,10 +77,7 @@ const ImageWithCaptionBase = (
             )}
 
             {props.fields?.Caption?.value && (
-              <motion.figcaption 
-                className={styles.caption}
-                variants={captionAnimation}
-              >
+              <motion.figcaption className={styles.caption} variants={captionAnimation}>
                 <ContentSdkText
                   field={props.fields.Caption}
                   className={styles.captionText}
@@ -101,40 +93,32 @@ const ImageWithCaptionBase = (
 
   // Fallback content when no fields are available
   const fallbackContent = {
-    default: "Centered image with professional styling",
-    left: "Image aligned to the left with caption below",
-    right: "Image aligned to the right with caption below", 
-    center: "Image centered with caption below",
-    minimal: "Minimal image with simple caption",
-    card: "Card-style image presentation"
+    default: 'Centered image with professional styling',
+    left: 'Image aligned to the left with caption below',
+    right: 'Image aligned to the right with caption below',
+    center: 'Image centered with caption below',
+    minimal: 'Minimal image with simple caption',
+    card: 'Card-style image presentation',
   };
 
   return (
-    <motion.div 
+    <motion.div
       className={`component ${containerClass}`}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }}
+      viewport={{ once: true, margin: '-100px' }}
     >
       <div className="component-content">
         <figure className={styles.imageWithCaptionFigure}>
-          <motion.div 
-            className={styles.imageContainer}
-            variants={imageAnimation}
-          >
+          <motion.div className={styles.imageContainer} variants={imageAnimation}>
             <div className={styles.placeholderImage}>
               <span className={styles.placeholderText}>
                 {variant.charAt(0).toUpperCase() + variant.slice(1)} Image
               </span>
             </div>
           </motion.div>
-          <motion.figcaption 
-            className={styles.caption}
-            variants={captionAnimation}
-          >
-            <span className={styles.captionText}>
-              {fallbackContent[variant]}
-            </span>
+          <motion.figcaption className={styles.caption} variants={captionAnimation}>
+            <span className={styles.captionText}>{fallbackContent[variant]}</span>
           </motion.figcaption>
         </figure>
       </div>
@@ -176,13 +160,13 @@ export const ContentLeft = (props: ImageWithCaptionProps): JSX.Element => {
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
       >
         <div className="component-content">
           <div className={styles.contentLayout}>
             {/* Image on Left */}
             {props.fields?.Image?.value && (
-              <motion.div 
+              <motion.div
                 className={styles.imageSection}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -201,7 +185,7 @@ export const ContentLeft = (props: ImageWithCaptionProps): JSX.Element => {
 
             {/* Caption/Content on Right */}
             {props.fields?.Caption?.value && (
-              <motion.div 
+              <motion.div
                 className={styles.captionSection}
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -223,7 +207,9 @@ export const ContentLeft = (props: ImageWithCaptionProps): JSX.Element => {
 
   // Fallback
   return (
-    <div className={`component ${styles.imageWithCaption} ${styles['imageWithCaption--contentLeft']}`}>
+    <div
+      className={`component ${styles.imageWithCaption} ${styles['imageWithCaption--contentLeft']}`}
+    >
       <div className="component-content">
         <div className={styles.contentLayout}>
           <div className={styles.imageSection}>
@@ -234,7 +220,10 @@ export const ContentLeft = (props: ImageWithCaptionProps): JSX.Element => {
           <div className={styles.captionSection}>
             <div className={styles.contentCaption}>
               <h3>Content on Right</h3>
-              <p>This layout places the image on the left with content/caption on the right side. Perfect for feature descriptions or detailed explanations.</p>
+              <p>
+                This layout places the image on the left with content/caption on the right side.
+                Perfect for feature descriptions or detailed explanations.
+              </p>
             </div>
           </div>
         </div>
@@ -252,13 +241,13 @@ export const ContentRight = (props: ImageWithCaptionProps): JSX.Element => {
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
       >
         <div className="component-content">
           <div className={styles.contentLayout}>
             {/* Caption/Content on Left */}
             {props.fields?.Caption?.value && (
-              <motion.div 
+              <motion.div
                 className={styles.captionSection}
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -275,7 +264,7 @@ export const ContentRight = (props: ImageWithCaptionProps): JSX.Element => {
 
             {/* Image on Right */}
             {props.fields?.Image?.value && (
-              <motion.div 
+              <motion.div
                 className={styles.imageSection}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -299,13 +288,18 @@ export const ContentRight = (props: ImageWithCaptionProps): JSX.Element => {
 
   // Fallback
   return (
-    <div className={`component ${styles.imageWithCaption} ${styles['imageWithCaption--contentRight']}`}>
+    <div
+      className={`component ${styles.imageWithCaption} ${styles['imageWithCaption--contentRight']}`}
+    >
       <div className="component-content">
         <div className={styles.contentLayout}>
           <div className={styles.captionSection}>
             <div className={styles.contentCaption}>
               <h3>Content on Left</h3>
-              <p>This layout places the content/caption on the left with the image on the right side. Great for alternating content layouts.</p>
+              <p>
+                This layout places the content/caption on the left with the image on the right side.
+                Great for alternating content layouts.
+              </p>
             </div>
           </div>
           <div className={styles.imageSection}>

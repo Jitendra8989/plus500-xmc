@@ -5,4 +5,10 @@ import { defineConfig } from '@sitecore-content-sdk/nextjs/config';
  * https://doc.sitecore.com/xmc/en/developers/content-sdk/the-sitecore-configuration-file.html
  */
 export default defineConfig({
+  api: {
+    edge: {
+      contextId: 'demo-context-id',
+    },
+  },
+  defaultLanguage: 'en',
 });

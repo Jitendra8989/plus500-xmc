@@ -51,7 +51,9 @@ export interface BaseButtonProps {
 /**
  * HTML Button Element Props
  */
-export interface HTMLButtonProps extends BaseButtonProps, Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'disabled' | 'className' | 'children'> {
+export interface HTMLButtonProps
+  extends BaseButtonProps,
+    Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'disabled' | 'className' | 'children'> {
   /** Render as HTML button element */
   as?: 'button';
 }
@@ -59,7 +61,9 @@ export interface HTMLButtonProps extends BaseButtonProps, Omit<ButtonHTMLAttribu
 /**
  * Anchor Element Props (for links styled as buttons)
  */
-export interface AnchorButtonProps extends BaseButtonProps, Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'className' | 'children'> {
+export interface AnchorButtonProps
+  extends BaseButtonProps,
+    Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'className' | 'children'> {
   /** Render as anchor element */
   as: 'link';
   /** Link destination */
@@ -104,7 +108,7 @@ export const BUTTON_PRESETS = {
     variant: 'secondary' as ButtonVariant,
     size: 'medium' as ButtonSize,
   },
-  
+
   // Form buttons
   FORM_SUBMIT: {
     variant: 'primary' as ButtonVariant,

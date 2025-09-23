@@ -52,27 +52,27 @@ const renderNavigationItem = (item: NavigationItem, level: number = 0): JSX.Elem
   return (
     <li key={item.id} className={`${styles.navItem} ${level > 0 ? styles.navSubItem : ''}`}>
       {link?.href ? (
-        <a 
-          href={link.href} 
-          target="_self" 
+        <a
+          href={link.href}
+          target="_self"
           className={styles.navLink}
           data-testid={`nav-link-${(link.text || title).toLowerCase().replace(/\s+/g, '-')}`}
         >
           {link.text || title}
           {hasChildren && (
-            <svg 
-              className={styles.dropdownArrow} 
-              width="12" 
-              height="12" 
-              viewBox="0 0 12 12" 
-              fill="none" 
+            <svg
+              className={styles.dropdownArrow}
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path 
-                d="M3 4.5L6 7.5L9 4.5" 
-                stroke="currentColor" 
-                strokeWidth="1.5" 
-                strokeLinecap="round" 
+              <path
+                d="M3 4.5L6 7.5L9 4.5"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
                 strokeLinejoin="round"
               />
             </svg>
@@ -82,19 +82,19 @@ const renderNavigationItem = (item: NavigationItem, level: number = 0): JSX.Elem
         <span className={styles.navLabel}>
           {title}
           {hasChildren && (
-            <svg 
-              className={styles.dropdownArrow} 
-              width="12" 
-              height="12" 
-              viewBox="0 0 12 12" 
-              fill="none" 
+            <svg
+              className={styles.dropdownArrow}
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path 
-                d="M3 4.5L6 7.5L9 4.5" 
-                stroke="currentColor" 
-                strokeWidth="1.5" 
-                strokeLinecap="round" 
+              <path
+                d="M3 4.5L6 7.5L9 4.5"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
                 strokeLinejoin="round"
               />
             </svg>
@@ -115,7 +115,7 @@ const renderNavigationItem = (item: NavigationItem, level: number = 0): JSX.Elem
 const renderLanguageNav = (languages: NavigationItem[]): JSX.Element => {
   return (
     <div className={styles.languageNav}>
-      <select 
+      <select
         className={styles.languageSelector}
         data-testid="language-selector"
         aria-label="Select language"
@@ -180,7 +180,10 @@ export const Default = (props: HeaderProps): JSX.Element => {
               {/* Main Navigation */}
               <nav className={styles.nav} role="navigation" aria-label="Main navigation">
                 {/* Desktop Menu */}
-                <div className={`${styles.navMenu} ${styles.desktopMenu}`} data-testid="desktop-menu">
+                <div
+                  className={`${styles.navMenu} ${styles.desktopMenu}`}
+                  data-testid="desktop-menu"
+                >
                   {props.fields.MainMenu && props.fields.MainMenu.length > 0 && (
                     <ul className={styles.mainMenu}>
                       {props.fields.MainMenu.map((menuItem) => renderNavigationItem(menuItem))}
@@ -196,9 +199,9 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   {isMobileMenuOpen && (
                     <motion.div
                       initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
+                      animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      transition={{ duration: 0.3, ease: 'easeInOut' }}
                       className={`${styles.navMenu} ${styles.navMenuOpen}`}
                       data-testid="mobile-menu"
                     >
@@ -242,20 +245,24 @@ export const Default = (props: HeaderProps): JSX.Element => {
               <div className={styles.ctaSection}>
                 {props.fields.SecondaryCTA?.value && (
                   <SecondaryButton
-                    as="link"
-                    href={props.fields.SecondaryCTA.value.href || '#'}
-                    target={props.fields.SecondaryCTA.value.target}
-                    data-testid="cta-secondary"
+                    {...{
+                      as: 'link' as const,
+                      href: props.fields.SecondaryCTA.value.href || '#',
+                      target: props.fields.SecondaryCTA.value.target,
+                      'data-testid': 'cta-secondary',
+                    }}
                   >
                     {props.fields.SecondaryCTA.value.text || 'Try Demo'}
                   </SecondaryButton>
                 )}
                 {props.fields.PrimaryCTA?.value && (
                   <PrimaryButton
-                    as="link"
-                    href={props.fields.PrimaryCTA.value.href || '#'}
-                    target={props.fields.PrimaryCTA.value.target}
-                    data-testid="cta-primary"
+                    {...{
+                      as: 'link' as const,
+                      href: props.fields.PrimaryCTA.value.href || '#',
+                      target: props.fields.PrimaryCTA.value.target,
+                      'data-testid': 'cta-primary',
+                    }}
                   >
                     {props.fields.PrimaryCTA.value.text || 'Start Trading'}
                   </PrimaryButton>
@@ -277,14 +284,14 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   className={styles.hamburger}
                   animate={{
                     rotate: isMobileMenuOpen ? 45 : 0,
-                    y: isMobileMenuOpen ? 6 : 0
+                    y: isMobileMenuOpen ? 6 : 0,
                   }}
                   transition={{ duration: 0.3 }}
                 />
                 <motion.span
                   className={styles.hamburger}
                   animate={{
-                    opacity: isMobileMenuOpen ? 0 : 1
+                    opacity: isMobileMenuOpen ? 0 : 1,
                   }}
                   transition={{ duration: 0.3 }}
                 />
@@ -292,7 +299,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   className={styles.hamburger}
                   animate={{
                     rotate: isMobileMenuOpen ? -45 : 0,
-                    y: isMobileMenuOpen ? -6 : 0
+                    y: isMobileMenuOpen ? -6 : 0,
                   }}
                   transition={{ duration: 0.3 }}
                 />
@@ -371,22 +378,26 @@ export const Dark = (props: HeaderProps): JSX.Element => {
               <div className={styles.ctaSection}>
                 {props.fields.SecondaryCTA?.value && (
                   <SecondaryButton
-                    as="link"
-                    href={props.fields.SecondaryCTA.value.href || '#'}
-                    target={props.fields.SecondaryCTA.value.target}
-                    theme="dark"
-                    data-testid="cta-secondary"
+                    {...{
+                      as: 'link' as const,
+                      href: props.fields.SecondaryCTA.value.href || '#',
+                      target: props.fields.SecondaryCTA.value.target,
+                      theme: 'dark',
+                      'data-testid': 'cta-secondary',
+                    }}
                   >
                     {props.fields.SecondaryCTA.value.text || 'Try Demo'}
                   </SecondaryButton>
                 )}
                 {props.fields.PrimaryCTA?.value && (
                   <PrimaryButton
-                    as="link"
-                    href={props.fields.PrimaryCTA.value.href || '#'}
-                    target={props.fields.PrimaryCTA.value.target}
-                    theme="dark"
-                    data-testid="cta-primary"
+                    {...{
+                      as: 'link' as const,
+                      href: props.fields.PrimaryCTA.value.href || '#',
+                      target: props.fields.PrimaryCTA.value.target,
+                      theme: 'dark',
+                      'data-testid': 'cta-primary',
+                    }}
                   >
                     {props.fields.PrimaryCTA.value.text || 'Start Trading'}
                   </PrimaryButton>
@@ -512,20 +523,24 @@ export const Light = (props: HeaderProps): JSX.Element => {
               <div className={styles.ctaSection}>
                 {props.fields.SecondaryCTA?.value && (
                   <SecondaryButton
-                    as="link"
-                    href={props.fields.SecondaryCTA.value.href || '#'}
-                    target={props.fields.SecondaryCTA.value.target}
-                    data-testid="cta-secondary"
+                    {...{
+                      as: 'link' as const,
+                      href: props.fields.SecondaryCTA.value.href || '#',
+                      target: props.fields.SecondaryCTA.value.target,
+                      'data-testid': 'cta-secondary',
+                    }}
                   >
                     {props.fields.SecondaryCTA.value.text || 'Try Demo'}
                   </SecondaryButton>
                 )}
                 {props.fields.PrimaryCTA?.value && (
                   <PrimaryButton
-                    as="link"
-                    href={props.fields.PrimaryCTA.value.href || '#'}
-                    target={props.fields.PrimaryCTA.value.target}
-                    data-testid="cta-primary"
+                    {...{
+                      as: 'link' as const,
+                      href: props.fields.PrimaryCTA.value.href || '#',
+                      target: props.fields.PrimaryCTA.value.target,
+                      'data-testid': 'cta-primary',
+                    }}
                   >
                     {props.fields.PrimaryCTA.value.text || 'Start Trading'}
                   </PrimaryButton>

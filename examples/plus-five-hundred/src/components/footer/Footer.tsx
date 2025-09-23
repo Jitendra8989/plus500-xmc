@@ -78,10 +78,7 @@ const renderFooterSection = (
           {links.map((link) => (
             <li key={link.id} className={styles.linkItem}>
               {link.fields.GeneralLink?.value?.href ? (
-                <ContentSdkLink
-                  field={link.fields.GeneralLink}
-                  className={styles.footerLink}
-                >
+                <ContentSdkLink field={link.fields.GeneralLink} className={styles.footerLink}>
                   {link.fields.GeneralLink.value.text ||
                     link.fields.Title?.value ||
                     link.displayName}
