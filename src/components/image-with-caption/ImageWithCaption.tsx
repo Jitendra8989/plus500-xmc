@@ -92,9 +92,7 @@ export const Default = (props: ImageWithCaptionProps): JSX.Element => {
             </div>
           </div>
           <figcaption className={styles.caption}>
-            <span className={styles.captionText}>
-              Sample image caption text goes here
-            </span>
+            <span className={styles.captionText}>Sample image caption text goes here</span>
           </figcaption>
         </figure>
       </div>
@@ -126,10 +124,7 @@ export const Minimal = (props: ImageWithCaptionProps): JSX.Element => {
     }
 
     return (
-      <div
-        className={`component ${containerClass}`}
-        id={props.params?.RenderingIdentifier}
-      >
+      <div className={`component ${containerClass}`} id={props.params?.RenderingIdentifier}>
         <div className="component-content">
           <figure className={styles.imageWithCaptionFigure}>
             {props.fields?.Image?.value && (
@@ -201,10 +196,7 @@ export const Card = (props: ImageWithCaptionProps): JSX.Element => {
     }
 
     return (
-      <div
-        className={`component ${containerClass}`}
-        id={props.params?.RenderingIdentifier}
-      >
+      <div className={`component ${containerClass}`} id={props.params?.RenderingIdentifier}>
         <div className="component-content">
           <figure className={styles.imageWithCaptionFigure}>
             {props.fields?.Image?.value && (

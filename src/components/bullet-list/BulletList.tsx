@@ -1,10 +1,5 @@
 import React, { JSX } from 'react';
-import {
-  Text as ContentSdkText,
-  RichText as ContentSdkRichText,
-  Field,
-  RichTextField,
-} from '@sitecore-content-sdk/nextjs';
+import { Text as ContentSdkText, Field } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { motion } from 'framer-motion';
 import styles from './BulletList.module.css';
@@ -14,10 +9,8 @@ interface BulletListItem {
   fields: {
     Text: Field<string>;
     Icon: Field<{
-      value: {
-        src: string;
-        alt: string;
-      };
+      src: string;
+      alt: string;
     }>;
     Subtext: Field<string>;
   };
@@ -50,7 +43,10 @@ export const Default = (props: BulletListProps): JSX.Element => {
     };
 
     return (
-      <section className={`component ${styles.bulletList} ${styles['bulletList--default']}`} data-testid="bullet-list">
+      <section
+        className={`component ${styles.bulletList} ${styles['bulletList--default']}`}
+        data-testid="bullet-list"
+      >
         <div className="component-content">
           <div className={styles.bulletContainer}>
             {/* Heading */}
@@ -80,11 +76,7 @@ export const Default = (props: BulletListProps): JSX.Element => {
               >
                 <ul className={styles.itemsContent}>
                   {props.fields.Items.map((item) => (
-                    <motion.li
-                      key={item.id}
-                      variants={itemVariants}
-                      className={styles.bulletItem}
-                    >
+                    <motion.li key={item.id} variants={itemVariants} className={styles.bulletItem}>
                       {item.fields?.Icon?.value?.src && (
                         <div className={styles.bulletIcon}>
                           <img
@@ -123,22 +115,35 @@ export const Default = (props: BulletListProps): JSX.Element => {
 
   // Fallback content when no fields are available
   return (
-    <section className={`component ${styles.bulletList} ${styles['bulletList--default']}`} data-testid="bullet-list">
+    <section
+      className={`component ${styles.bulletList} ${styles['bulletList--default']}`}
+      data-testid="bullet-list"
+    >
       <div className="component-content">
         <div className={styles.bulletContainer}>
           <div className={styles.bulletHeading}>
-            <h2 className={styles.headingText}>
-              Key Features
-            </h2>
+            <h2 className={styles.headingText}>Key Features</h2>
           </div>
 
           <div className={styles.bulletItems}>
             <div className={styles.itemsContent}>
               <ul>
-                <li>🛡️ <strong>Regulated & Secure</strong> - FCA, CySEC, ASIC regulated with client funds protection</li>
-                <li>🕒 <strong>24/7 Trading</strong> - Trade major markets around the clock with advanced platform</li>
-                <li>🌍 <strong>Global Markets</strong> - Access thousands of instruments across multiple asset classes</li>
-                <li>📈 <strong>Competitive Spreads</strong> - Enjoy tight spreads and transparent pricing</li>
+                <li>
+                  🛡️ <strong>Regulated & Secure</strong> - FCA, CySEC, ASIC regulated with client
+                  funds protection
+                </li>
+                <li>
+                  🕒 <strong>24/7 Trading</strong> - Trade major markets around the clock with
+                  advanced platform
+                </li>
+                <li>
+                  🌍 <strong>Global Markets</strong> - Access thousands of instruments across
+                  multiple asset classes
+                </li>
+                <li>
+                  📈 <strong>Competitive Spreads</strong> - Enjoy tight spreads and transparent
+                  pricing
+                </li>
               </ul>
             </div>
           </div>
@@ -152,7 +157,7 @@ export const Compact = (props: BulletListProps): JSX.Element => {
   const component = Default(props);
 
   return React.cloneElement(component, {
-    className: component.props.className.replace('bulletList--default', 'bulletList--compact')
+    className: component.props.className.replace('bulletList--default', 'bulletList--compact'),
   });
 };
 
@@ -160,7 +165,7 @@ export const Grid = (props: BulletListProps): JSX.Element => {
   const component = Default(props);
 
   return React.cloneElement(component, {
-    className: component.props.className.replace('bulletList--default', 'bulletList--grid')
+    className: component.props.className.replace('bulletList--default', 'bulletList--grid'),
   });
 };
 
@@ -168,7 +173,7 @@ export const Minimal = (props: BulletListProps): JSX.Element => {
   const component = Default(props);
 
   return React.cloneElement(component, {
-    className: component.props.className.replace('bulletList--default', 'bulletList--minimal')
+    className: component.props.className.replace('bulletList--default', 'bulletList--minimal'),
   });
 };
 
@@ -176,7 +181,7 @@ export const Numbered = (props: BulletListProps): JSX.Element => {
   const component = Default(props);
 
   return React.cloneElement(component, {
-    className: component.props.className.replace('bulletList--default', 'bulletList--numbered')
+    className: component.props.className.replace('bulletList--default', 'bulletList--numbered'),
   });
 };
 

@@ -866,7 +866,7 @@
           "build/Sitecore.Assemblies.SitecoreHeadlessServicesServer.targets": {}
         }
       },
-      "Sitecore.XmCloud.Annotations/1.6.1044": {
+      "Sitecore.XmCloud.Annotations/1.6.1073": {
         "type": "package",
         "frameworkAssemblies": [
           "System.Linq",
@@ -886,18 +886,18 @@
           }
         }
       },
-      "Sitecore.XMCloud.Assemblies/1.6.1044": {
+      "Sitecore.XMCloud.Assemblies/1.6.1073": {
         "type": "package",
         "build": {
           "build/Sitecore.XMCloud.Assemblies.targets": {}
         }
       },
-      "Sitecore.XmCloud.Client/1.6.1044": {
+      "Sitecore.XmCloud.Client/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.Kernel": "1.6.1044",
-          "Sitecore.XmCloud.Nexus.Consumption": "1.6.1044",
-          "Sitecore.XmCloud.Screenshots": "1.6.1044"
+          "Sitecore.XmCloud.Kernel": "1.6.1073",
+          "Sitecore.XmCloud.Nexus.Consumption": "1.6.1073",
+          "Sitecore.XmCloud.Screenshots": "1.6.1073"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -943,11 +943,11 @@
           }
         }
       },
-      "Sitecore.XmCloud.ContentSearch/1.6.1044": {
+      "Sitecore.XmCloud.ContentSearch/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.ContentSearch.Data": "1.6.1044",
-          "Sitecore.XmCloud.ContentSearch.Linq": "1.6.1044",
+          "Sitecore.XmCloud.ContentSearch.Data": "1.6.1073",
+          "Sitecore.XmCloud.ContentSearch.Linq": "1.6.1073",
           "prometheus-net.NetFramework.AspNet": "6.0.0"
         },
         "frameworkAssemblies": [
@@ -997,7 +997,7 @@
           }
         }
       },
-      "Sitecore.XmCloud.ContentSearch.Data/1.6.1044": {
+      "Sitecore.XmCloud.ContentSearch.Data/1.6.1073": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.Win32.Primitives",
@@ -1040,11 +1040,11 @@
           }
         }
       },
-      "Sitecore.XmCloud.ContentSearch.Linq/1.6.1044": {
+      "Sitecore.XmCloud.ContentSearch.Linq/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.ContentSearch.Data": "1.6.1044",
-          "Sitecore.XmCloud.Kernel": "1.6.1044"
+          "Sitecore.XmCloud.ContentSearch.Data": "1.6.1073",
+          "Sitecore.XmCloud.Kernel": "1.6.1073"
         },
         "frameworkAssemblies": [
           "Microsoft.Win32.Primitives",
@@ -1089,7 +1089,7 @@
           }
         }
       },
-      "Sitecore.XmCloud.Data.ItemsTransfer/1.6.1044": {
+      "Sitecore.XmCloud.Data.ItemsTransfer/1.6.1073": {
         "type": "package",
         "dependencies": {
           "Azure.Storage.Blobs": "12.14.1",
@@ -1110,7 +1110,7 @@
           }
         }
       },
-      "Sitecore.XmCloud.Data.ResourceItems.Abstractions/1.6.1044": {
+      "Sitecore.XmCloud.Data.ResourceItems.Abstractions/1.6.1073": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
@@ -1126,11 +1126,11 @@
           }
         }
       },
-      "Sitecore.XmCloud.Data.ResourceItems.ProtobufNet/1.6.1044": {
+      "Sitecore.XmCloud.Data.ResourceItems.ProtobufNet/1.6.1073": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
-          "Sitecore.XmCloud.Data.ResourceItems.Abstractions": "1.6.1044",
+          "Sitecore.XmCloud.Data.ResourceItems.Abstractions": "1.6.1073",
           "protobuf-net": "2.4.6"
         },
         "compile": {
@@ -1144,7 +1144,7 @@
           }
         }
       },
-      "Sitecore.XmCloud.External/1.6.1044": {
+      "Sitecore.XmCloud.External/1.6.1073": {
         "type": "package",
         "compile": {
           "lib/net48/Magick.NET-Q8-AnyCPU.dll": {},
@@ -1155,7 +1155,7 @@
           "lib/net48/Magick.NET.Core.dll": {}
         }
       },
-      "Sitecore.XmCloud.Framework.Conditions/1.6.1044": {
+      "Sitecore.XmCloud.Framework.Conditions/1.6.1073": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {
@@ -1168,11 +1168,11 @@
           }
         }
       },
-      "Sitecore.XmCloud.Framework.Data.Blobs/1.6.1044": {
+      "Sitecore.XmCloud.Framework.Data.Blobs/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.Framework.Conditions": "1.6.1044",
-          "Sitecore.XmCloud.Framework.Data.Blobs.Abstractions": "1.6.1044"
+          "Sitecore.XmCloud.Framework.Conditions": "1.6.1073",
+          "Sitecore.XmCloud.Framework.Data.Blobs.Abstractions": "1.6.1073"
         },
         "compile": {
           "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.dll": {
@@ -1185,10 +1185,10 @@
           }
         }
       },
-      "Sitecore.XmCloud.Framework.Data.Blobs.Abstractions/1.6.1044": {
+      "Sitecore.XmCloud.Framework.Data.Blobs.Abstractions/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.Framework.Conditions": "1.6.1044"
+          "Sitecore.XmCloud.Framework.Conditions": "1.6.1073"
         },
         "compile": {
           "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.Abstractions.dll": {
@@ -1201,7 +1201,7 @@
           }
         }
       },
-      "Sitecore.XmCloud.Kernel/1.6.1044": {
+      "Sitecore.XmCloud.Kernel/1.6.1073": {
         "type": "package",
         "dependencies": {
           "EnterpriseLibrary.Common": "6.0.1304",
@@ -1227,15 +1227,15 @@
           "Newtonsoft.Json": "13.0.1",
           "Polly": "6.1.2",
           "SharpZipLib": "1.4.2",
-          "Sitecore.XmCloud.Data.ItemsTransfer": "1.6.1044",
-          "Sitecore.XmCloud.Data.ResourceItems.ProtobufNet": "1.6.1044",
-          "Sitecore.XmCloud.External": "1.6.1044",
-          "Sitecore.XmCloud.Framework.Data.Blobs": "1.6.1044",
-          "Sitecore.XmCloud.Kernel.Portable": "1.6.1044",
-          "Sitecore.XmCloud.Logging": "1.6.1044",
-          "Sitecore.XmCloud.Logging.Client": "1.6.1044",
-          "Sitecore.XmCloud.Nexus.Consumption": "1.6.1044",
-          "Sitecore.XmCloud.Screenshots": "1.6.1044",
+          "Sitecore.XmCloud.Data.ItemsTransfer": "1.6.1073",
+          "Sitecore.XmCloud.Data.ResourceItems.ProtobufNet": "1.6.1073",
+          "Sitecore.XmCloud.External": "1.6.1073",
+          "Sitecore.XmCloud.Framework.Data.Blobs": "1.6.1073",
+          "Sitecore.XmCloud.Kernel.Portable": "1.6.1073",
+          "Sitecore.XmCloud.Logging": "1.6.1073",
+          "Sitecore.XmCloud.Logging.Client": "1.6.1073",
+          "Sitecore.XmCloud.Nexus.Consumption": "1.6.1073",
+          "Sitecore.XmCloud.Screenshots": "1.6.1073",
           "System.Buffers": "4.5.1",
           "System.Text.Encodings.Web": "7.0.0",
           "System.Threading.Tasks.Dataflow": "6.0.0"
@@ -1285,7 +1285,7 @@
           }
         }
       },
-      "Sitecore.XmCloud.Kernel.Portable/1.6.1044": {
+      "Sitecore.XmCloud.Kernel.Portable/1.6.1073": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Sitecore.Kernel.Portable.dll": {
@@ -1298,11 +1298,11 @@
           }
         }
       },
-      "Sitecore.XmCloud.LayoutService/1.6.1044": {
+      "Sitecore.XmCloud.LayoutService/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.Mvc": "1.6.1044",
-          "Sitecore.XmCloud.Services.GraphQL.EdgeSchema": "1.6.1044"
+          "Sitecore.XmCloud.Mvc": "1.6.1073",
+          "Sitecore.XmCloud.Services.GraphQL.EdgeSchema": "1.6.1073"
         },
         "frameworkAssemblies": [
           "System.IO",
@@ -1328,7 +1328,7 @@
           }
         }
       },
-      "Sitecore.XmCloud.Logging/1.6.1044": {
+      "Sitecore.XmCloud.Logging/1.6.1073": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -1353,10 +1353,10 @@
           }
         }
       },
-      "Sitecore.XmCloud.Logging.Client/1.6.1044": {
+      "Sitecore.XmCloud.Logging.Client/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.Logging": "1.6.1044"
+          "Sitecore.XmCloud.Logging": "1.6.1073"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -1387,13 +1387,13 @@
           }
         }
       },
-      "Sitecore.XmCloud.Mvc/1.6.1044": {
+      "Sitecore.XmCloud.Mvc/1.6.1073": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.Mvc": "5.2.4",
           "Microsoft.AspNet.WebApi.WebHost": "5.2.6",
           "RazorGenerator.Mvc": "2.4.9",
-          "Sitecore.XmCloud.Web": "1.6.1044"
+          "Sitecore.XmCloud.Web": "1.6.1073"
         },
         "frameworkAssemblies": [
           "System.IO",
@@ -1416,10 +1416,10 @@
           "lib/net48/Sitecore.Mvc.dll": {}
         }
       },
-      "Sitecore.XmCloud.Nexus.Consumption/1.6.1044": {
+      "Sitecore.XmCloud.Nexus.Consumption/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.Nexus.Licensing": "1.6.1044"
+          "Sitecore.XmCloud.Nexus.Licensing": "1.6.1073"
         },
         "compile": {
           "lib/netstandard2.0/Sitecore.Nexus.Consumption.dll": {}
@@ -1428,7 +1428,7 @@
           "lib/netstandard2.0/Sitecore.Nexus.Consumption.dll": {}
         }
       },
-      "Sitecore.XmCloud.Nexus.Licensing/1.6.1044": {
+      "Sitecore.XmCloud.Nexus.Licensing/1.6.1073": {
         "type": "package",
         "dependencies": {
           "System.Security.Cryptography.Xml": "4.5.0"
@@ -1440,7 +1440,7 @@
           "lib/netstandard2.0/Sitecore.Nexus.Licensing.dll": {}
         }
       },
-      "Sitecore.XmCloud.Screenshots/1.6.1044": {
+      "Sitecore.XmCloud.Screenshots/1.6.1073": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
@@ -1458,11 +1458,11 @@
           }
         }
       },
-      "Sitecore.XmCloud.Services.Client/1.6.1044": {
+      "Sitecore.XmCloud.Services.Client/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.Client": "1.6.1044",
-          "Sitecore.XmCloud.Services.Core": "1.6.1044"
+          "Sitecore.XmCloud.Client": "1.6.1073",
+          "Sitecore.XmCloud.Services.Core": "1.6.1073"
         },
         "frameworkAssemblies": [
           "System.IO",
@@ -1484,12 +1484,12 @@
           "lib/net48/Sitecore.Services.Client.dll": {}
         }
       },
-      "Sitecore.XmCloud.Services.Core/1.6.1044": {
+      "Sitecore.XmCloud.Services.Core/1.6.1073": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.OData": "7.5.9",
           "Microsoft.OData.Core": "7.9.0",
-          "Sitecore.XmCloud.Web": "1.6.1044"
+          "Sitecore.XmCloud.Web": "1.6.1073"
         },
         "frameworkAssemblies": [
           "System.ComponentModel.DataAnnotations",
@@ -1512,7 +1512,7 @@
           "lib/net48/Sitecore.Services.Core.dll": {}
         }
       },
-      "Sitecore.XmCloud.Services.GraphQL/1.6.1044": {
+      "Sitecore.XmCloud.Services.GraphQL/1.6.1073": {
         "type": "package",
         "dependencies": {
           "GraphQL": "2.4.0",
@@ -1528,11 +1528,11 @@
           "lib/netstandard2.0/Sitecore.Services.GraphQL.dll": {}
         }
       },
-      "Sitecore.XmCloud.Services.GraphQL.ContentSchema/1.6.1044": {
+      "Sitecore.XmCloud.Services.GraphQL.ContentSchema/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.ContentSearch": "1.6.1044",
-          "Sitecore.XmCloud.Services.GraphQL.NetFxHost": "1.6.1044"
+          "Sitecore.XmCloud.ContentSearch": "1.6.1073",
+          "Sitecore.XmCloud.Services.GraphQL.NetFxHost": "1.6.1073"
         },
         "frameworkAssemblies": [
           "System.IO",
@@ -1554,11 +1554,11 @@
           "lib/net48/Sitecore.Services.GraphQL.Content.dll": {}
         }
       },
-      "Sitecore.XmCloud.Services.GraphQL.EdgeSchema/1.6.1044": {
+      "Sitecore.XmCloud.Services.GraphQL.EdgeSchema/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.Services.GraphQL": "1.6.1044",
-          "Sitecore.XmCloud.Services.GraphQL.ContentSchema": "1.6.1044"
+          "Sitecore.XmCloud.Services.GraphQL": "1.6.1073",
+          "Sitecore.XmCloud.Services.GraphQL.ContentSchema": "1.6.1073"
         },
         "frameworkAssemblies": [
           "System.IO",
@@ -1580,14 +1580,14 @@
           "lib/net48/Sitecore.Services.GraphQL.EdgeSchema.dll": {}
         }
       },
-      "Sitecore.XmCloud.Services.GraphQL.NetFxHost/1.6.1044": {
+      "Sitecore.XmCloud.Services.GraphQL.NetFxHost/1.6.1073": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.Mvc": "5.2.4",
-          "Sitecore.XmCloud.Annotations": "1.6.1044",
-          "Sitecore.XmCloud.Services.Client": "1.6.1044",
-          "Sitecore.XmCloud.Services.GraphQL": "1.6.1044",
-          "Sitecore.XmCloud.Services.Infrastructure.Sitecore.XmCloud": "1.6.1044"
+          "Sitecore.XmCloud.Annotations": "1.6.1073",
+          "Sitecore.XmCloud.Services.Client": "1.6.1073",
+          "Sitecore.XmCloud.Services.GraphQL": "1.6.1073",
+          "Sitecore.XmCloud.Services.Infrastructure.Sitecore.XmCloud": "1.6.1073"
         },
         "frameworkAssemblies": [
           "System.IO",
@@ -1609,13 +1609,13 @@
           "lib/net48/Sitecore.Services.GraphQL.NetFxHost.dll": {}
         }
       },
-      "Sitecore.XmCloud.Services.Infrastructure/1.6.1044": {
+      "Sitecore.XmCloud.Services.Infrastructure/1.6.1073": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.Mvc": "5.2.4",
           "Microsoft.AspNet.WebApi.Cors": "5.2.6",
           "Microsoft.AspNet.WebApi.WebHost": "5.2.6",
-          "Sitecore.XmCloud.Services.Core": "1.6.1044",
+          "Sitecore.XmCloud.Services.Core": "1.6.1073",
           "System.IdentityModel.Tokens.Jwt": "5.7.0"
         },
         "frameworkAssemblies": [
@@ -1638,12 +1638,12 @@
           "lib/net48/Sitecore.Services.Infrastructure.dll": {}
         }
       },
-      "Sitecore.XmCloud.Services.Infrastructure.Sitecore.XmCloud/1.6.1044": {
+      "Sitecore.XmCloud.Services.Infrastructure.Sitecore.XmCloud/1.6.1073": {
         "type": "package",
         "dependencies": {
-          "Sitecore.XmCloud.ContentSearch": "1.6.1044",
-          "Sitecore.XmCloud.Services.Core": "1.6.1044",
-          "Sitecore.XmCloud.Services.Infrastructure": "1.6.1044"
+          "Sitecore.XmCloud.ContentSearch": "1.6.1073",
+          "Sitecore.XmCloud.Services.Core": "1.6.1073",
+          "Sitecore.XmCloud.Services.Infrastructure": "1.6.1073"
         },
         "frameworkAssemblies": [
           "System.IO",
@@ -1666,12 +1666,12 @@
           "lib/net48/Sitecore.Services.Infrastructure.Sitecore.dll": {}
         }
       },
-      "Sitecore.XmCloud.Web/1.6.1044": {
+      "Sitecore.XmCloud.Web/1.6.1073": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Core": "5.2.6",
           "Microsoft.AspNet.WebPages": "3.2.4",
-          "Sitecore.XmCloud.Kernel": "1.6.1044"
+          "Sitecore.XmCloud.Kernel": "1.6.1073"
         },
         "frameworkAssemblies": [
           "System.IO",
@@ -3261,10 +3261,10 @@
         "sitecore.assemblies.sitecoreheadlessservicesserver.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Annotations/1.6.1044": {
-      "sha512": "Z+AZFFXChiXisG1Hgx6/rbBerHtbQJARlp2N+raUH0qEmwDAnvjQVJjnq3mNfhypMaYbiZlDV4AkCmTCvPWykQ==",
+    "Sitecore.XmCloud.Annotations/1.6.1073": {
+      "sha512": "iiCAn7hfgnYIMisqZmzOwTUZk6CSwDga291Zw9ZTUnpSPYHhjIsbIeLae6AhLDIZsIS4lr+Fb3lJKnde9OcDxg==",
       "type": "package",
-      "path": "sitecore.xmcloud.annotations/1.6.1044",
+      "path": "sitecore.xmcloud.annotations/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
@@ -3272,386 +3272,388 @@
         "lib/net471/Sitecore.Annotations.xml",
         "lib/netstandard2.0/Sitecore.Annotations.dll",
         "lib/netstandard2.0/Sitecore.Annotations.xml",
-        "sitecore.xmcloud.annotations.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.annotations.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.annotations.nuspec"
       ]
     },
-    "Sitecore.XMCloud.Assemblies/1.6.1044": {
-      "sha512": "EReAOPffp0f73fBVEFof0RdxF61yls0txC58Sy8vEG03wmHvYEbuFiQHbM0KZrXSm6Jc3XLcjgDqyA+paCTVeA==",
+    "Sitecore.XMCloud.Assemblies/1.6.1073": {
+      "sha512": "BIcudJKGa4oOodS80b+yV9tSAaFoqhnJ1JXc5uU638kC086fPKC69SFVSj8I2eK6GMBRuwOkie5IlPj31gUFSQ==",
       "type": "package",
-      "path": "sitecore.xmcloud.assemblies/1.6.1044",
+      "path": "sitecore.xmcloud.assemblies/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "build/Sitecore.XMCloud.Assemblies.targets",
-        "sitecore.xmcloud.assemblies.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.assemblies.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.assemblies.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Client/1.6.1044": {
-      "sha512": "GGYABCs8kyBZiWIICUQFckra7umbJan4+qoyAZ13ICFB8yuGCk7jymy4uDqQvxm5hc6CGV1DmYHNZ1jdW1tR+w==",
+    "Sitecore.XmCloud.Client/1.6.1073": {
+      "sha512": "gDZeVUl7WjX54A+4EQJ3Z+GMnaJP8xYc+8E6XqIlw2003C1PIE+dNjW/DC+bwtqaYqlNjNAtkkLBv4RJCRmofQ==",
       "type": "package",
-      "path": "sitecore.xmcloud.client/1.6.1044",
+      "path": "sitecore.xmcloud.client/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Client.dll",
         "lib/net48/Sitecore.Client.xml",
-        "sitecore.xmcloud.client.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.client.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.client.nuspec"
       ]
     },
-    "Sitecore.XmCloud.ContentSearch/1.6.1044": {
-      "sha512": "ye5an2mwnUydfZXZnGJhlmLY7QnkmJixsZBF9hV6bOOEuZZdEZPUElMZHHmJKERt/4wI5gYqHMuXGOTd/fss5A==",
+    "Sitecore.XmCloud.ContentSearch/1.6.1073": {
+      "sha512": "HyLtyDPjtguODRslgYF9mOTrf+JdzsJFIPsVNmxiQUY3qE2z7Rmy2pW82NCnpcKWQn9Mt/LeaPD3pfcavH5T+A==",
       "type": "package",
-      "path": "sitecore.xmcloud.contentsearch/1.6.1044",
+      "path": "sitecore.xmcloud.contentsearch/1.6.1073",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.ContentSearch.dll",
         "lib/net48/Sitecore.ContentSearch.xml",
-        "sitecore.xmcloud.contentsearch.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.contentsearch.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.contentsearch.nuspec"
       ]
     },
-    "Sitecore.XmCloud.ContentSearch.Data/1.6.1044": {
-      "sha512": "3BjBgbFPhOXC8XGeB79Y6V4XbppGpOvI5L5Zp79flLJcAc9BXISYoAQJhBSI9L33KJYnJY0+XgQaO+l1xEsHzA==",
+    "Sitecore.XmCloud.ContentSearch.Data/1.6.1073": {
+      "sha512": "LO5SsFcypwy+cBt8FHQmCRwZKvb3ezuiX0I+W0p/o54nHRiR0D/lW6jsbqUAL//qclyJCMaQwJw7zVCQlAYrWg==",
       "type": "package",
-      "path": "sitecore.xmcloud.contentsearch.data/1.6.1044",
+      "path": "sitecore.xmcloud.contentsearch.data/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.ContentSearch.Data.dll",
         "lib/net48/Sitecore.ContentSearch.Data.xml",
-        "sitecore.xmcloud.contentsearch.data.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.contentsearch.data.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.contentsearch.data.nuspec"
       ]
     },
-    "Sitecore.XmCloud.ContentSearch.Linq/1.6.1044": {
-      "sha512": "AvAnCGYH0qfsE93aFNYqYQd7Pmcc5hz9LYZqFaFq6MnKHaT4clzTjATqwjZQjkNL4SnHwJva0/9yI9P2B50o8w==",
+    "Sitecore.XmCloud.ContentSearch.Linq/1.6.1073": {
+      "sha512": "OOzGJE+9eN5wtwm2zfgArjzzRoC93Tym47JpJE5XCGfi+gubalGrbBGQKaNcnz853Ojg2M04URLYZf8JD41exw==",
       "type": "package",
-      "path": "sitecore.xmcloud.contentsearch.linq/1.6.1044",
+      "path": "sitecore.xmcloud.contentsearch.linq/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.ContentSearch.Linq.dll",
         "lib/net48/Sitecore.ContentSearch.Linq.xml",
-        "sitecore.xmcloud.contentsearch.linq.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.contentsearch.linq.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.contentsearch.linq.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Data.ItemsTransfer/1.6.1044": {
-      "sha512": "nl/7/awtc1kGFk+DCfgNuJBmqtWQI7hX048ILQbaM4DjwZfyT5zl30g/mfXFauMmVbdqAKYNqkdqdf2rU7v+TA==",
+    "Sitecore.XmCloud.Data.ItemsTransfer/1.6.1073": {
+      "sha512": "IS3qxH7dyADVcMiQHiKtgKAweheRnwr9qyvye37qFUid/3axxoY8nN+E/y144dwUMz8enDnbpi/U7TBsr+699A==",
       "type": "package",
-      "path": "sitecore.xmcloud.data.itemstransfer/1.6.1044",
+      "path": "sitecore.xmcloud.data.itemstransfer/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/netstandard2.0/Sitecore.Data.ItemsTransfer.dll",
         "lib/netstandard2.0/Sitecore.Data.ItemsTransfer.xml",
-        "sitecore.xmcloud.data.itemstransfer.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.data.itemstransfer.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.data.itemstransfer.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Data.ResourceItems.Abstractions/1.6.1044": {
-      "sha512": "TLjn6lJB2I0jPs84cnNqETM5HkJha8UE01wRno4xUCv3/l/NUTQYGaW21f4ChBK/iVvpLsyhzf49c2DhFGlx/g==",
+    "Sitecore.XmCloud.Data.ResourceItems.Abstractions/1.6.1073": {
+      "sha512": "baCQm4z3ktLDhA3wN4Txq0qgvM+Ml8ieAiqZYEgABEGgufKzc8CWKI4JFKh73SeUGkAGeo7uTulJhrE6gQkPNQ==",
       "type": "package",
-      "path": "sitecore.xmcloud.data.resourceitems.abstractions/1.6.1044",
+      "path": "sitecore.xmcloud.data.resourceitems.abstractions/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/netstandard2.0/Sitecore.Data.ResourceItems.Abstractions.dll",
         "lib/netstandard2.0/Sitecore.Data.ResourceItems.Abstractions.xml",
-        "sitecore.xmcloud.data.resourceitems.abstractions.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.data.resourceitems.abstractions.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.data.resourceitems.abstractions.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Data.ResourceItems.ProtobufNet/1.6.1044": {
-      "sha512": "O59tb3N59/Qyk5mn9rtxL3KbKkcVCSbL/PQH1pp8pGeXcT3o9YE5r4i+cJGlabkJ1jbSXayGz5saDBUNGwvmcg==",
+    "Sitecore.XmCloud.Data.ResourceItems.ProtobufNet/1.6.1073": {
+      "sha512": "nmJu9j8TIW0G1wCQSTxoWrjH3UHRW4I7V6SbTFbO1YmfffWgCdMKi83PR/StWHXUJt/HOz2OJ1/JgypnlJUzzw==",
       "type": "package",
-      "path": "sitecore.xmcloud.data.resourceitems.protobufnet/1.6.1044",
+      "path": "sitecore.xmcloud.data.resourceitems.protobufnet/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/netstandard2.0/Sitecore.Data.ResourceItems.ProtobufNet.dll",
         "lib/netstandard2.0/Sitecore.Data.ResourceItems.ProtobufNet.xml",
-        "sitecore.xmcloud.data.resourceitems.protobufnet.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.data.resourceitems.protobufnet.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.data.resourceitems.protobufnet.nuspec"
       ]
     },
-    "Sitecore.XmCloud.External/1.6.1044": {
-      "sha512": "MC6RsB1xZYR0BCCcMhtAkm5OSYjBVOowkXj0602dPhKBthuIfx7PWdVQWimqm4eDA0V7PyTLQmxIazze9Yjl3A==",
+    "Sitecore.XmCloud.External/1.6.1073": {
+      "sha512": "ErqML72/krJmrSzYu7QwnZRwqEliyvW0riiU9378DM6L+3v+k6roMRFdyYZX63xDWYKWuACnQWg0q9VGL3x5Bw==",
       "type": "package",
-      "path": "sitecore.xmcloud.external/1.6.1044",
+      "path": "sitecore.xmcloud.external/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Magick.NET-Q8-AnyCPU.dll",
         "lib/net48/Magick.NET.Core.dll",
-        "sitecore.xmcloud.external.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.external.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.external.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Framework.Conditions/1.6.1044": {
-      "sha512": "QtVHqEKFm3Pt7y7O0W9DMk5yGe2F1ViNcg7odlVw+p/KIP2R31+4Oh5lf5aqUNoFGLVZ1F82JQG62hGqXdFfhw==",
+    "Sitecore.XmCloud.Framework.Conditions/1.6.1073": {
+      "sha512": "MFIMYHfKOxb7lUQrijeI32qtgytBdfukh+KkVgInqMUhy0UXg/ejg7gq0TwJQwAgj7gwvRI2X+fthi0jDRPfog==",
       "type": "package",
-      "path": "sitecore.xmcloud.framework.conditions/1.6.1044",
+      "path": "sitecore.xmcloud.framework.conditions/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/netstandard2.0/Sitecore.Framework.Conditions.dll",
         "lib/netstandard2.0/Sitecore.Framework.Conditions.xml",
-        "sitecore.xmcloud.framework.conditions.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.framework.conditions.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.framework.conditions.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Framework.Data.Blobs/1.6.1044": {
-      "sha512": "O7Oe/m5sPbGWCnOylWoDhHo0/d4ia6n8p6e1ihHpEsKBuJgbybv3/7BAkH0DAd1B0GJqSzcMQMK5tW4O6eJJGQ==",
+    "Sitecore.XmCloud.Framework.Data.Blobs/1.6.1073": {
+      "sha512": "iH65fTsEZrifE6ZhIFoTkibZYAppnqt3Gfk3Qyb4LOw8yXuaMp20tGA4btE+FEaUnrPvjK3WZ6SoBHIzhEtDrA==",
       "type": "package",
-      "path": "sitecore.xmcloud.framework.data.blobs/1.6.1044",
+      "path": "sitecore.xmcloud.framework.data.blobs/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.dll",
         "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.xml",
-        "sitecore.xmcloud.framework.data.blobs.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.framework.data.blobs.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.framework.data.blobs.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Framework.Data.Blobs.Abstractions/1.6.1044": {
-      "sha512": "HA/c2RiBwLh4kMrGBpE+Ne0n6V204YKEp3h1VOgknDwFDSF4pgJ9XOO75KZRxhoYH2V1pc8Eu7TbIukLL0bHlg==",
+    "Sitecore.XmCloud.Framework.Data.Blobs.Abstractions/1.6.1073": {
+      "sha512": "ZEof4VIQwXlNKM/SeWDYPBE7vlSXhjFDYPXg8dEuHKTfTtF8lZbmdYoog9F3ruFXW404NbR7zwKPX/zqfgrQfA==",
       "type": "package",
-      "path": "sitecore.xmcloud.framework.data.blobs.abstractions/1.6.1044",
+      "path": "sitecore.xmcloud.framework.data.blobs.abstractions/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.Abstractions.dll",
         "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.Abstractions.xml",
-        "sitecore.xmcloud.framework.data.blobs.abstractions.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.framework.data.blobs.abstractions.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.framework.data.blobs.abstractions.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Kernel/1.6.1044": {
-      "sha512": "jD7dOkvZPHN6Qx3I3TC66PCDxGpiHf5534ctYOxRylIqTMLPcK36weJpEUB1AEXvL5XEj01hNUWBapLNkC6HSA==",
+    "Sitecore.XmCloud.Kernel/1.6.1073": {
+      "sha512": "/vLwLSYJYOxOk49HEhqULiWzMLcILYMGSyM1g4Ske9K+5zAxH2o3AdBOANvDWcx719DYTTaAzBV3XNX7lB4G1w==",
       "type": "package",
-      "path": "sitecore.xmcloud.kernel/1.6.1044",
+      "path": "sitecore.xmcloud.kernel/1.6.1073",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Kernel.dll",
         "lib/net48/Sitecore.Kernel.xml",
-        "sitecore.xmcloud.kernel.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.kernel.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.kernel.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Kernel.Portable/1.6.1044": {
-      "sha512": "xtpB74T+Ek/Y+MqPxTX4RHIryaGr9L5Ssza/jys9E6cxAigHpOC9MHc3rurTgWgoywQcbsmRLELAHTHflCaSXw==",
+    "Sitecore.XmCloud.Kernel.Portable/1.6.1073": {
+      "sha512": "XFsdpEeHf4pXNBe1rFweF3BwkVllpSYFXqts8a+9QYMEUVUCvCNKP5hCKx4E/dKxuZLtNabzH01m7EsoSu9K4A==",
       "type": "package",
-      "path": "sitecore.xmcloud.kernel.portable/1.6.1044",
+      "path": "sitecore.xmcloud.kernel.portable/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/netstandard2.0/Sitecore.Kernel.Portable.dll",
         "lib/netstandard2.0/Sitecore.Kernel.Portable.xml",
-        "sitecore.xmcloud.kernel.portable.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.kernel.portable.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.kernel.portable.nuspec"
       ]
     },
-    "Sitecore.XmCloud.LayoutService/1.6.1044": {
-      "sha512": "q1Nfuu11t39k8ikeZikpNxLw4ll7wUQLF4hwLTtkc+hSM4wtJ7cUuoZ99baec4sWc1tfd08A08fO1s8fXSyfAA==",
+    "Sitecore.XmCloud.LayoutService/1.6.1073": {
+      "sha512": "1kh8GUmLvPnNmcsjb1DdSFo5U9NXUnwIUc/tpzGwsfiS/9HeM8M6L5OCxUOYF/du61UofnwQ+zZp4Y6TNYe2Ug==",
       "type": "package",
-      "path": "sitecore.xmcloud.layoutservice/1.6.1044",
+      "path": "sitecore.xmcloud.layoutservice/1.6.1073",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.LayoutService.dll",
         "lib/net48/Sitecore.LayoutService.xml",
-        "sitecore.xmcloud.layoutservice.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.layoutservice.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.layoutservice.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Logging/1.6.1044": {
-      "sha512": "HeXELHxe98/A237hp17T1Rc49nX3qtGmr+dqixxo2DN1G5DKArbJaDH1Wb2cPBUA058zKTDqvuzA8gTKBaOgEg==",
+    "Sitecore.XmCloud.Logging/1.6.1073": {
+      "sha512": "uSWVXfq6ybSNxGMC+uxvLNg/EFuxT+ceU/lDWCnm3xxf3b4B/jUlIEvxgwyFC/mRQzYFN5C+yHOBLJd0bcmjeQ==",
       "type": "package",
-      "path": "sitecore.xmcloud.logging/1.6.1044",
+      "path": "sitecore.xmcloud.logging/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Logging.dll",
         "lib/net48/Sitecore.Logging.xml",
-        "sitecore.xmcloud.logging.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.logging.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.logging.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Logging.Client/1.6.1044": {
-      "sha512": "+C9eZvPK3bEW6z3XTsWJGfaeMdF9yR4L4LB2kSZs1951UveoXypq+6uqwpZUJKxZ5HqIg9FJgZODtGhSRSKgzQ==",
+    "Sitecore.XmCloud.Logging.Client/1.6.1073": {
+      "sha512": "lWzMXvakfbZTrMk4R82PnbiViNrbMK8GsR3+cQinB0S1MV7OY9dHo5mw2heYHjX5adpL/frdz0SneRO7KFpPDg==",
       "type": "package",
-      "path": "sitecore.xmcloud.logging.client/1.6.1044",
+      "path": "sitecore.xmcloud.logging.client/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Logging.Client.dll",
         "lib/net48/Sitecore.Logging.Client.xml",
-        "sitecore.xmcloud.logging.client.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.logging.client.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.logging.client.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Mvc/1.6.1044": {
-      "sha512": "7o4bvPlZJHeiMFTGRcGTKtlIW2lD1KzvZXvuY9vzlyUFkUmFTdbfrhccJtOh53TynFUGPVCX9cKF5W1Ha0qKYA==",
+    "Sitecore.XmCloud.Mvc/1.6.1073": {
+      "sha512": "cfqPKDuBO1qHPtkcrbsnr8qWfwRYysMaPpnvIYDDy+wlKHafw8gqPQr+wllGnHmiE/hBkyva4venAEttMHth5A==",
       "type": "package",
-      "path": "sitecore.xmcloud.mvc/1.6.1044",
+      "path": "sitecore.xmcloud.mvc/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Mvc.dll",
-        "sitecore.xmcloud.mvc.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.mvc.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.mvc.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Nexus.Consumption/1.6.1044": {
-      "sha512": "BXQ8bsd6943Hft1DMwHqNJyWPXUVIkTosBMJPJ8T5MvvD9rvqhg6gkUrDxNPpM3crYcadBRsRy2ewNRH3njjvQ==",
+    "Sitecore.XmCloud.Nexus.Consumption/1.6.1073": {
+      "sha512": "fboV5Rx2eVY+Sy9PNhh3oz9iNQr3sW5WzTZ7N4xKmziNIpvlyj8CKOqj2Eo79KbvhTr8HzpA+FFJRajy0S9ZzA==",
       "type": "package",
-      "path": "sitecore.xmcloud.nexus.consumption/1.6.1044",
+      "path": "sitecore.xmcloud.nexus.consumption/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/netstandard2.0/Sitecore.Nexus.Consumption.dll",
-        "sitecore.xmcloud.nexus.consumption.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.nexus.consumption.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.nexus.consumption.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Nexus.Licensing/1.6.1044": {
-      "sha512": "oS9WJCUdQQ3aHSmrUovyZOliXQ2WsbJqIoOjbxyvMqfs/neEAyn74vg3TZg27d1zoc8B15ZgwTEbN0rqJcAk5g==",
+    "Sitecore.XmCloud.Nexus.Licensing/1.6.1073": {
+      "sha512": "M42penF8snfdiuDX7SUxvFNoIwRIckw5Q3BtClRbc0lon96RdAutrwdPkWjtdgSYjcWdCPZB0F2KRB0yO/2SKA==",
       "type": "package",
-      "path": "sitecore.xmcloud.nexus.licensing/1.6.1044",
+      "path": "sitecore.xmcloud.nexus.licensing/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/netstandard2.0/Sitecore.Nexus.Licensing.dll",
-        "sitecore.xmcloud.nexus.licensing.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.nexus.licensing.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.nexus.licensing.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Screenshots/1.6.1044": {
-      "sha512": "HnBGcEHI7pMblEVp8lWI68wI/HuM3AS4IJalu4H+zHWSBksnOcL2KbYX2iLczSuk0r/VFM3y/eYNC576RlcB3w==",
+    "Sitecore.XmCloud.Screenshots/1.6.1073": {
+      "sha512": "zt8sKnrg0KLiciOwAfu8fK+jY4fAzRv95mdHch7IiRJuUcVoANR6J1IWq8zzHpYy2JAZ0asG9bXB+PdfSGFM4A==",
       "type": "package",
-      "path": "sitecore.xmcloud.screenshots/1.6.1044",
+      "path": "sitecore.xmcloud.screenshots/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/netstandard2.0/Sitecore.Screenshots.dll",
         "lib/netstandard2.0/Sitecore.Screenshots.xml",
-        "sitecore.xmcloud.screenshots.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.screenshots.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.screenshots.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Services.Client/1.6.1044": {
-      "sha512": "phf608UiTAmiMEjoASmqCy3S2TSI5HrHmSZRk21fgTNgyY0FE5nfhf+lDyav6eXBNfk7Ut75A1EUA7pN0RCnKg==",
+    "Sitecore.XmCloud.Services.Client/1.6.1073": {
+      "sha512": "/G4HK02l2d/vx0FgLulV7W9wzPyXaf1NgHYRcYZGQvQLWiuDjYpjXU/5SoTfKGmXjwhGTivNjQyzXgQ2Q6CQVQ==",
       "type": "package",
-      "path": "sitecore.xmcloud.services.client/1.6.1044",
+      "path": "sitecore.xmcloud.services.client/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Services.Client.dll",
-        "sitecore.xmcloud.services.client.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.services.client.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.services.client.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Services.Core/1.6.1044": {
-      "sha512": "oIxUCVBlBUwOwNTMbxBNuxQsYht65H5yTRE51f0cxd2kPhSujKzM+lzFANJh1ZglplZgFEksoEwY94eN7h6RVQ==",
+    "Sitecore.XmCloud.Services.Core/1.6.1073": {
+      "sha512": "Et6S6nv3KDF4p1p93q2AuLY5DvNkm6GBitTrNU6x8mtr6OwoW30mb/vIA4HCdmxvnnyHpL+6PEmgwLurZhnRHg==",
       "type": "package",
-      "path": "sitecore.xmcloud.services.core/1.6.1044",
+      "path": "sitecore.xmcloud.services.core/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Services.Core.dll",
-        "sitecore.xmcloud.services.core.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.services.core.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.services.core.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Services.GraphQL/1.6.1044": {
-      "sha512": "8U7LrgybshWyu4j7LbUAq4SFZHKpkXboOnOj/1DhjRa5TRK3KG8gXj70VAK6Y0QdI3zLncWe10pulQPIF7lWUA==",
+    "Sitecore.XmCloud.Services.GraphQL/1.6.1073": {
+      "sha512": "pjVnVfFsoB1/cY+UyRy3cG4sVOTdxPxJNfJJizWK1pTz8ydoDNcKTtPlWlQcs5tSM3kgTI382igWEmFhlySVDg==",
       "type": "package",
-      "path": "sitecore.xmcloud.services.graphql/1.6.1044",
+      "path": "sitecore.xmcloud.services.graphql/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/netstandard2.0/Sitecore.Services.GraphQL.dll",
-        "sitecore.xmcloud.services.graphql.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.services.graphql.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.services.graphql.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Services.GraphQL.ContentSchema/1.6.1044": {
-      "sha512": "dHe6qUChXjB9Wg6dHFS8e5vq/R1lJlwmNA3u4tQJvcSECVT0fwQ2c2PaqvCjiSc/a9SlblCq93sbuQ7Ze4LqiA==",
+    "Sitecore.XmCloud.Services.GraphQL.ContentSchema/1.6.1073": {
+      "sha512": "0vapboEKRbCTJQgZs84RW81wlf+FF50x6ZRZtcI739eo4WP6QWCVZWSrLvyCIxUOwp8TjjFLALy3jKhiAZiwlQ==",
       "type": "package",
-      "path": "sitecore.xmcloud.services.graphql.contentschema/1.6.1044",
+      "path": "sitecore.xmcloud.services.graphql.contentschema/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Services.GraphQL.Content.dll",
-        "sitecore.xmcloud.services.graphql.contentschema.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.services.graphql.contentschema.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.services.graphql.contentschema.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Services.GraphQL.EdgeSchema/1.6.1044": {
-      "sha512": "pgzDW3u2wAjCwq9xeBQJXoiqkPkIs7ZTCk3IzXUlwTjoWhBlc8yO5gfoK8ZxNkZT35kgpEKXImbeMFASlioQoQ==",
+    "Sitecore.XmCloud.Services.GraphQL.EdgeSchema/1.6.1073": {
+      "sha512": "POnAwrihcHKuJmGm0NM4wTMjrHpZ+ejRNaVOzaSltscW33ChiQyN4w70w7W1gfEJiY6cuaaqmHl2dJBo6FQ9jg==",
       "type": "package",
-      "path": "sitecore.xmcloud.services.graphql.edgeschema/1.6.1044",
+      "path": "sitecore.xmcloud.services.graphql.edgeschema/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Services.GraphQL.EdgeSchema.dll",
-        "sitecore.xmcloud.services.graphql.edgeschema.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.services.graphql.edgeschema.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.services.graphql.edgeschema.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Services.GraphQL.NetFxHost/1.6.1044": {
-      "sha512": "AtJ623NLenzpZAcsA5s5UQU8aTyiBL/0h9Ip7KcLShTvvhMG2fexRElxuWnexe7jf/6AsQszMvNdZxqHkOyXcw==",
+    "Sitecore.XmCloud.Services.GraphQL.NetFxHost/1.6.1073": {
+      "sha512": "dp1aGxki24LQ0KwPGy2FE5XG9muB/wupq3f2UNt24MTG6jYxSXpUvw76kwyGNCqUBx76RvwAjnJrfPcirUzfRg==",
       "type": "package",
-      "path": "sitecore.xmcloud.services.graphql.netfxhost/1.6.1044",
+      "path": "sitecore.xmcloud.services.graphql.netfxhost/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Services.GraphQL.NetFxHost.dll",
-        "sitecore.xmcloud.services.graphql.netfxhost.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.services.graphql.netfxhost.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.services.graphql.netfxhost.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Services.Infrastructure/1.6.1044": {
-      "sha512": "KBpABJXIHft40rqJ0ji9ftB6EHEz3zSgtfBYRwtikOt5JhKVFG0aR0hz2jSY83H8kIfbTf/CirXtsbg5hPGZlw==",
+    "Sitecore.XmCloud.Services.Infrastructure/1.6.1073": {
+      "sha512": "LW2XVEjjf8HrCwrmAC4DH78JaBRW1pIIRdlTQaBZ5KOdHZ4LE7gs34m3oHRpJ3z8j1KmuvFDj/FFASyewcV/WQ==",
       "type": "package",
-      "path": "sitecore.xmcloud.services.infrastructure/1.6.1044",
+      "path": "sitecore.xmcloud.services.infrastructure/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Services.Infrastructure.dll",
-        "sitecore.xmcloud.services.infrastructure.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.services.infrastructure.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.services.infrastructure.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Services.Infrastructure.Sitecore.XmCloud/1.6.1044": {
-      "sha512": "SztoAbLJ7YtKJGSsUBUHxZ3UIGZrgKmtVulW59BoTsldNMkpnyToGZVSfLTNV59wTM3Qubx8JkbgyMvXpRCqEQ==",
+    "Sitecore.XmCloud.Services.Infrastructure.Sitecore.XmCloud/1.6.1073": {
+      "sha512": "HlRS2Iwijo+HJm/+RxCrLRbIVI7JMNUb2DUUgPsjAU0PrDo4iGInh2e6Pky6SlYo8zJoi4HR547DZdmRRuBPXw==",
       "type": "package",
-      "path": "sitecore.xmcloud.services.infrastructure.sitecore.xmcloud/1.6.1044",
+      "path": "sitecore.xmcloud.services.infrastructure.sitecore.xmcloud/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Services.Infrastructure.Sitecore.dll",
-        "sitecore.xmcloud.services.infrastructure.sitecore.xmcloud.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.services.infrastructure.sitecore.xmcloud.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.services.infrastructure.sitecore.xmcloud.nuspec"
       ]
     },
-    "Sitecore.XmCloud.Web/1.6.1044": {
-      "sha512": "PUpT4/hWRu8Ku0tWwc8U2KFxzrjkeHhwYqz9iuJxCv/cDYDlO/ECWSNl/zO5dp4kqEOk1ESJWaQfqD9x7vQIPQ==",
+    "Sitecore.XmCloud.Web/1.6.1073": {
+      "sha512": "fjzoDSdaxsAYo+ljfoW5MuQ4xYi+oO2nvsAgREVADVaX2ypgGgLFP29Ufq4nf7kDXA89pC0pr9qaz9m8ietT7g==",
       "type": "package",
-      "path": "sitecore.xmcloud.web/1.6.1044",
+      "path": "sitecore.xmcloud.web/1.6.1073",
       "files": [
         ".nupkg.metadata",
         "Sitecore.Artifact.License.Agreement.md",
         "lib/net48/Sitecore.Web.dll",
         "lib/net48/Sitecore.Web.xml",
-        "sitecore.xmcloud.web.1.6.1044.nupkg.sha512",
+        "sitecore.xmcloud.web.1.6.1073.nupkg.sha512",
         "sitecore.xmcloud.web.nuspec"
       ]
     },
@@ -4681,18 +4683,18 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\DCX\\authoring\\platform\\Platform.csproj",
+      "projectUniqueName": "D:\\projects\\vv\\authoring\\platform\\Platform.csproj",
       "projectName": "XmCloudNextJsStarter",
-      "projectPath": "D:\\projects\\DCX\\authoring\\platform\\Platform.csproj",
+      "projectPath": "D:\\projects\\vv\\authoring\\platform\\Platform.csproj",
       "packagesPath": "C:\\Users\\jitus\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\DCX\\authoring\\platform\\obj\\",
+      "outputPath": "D:\\projects\\vv\\authoring\\platform\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "D:\\projects\\DCX\\NuGet.Config",
+        "D:\\projects\\vv\\NuGet.Config",
         "C:\\Users\\jitus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

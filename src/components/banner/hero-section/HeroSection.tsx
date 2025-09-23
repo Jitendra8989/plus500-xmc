@@ -53,13 +53,8 @@ export const Default = (props: HeroSectionProps): JSX.Element => {
     }
 
     return (
-      <section
-        className={`component ${containerClass}`}
-        role="banner"
-        data-theme={theme}
-      >
+      <section className={`component ${containerClass}`} role="banner" data-theme={theme}>
         <div className="component-content">
-
           {/* Background Image for BackgroundImage theme and Default */}
           {(theme === 'BackgroundImage' || theme === 'Default') && (
             <div className={styles.backgroundMedia}>
@@ -88,20 +83,13 @@ export const Default = (props: HeroSectionProps): JSX.Element => {
               {/* Badges */}
               {props.fields?.Badges?.value && (
                 <div className={styles.heroBadges}>
-                  <ContentSdkRichText
-                    field={props.fields.Badges}
-                    className={styles.badgeText}
-                  />
+                  <ContentSdkRichText field={props.fields.Badges} className={styles.badgeText} />
                 </div>
               )}
 
               {/* Title */}
               {props.fields?.Title?.value && (
-                <ContentSdkText
-                  field={props.fields.Title}
-                  className={styles.heroTitle}
-                  tag="h1"
-                />
+                <ContentSdkText field={props.fields.Title} className={styles.heroTitle} tag="h1" />
               )}
 
               {/* Subtitle */}
@@ -115,13 +103,12 @@ export const Default = (props: HeroSectionProps): JSX.Element => {
 
               {/* CTA Actions */}
               <div className={styles.heroActions}>
-                {(props.fields?.PrimaryCTA?.value?.href || props.fields?.PrimaryCTA?.value?.text) && (
-                  <ContentSdkLink
-                    field={props.fields.PrimaryCTA}
-                    className={styles.ctaPrimary}
-                  />
+                {(props.fields?.PrimaryCTA?.value?.href ||
+                  props.fields?.PrimaryCTA?.value?.text) && (
+                  <ContentSdkLink field={props.fields.PrimaryCTA} className={styles.ctaPrimary} />
                 )}
-                {(props.fields?.SecondaryCTA?.value?.href || props.fields?.SecondaryCTA?.value?.text) && (
+                {(props.fields?.SecondaryCTA?.value?.href ||
+                  props.fields?.SecondaryCTA?.value?.text) && (
                   <ContentSdkLink
                     field={props.fields.SecondaryCTA}
                     className={styles.ctaSecondary}
@@ -149,7 +136,10 @@ export const Default = (props: HeroSectionProps): JSX.Element => {
 
   // Fallback content when no fields are available
   return (
-    <section className={`component ${styles.heroSection} ${styles['heroSection--backgroundImage']}`} role="banner">
+    <section
+      className={`component ${styles.heroSection} ${styles['heroSection--backgroundImage']}`}
+      role="banner"
+    >
       <div className="component-content">
         {/* Background section for fallback */}
         <div className={styles.backgroundMedia}>
@@ -164,12 +154,11 @@ export const Default = (props: HeroSectionProps): JSX.Element => {
               <span className={styles.badge}>New</span>
             </div>
 
-            <h1 className={styles.heroTitle}>
-              Trade with Confidence
-            </h1>
+            <h1 className={styles.heroTitle}>Trade with Confidence</h1>
 
             <p className={styles.heroSubtitle}>
-              Experience advanced trading tools, real-time market data, and professional analysis on our secure platform.
+              Experience advanced trading tools, real-time market data, and professional analysis on
+              our secure platform.
             </p>
 
             <div className={styles.heroActions}>

@@ -32,5 +32,5 @@
     "forceConsistentCasingInFileNames": false
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "A-REFERENCE-REACTPROJECT"]
+  "exclude": ["node_modules", "A-REFERENCE-REACTPROJECT", "examples"]
 }
