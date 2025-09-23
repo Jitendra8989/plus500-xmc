@@ -7,6 +7,9 @@ const nextConfig = {
   // Allow specifying a distinct distDir when concurrently running app in a container
   distDir: process.env.NEXTJS_DIST_DIR || '.next',
 
+  // Optimize for deployment
+  compress: true,
+
   // i18n disabled - using custom routing logic in [[...path]].tsx
   // i18n: {
   //   locales: ['en','ar-AE'],

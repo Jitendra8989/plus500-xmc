@@ -10,10 +10,9 @@
 # misc
 .DS_Store
 
-# local env files
+# local env files (keep .env for demo, but protect .env.local)
 .env.local
 .env.*.local
-.env
 
 # Log files
 *.log*
