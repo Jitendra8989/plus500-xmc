@@ -1,0 +1,696 @@
+/* ========================================
+   🦶 PLUS500 FOOTER DESIGN SYSTEM
+   ======================================== */
+
+/* Base Footer Styles */
+.footer {
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 20px;
+}
+
+/* ========================================
+   SHARED COMPONENTS
+   ======================================== */
+
+/* Section Headers */
+.sectionHeader {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.025em;
+}
+
+/* Link Lists */
+.linkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linkItem {
+  margin-bottom: 0.5rem;
+}
+
+.footerLink,
+.footerText {
+  font-size: 1.375rem;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: block;
+}
+
+.footerLink:hover {
+  color: #60a5fa;
+}
+
+/* Logo Styles */
+.footerLogo {
+  margin-bottom: 1rem;
+}
+
+.logoLink {
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+.logoLink:hover {
+  opacity: 0.8;
+}
+
+.logoImage {
+  height: auto;
+  width: auto;
+  max-height: 32px;
+}
+
+/* Brand Title */
+.brandTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem 0;
+  color: #60a5fa;
+}
+
+/* Social Links */
+.socialSection {
+  margin-top: 1rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.socialLink:hover {
+  transform: translateY(-2px);
+  border-color: #60a5fa;
+}
+
+.socialIcon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+/* Legal and Compliance Sections */
+.legalSection {
+  margin-bottom: 1.5rem;
+}
+
+.legalText,
+.copyrightText,
+.brandLegalText,
+.corporateLegalText {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Risk Warning Section */
+.riskWarningSection {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.riskWarningBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.riskWarningTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: inherit;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.riskWarningText {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  margin: 0;
+  color: inherit;
+}
+
+/* Regional Information */
+.regionalInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+}
+
+.entityInfo,
+.regulatorInfo,
+.licenseInfo,
+.countryInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.entityLabel,
+.regulatorLabel,
+.licenseLabel,
+.countryLabel {
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+
+.entityName,
+.regulatorName,
+.licenseNumber,
+.countryName {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.regionInfo,
+.corporateRegion {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin: 0;
+  text-align: right;
+}
+
+/* ========================================
+   VARIANT: DEFAULT (Dark Gray)
+   ======================================== */
+.footer--default {
+  background: #1f2937;
+  color: #f9fafb;
+  border-top: 1px solid #374151;
+}
+
+.footer--default .footerTop {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 40px;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #374151;
+}
+
+.footer--default .brandSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--default .linkSections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer--default .linkSection {
+  min-width: 0;
+}
+
+.footer--default .sectionHeader {
+  color: #f9fafb;
+}
+
+.footer--default .footerLink {
+  color: #d1d5db;
+}
+
+.footer--default .footerText {
+  color: #9ca3af;
+}
+
+.footer--default .socialLink {
+  background: rgba(96, 165, 250, 0.1);
+  color: #60a5fa;
+}
+
+.footer--default .socialLink:hover {
+  background: rgba(96, 165, 250, 0.2);
+}
+
+.footer--default .footerBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer--default .legalText {
+  color: #9ca3af;
+}
+
+.footer--default .riskWarningSection {
+  background: transparent;
+  border: none;
+}
+
+.footer--default .riskWarningTitle {
+  color: #f9fafb;
+}
+
+.footer--default .riskWarningText {
+  color: #d1d5db;
+}
+
+.footer--default .regionalInfo {
+  background: transparent;
+  border: none;
+}
+
+.footer--default .entityLabel,
+.footer--default .regulatorLabel,
+.footer--default .licenseLabel,
+.footer--default .countryLabel {
+  color: #9ca3af;
+}
+
+.footer--default .entityName,
+.footer--default .regulatorName,
+.footer--default .licenseNumber,
+.footer--default .countryName {
+  color: #e5e7eb;
+}
+
+/* ========================================
+   VARIANT: MINIMAL (Pure Black/Dark Blue)
+   ======================================== */
+.footer--minimal {
+  background: #000000;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer--minimal .footerMinimal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer--minimal .essentialLinks {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.footer--minimal .minimalSection {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer--minimal .minimalLink {
+  color: #d1d5db;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer--minimal .minimalLink:hover {
+  color: #60a5fa;
+}
+
+.footer--minimal .copyright {
+  flex-shrink: 0;
+  min-width: 200px;
+}
+
+.footer--minimal .copyrightText {
+  color: #9ca3af;
+  text-align: right;
+}
+
+/* ========================================
+   VARIANT: BRAND (Primary Blue Gradient)
+   ======================================== */
+.footer--brand {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%);
+  color: white;
+}
+
+.footer--brand .footerBrand {
+  text-align: center;
+}
+
+.footer--brand .brandCentered {
+  margin-bottom: 2rem;
+}
+
+.footer--brand .brandLogo {
+  margin-bottom: 1.5rem;
+}
+
+.footer--brand .brandLogoImage {
+  height: auto;
+  width: auto;
+  max-height: 48px;
+}
+
+.footer--brand .brandTitleLarge {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem 0 2rem 0;
+  color: white;
+}
+
+.footer--brand .brandLinks {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer--brand .brandLinkSection {
+  text-align: left;
+}
+
+.footer--brand .sectionHeader {
+  color: white;
+  font-weight: 600;
+}
+
+.footer--brand .footerLink {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer--brand .footerLink:hover {
+  color: #dbeafe;
+}
+
+.footer--brand .socialLink {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.footer--brand .socialLink:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.footer--brand .brandLegal {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer--brand .brandLegalText {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+/* ========================================
+   VARIANT: CORPORATE (White/Light Gray)
+   ======================================== */
+.footer--corporate {
+  background: #ffffff;
+  color: #374151;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer--corporate .corporateGrid {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.footer--corporate .corporateBrand {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--corporate .corporateLogo {
+  height: auto;
+  width: auto;
+  max-height: 36px;
+  margin-bottom: 1rem;
+}
+
+.footer--corporate .corporateTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #60a5fa;
+  margin: 0;
+}
+
+.footer--corporate .corporateSection {
+  min-width: 0;
+}
+
+.footer--corporate .sectionHeader {
+  color: #111827;
+  font-weight: 600;
+}
+
+.footer--corporate .footerLink {
+  color: #4b5563;
+}
+
+.footer--corporate .footerLink:hover {
+  color: #2563eb;
+}
+
+.footer--corporate .socialLink {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.footer--corporate .socialLink:hover {
+  background: #e5e7eb;
+  color: #2563eb;
+}
+
+.footer--corporate .corporateLegal {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.footer--corporate .corporateLegalText {
+  color: #6b7280;
+}
+
+.footer--corporate .corporateRegion {
+  color: #6b7280;
+  text-align: right;
+  min-width: 200px;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+  .footerContainer {
+    padding: 30px 15px 15px;
+  }
+
+  /* Default Variant - Tablet */
+  .footer--default .footerTop {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer--default .linkSections {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer--default .footerBottom {
+    gap: 1rem;
+  }
+
+  .regionalInfo {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .riskWarningSection {
+    padding: 0.75rem;
+  }
+
+  /* Brand Variant - Tablet */
+  .footer--brand .brandLinks {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .footer--brand .brandLinkSection {
+    text-align: center;
+  }
+
+  /* Corporate Variant - Tablet */
+  .footer--corporate .corporateGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer--corporate .corporateBrand {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .footer--corporate .corporateLegal {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .footer--corporate .corporateRegion {
+    text-align: left;
+  }
+}
+
+/* Mobile (480px) */
+@media (max-width: 480px) {
+  .footerContainer {
+    padding: 20px 10px 10px;
+  }
+
+  /* Default Variant - Mobile */
+  .footer--default .linkSections {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer--default .footerBottom {
+    gap: 0.75rem;
+  }
+
+  .regionalInfo {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .riskWarningSection {
+    padding: 0.75rem;
+  }
+
+  .riskWarningBox {
+    gap: 0.375rem;
+  }
+
+  .entityInfo,
+  .regulatorInfo,
+  .licenseInfo,
+  .countryInfo {
+    gap: 0.125rem;
+  }
+
+  /* Minimal Variant - Mobile */
+  .footer--minimal .footerMinimal {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer--minimal .essentialLinks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer--minimal .minimalSection {
+    justify-content: center;
+  }
+
+  .footer--minimal .copyrightText {
+    text-align: center;
+  }
+
+  /* Brand Variant - Mobile */
+  .footer--brand .brandTitleLarge {
+    font-size: 1.5rem;
+  }
+
+  .footer--brand .socialLinks {
+    justify-content: center;
+  }
+
+  /* Corporate Variant - Mobile */
+  .footer--corporate .corporateGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer--corporate .corporateBrand {
+    grid-column: 1;
+    text-align: center;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY & FOCUS STATES
+   ======================================== */
+.footerLink:focus,
+.socialLink:focus,
+.minimalLink:focus,
+.logoLink:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .footer--default {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  .footer--brand {
+    background: #1e40af;
+  }
+
+  .footer--corporate {
+    background: #ffffff;
+    color: #000000;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .footerLink,
+  .socialLink,
+  .logoLink {
+    transition: none;
+  }
+
+  .socialLink:hover {
+    transform: none;
+  }
+}

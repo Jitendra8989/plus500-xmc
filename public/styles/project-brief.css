@@ -1,0 +1,617 @@
+/* ========================================
+   📊 PLUS500 PROJECT BRIEF ENHANCED STYLES
+   ======================================== */
+
+.rich-text-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem);
+  line-height: 1.7;
+  color: #374151;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+    linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%);
+  border-radius: 24px;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.12),
+    0 8px 24px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.rich-text-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #1e40af 0%, #2563eb 30%, #3b82f6 60%, #60a5fa 100%);
+  border-radius: 24px 24px 0 0;
+}
+
+/* ========================================
+   DOCUMENT HEADER & META
+   ======================================== */
+.rich-text-content h1 {
+  font-size: clamp(2.75rem, 5vw, 4rem);
+  font-weight: 900;
+  color: #1e40af;
+  margin: 0 0 2rem 0;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.rich-text-content h1::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 6px;
+  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 50%, #3b82f6 100%);
+  border-radius: 3px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  animation: titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%, 100% { box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4); }
+  50% { box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6); }
+}
+
+/* Document Meta Information */
+.rich-text-content p:nth-of-type(1) {
+  background:
+    linear-gradient(135deg, rgba(239, 246, 255, 0.9) 0%, rgba(219, 234, 254, 0.95) 100%);
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(191, 219, 254, 0.8);
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  border-left: 6px solid #2563eb;
+  box-shadow:
+    0 8px 32px rgba(37, 99, 235, 0.1),
+    0 4px 16px rgba(37, 99, 235, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  position: relative;
+}
+
+.rich-text-content p:nth-of-type(1)::before {
+  content: '📋';
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  font-size: 1.25rem;
+  z-index: 5;
+}
+
+.rich-text-content p:nth-of-type(1) strong {
+  color: #1e40af;
+  font-weight: 700;
+}
+
+/* Objective Statement */
+.rich-text-content p:nth-of-type(2) {
+  font-size: clamp(1.25rem, 2vw, 1.375rem);
+  font-weight: 500;
+  color: #1f2937;
+  text-align: center;
+  padding: 2.5rem;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(125, 211, 252, 0.3) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(240, 249, 255, 0.9) 0%, rgba(224, 242, 254, 0.95) 100%);
+  border-radius: 20px;
+  border: 1px solid rgba(125, 211, 252, 0.5);
+  margin-bottom: 3rem;
+  position: relative;
+  box-shadow:
+    0 12px 40px rgba(37, 99, 235, 0.1),
+    0 6px 20px rgba(37, 99, 235, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+}
+
+.rich-text-content p:nth-of-type(2)::before {
+  content: '🎯';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background:
+    linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  box-shadow:
+    0 8px 32px rgba(37, 99, 235, 0.2),
+    0 4px 16px rgba(37, 99, 235, 0.1);
+  border: 2px solid rgba(125, 211, 252, 0.3);
+  z-index: 5;
+}
+
+/* ========================================
+   SECTION HEADERS
+   ======================================== */
+.rich-text-content h2 {
+  font-size: clamp(1.875rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: #1e40af;
+  margin: 3rem 0 1.5rem 0;
+  padding: 1.5rem 0 1.5rem 3rem;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(239, 246, 255, 0.9) 0%, rgba(219, 234, 254, 0.95) 100%);
+  border-radius: 16px;
+  border-left: 8px solid #2563eb;
+  position: relative;
+  line-height: 1.3;
+  box-shadow:
+    0 8px 32px rgba(37, 99, 235, 0.1),
+    0 4px 16px rgba(37, 99, 235, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(191, 219, 254, 0.3);
+  overflow: visible;
+  z-index: 1;
+  counter-increment: section-counter;
+}
+
+.rich-text-content h2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(37, 99, 235, 0.05) 100%);
+  pointer-events: none;
+}
+
+.rich-text-content h2::before {
+  content: counter(section-counter);
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+    linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+  box-shadow:
+    0 12px 40px rgba(37, 99, 235, 0.5),
+    0 6px 20px rgba(37, 99, 235, 0.3),
+    inset 0 2px 0 rgba(255, 255, 255, 0.4);
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  z-index: 15;
+}
+
+.rich-text-content {
+  counter-reset: section-counter;
+}
+
+
+/* ========================================
+   ENHANCED LISTS
+   ======================================== */
+.rich-text-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.rich-text-content ul li {
+  position: relative;
+  padding: 1.25rem 2rem 1.25rem 3.5rem;
+  margin-bottom: 1.25rem;
+  background:
+    radial-gradient(circle at 90% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+  backdrop-filter: blur(8px);
+}
+
+.rich-text-content ul li:hover {
+  transform: translateX(12px) translateY(-2px);
+  box-shadow:
+    0 16px 40px rgba(37, 99, 235, 0.15),
+    0 8px 24px rgba(37, 99, 235, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border-color: rgba(37, 99, 235, 0.3);
+  background:
+    radial-gradient(circle at 90% 20%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(239, 246, 255, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%);
+}
+
+.rich-text-content ul li::before {
+  content: '▶';
+  position: absolute;
+  left: 1rem;
+  top: 1.25rem;
+  color: #2563eb;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+/* Nested Lists */
+.rich-text-content ul ul {
+  margin: 1rem 0 0 0;
+  padding-left: 1rem;
+}
+
+.rich-text-content ul ul li {
+  background: rgba(37, 99, 235, 0.05);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  font-size: 1rem;
+}
+
+.rich-text-content ul ul li::before {
+  content: '•';
+  left: 1rem;
+  top: 0.875rem;
+  color: #60a5fa;
+}
+
+/* ========================================
+   ORDERED LISTS (Strategic Objectives)
+   ======================================== */
+.rich-text-content ol {
+  list-style: none;
+  padding: 0;
+  counter-reset: objective-counter;
+}
+
+.rich-text-content ol li {
+  position: relative;
+  padding: 1.5rem 2rem 1.5rem 4rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-radius: 16px;
+  border: 1px solid #f59e0b;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.2);
+  counter-increment: objective-counter;
+  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+}
+
+.rich-text-content ol li::before {
+  content: counter(objective-counter);
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+/* ========================================
+   BLOCKQUOTE STYLING
+   ======================================== */
+.rich-text-content blockquote {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-radius: 16px;
+  border: 1px solid #22c55e;
+  border-left: 6px solid #22c55e;
+  position: relative;
+  font-style: italic;
+}
+
+.rich-text-content blockquote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 4rem;
+  color: #22c55e;
+  line-height: 1;
+  background: white;
+  padding: 0 10px;
+}
+
+.rich-text-content blockquote p {
+  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+  color: #166534;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.rich-text-content blockquote footer {
+  font-size: 1rem;
+  color: #059669;
+  font-weight: 600;
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.rich-text-content blockquote footer::before {
+  content: '— ';
+}
+
+/* ========================================
+   TABLE STYLING
+   ======================================== */
+.rich-text-content figure.table {
+  margin: 2rem 0;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.rich-text-content table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+}
+
+.rich-text-content table th {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+  color: white;
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border: none;
+}
+
+.rich-text-content table td {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+  transition: background-color 200ms ease;
+}
+
+.rich-text-content table tr:hover td {
+  background: #f8fafc;
+}
+
+.rich-text-content table tr:last-child td {
+  border-bottom: none;
+}
+
+.rich-text-content table td:first-child {
+  font-weight: 600;
+  color: #1f2937;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+.rich-text-content hr {
+  margin: 3rem 0;
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #2563eb 50%, transparent 100%);
+  position: relative;
+}
+
+.rich-text-content hr::after {
+  content: '⭐';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 0 15px;
+  font-size: 1.25rem;
+  z-index: 5;
+}
+
+/* ========================================
+   HIGHLIGHTED TEXT
+   ======================================== */
+.rich-text-content mark.marker-green {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  color: #166534;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: 1px solid #22c55e;
+}
+
+.rich-text-content strong {
+  color: #1e40af;
+  font-weight: 700;
+}
+
+.rich-text-content em {
+  color: #059669;
+  font-style: normal;
+  font-weight: 600;
+  background: rgba(5, 150, 105, 0.1);
+  padding: 0.125rem 0.25rem;
+  border-radius: 4px;
+}
+
+/* ========================================
+   VIDEO FIGURE
+   ======================================== */
+.rich-text-content figure.media {
+  margin: 3rem 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.rich-text-content figure.media > div {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.rich-text-content figcaption {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #4b5563;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-radius: 8px;
+  border: 1px solid #bfdbfe;
+}
+
+.rich-text-content figcaption::before {
+  content: '🎥 ';
+  margin-right: 0.5rem;
+  z-index: 5;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+  .rich-text-content {
+    padding: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  .rich-text-content h2::before {
+    left: -25px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .rich-text-content h2 {
+    padding-left: 2rem;
+  }
+
+  .rich-text-content ul li:hover {
+    transform: none;
+  }
+
+  .rich-text-content table {
+    font-size: 0.875rem;
+  }
+
+  .rich-text-content table th,
+  .rich-text-content table td {
+    padding: 0.875rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rich-text-content blockquote {
+    padding: 1.5rem 1rem;
+  }
+
+  .rich-text-content ol li,
+  .rich-text-content ul li {
+    padding: 1rem;
+  }
+
+  .rich-text-content figure.media {
+    padding: 1rem;
+  }
+}
+
+/* ========================================
+   RTL SUPPORT
+   ======================================== */
+html[dir="rtl"] .rich-text-content h2 {
+  padding: 1rem 1.5rem 1rem 0;
+  border-left: none;
+  border-right: 6px solid #2563eb;
+}
+
+html[dir="rtl"] .rich-text-content h2::before {
+  left: auto;
+  right: -20px;
+}
+
+html[dir="rtl"] .rich-text-content ul li {
+  padding: 1rem 3rem 1rem 1.5rem;
+}
+
+html[dir="rtl"] .rich-text-content ul li::before {
+  left: auto;
+  right: 1rem;
+  content: '◀';
+}
+
+html[dir="rtl"] .rich-text-content ul li:hover {
+  transform: translateX(-8px);
+}
+
+html[dir="rtl"] .rich-text-content ol li {
+  padding: 1.5rem 4rem 1.5rem 2rem;
+}
+
+html[dir="rtl"] .rich-text-content ol li::before {
+  left: auto;
+  right: 1rem;
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  .rich-text-content ul li,
+  .rich-text-content table td {
+    transition: none;
+  }
+
+  .rich-text-content ul li:hover {
+    transform: none;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .rich-text-content h1,
+  .rich-text-content h2 {
+    background: none;
+    -webkit-text-fill-color: #000;
+    color: #000;
+  }
+
+  .rich-text-content table th {
+    background: #000;
+    color: #fff;
+  }
+}

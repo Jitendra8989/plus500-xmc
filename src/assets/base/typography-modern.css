@@ -1,0 +1,521 @@
+/* ========================================
+   🎯 MODERN TYPOGRAPHY SYSTEM (from React)
+   ======================================== */
+
+/* Base Typography Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root Typography Settings */
+:root {
+  font-family: var(--font-inter);
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--gray-900);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-feature-settings:
+    'rlig' 1,
+    'calt' 1;
+}
+
+/* ========================================
+   MODERN HEADING STYLES
+   ======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--gray-900);
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-size: clamp(var(--text-font-3xl), 5vw, var(--text-font-6xl));
+  font-weight: var(--font-weight-extrabold);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: clamp(var(--text-font-2xl), 4vw, var(--text-font-5xl));
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-size: clamp(var(--text-font-xl), 3vw, var(--text-font-3xl));
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.02em;
+}
+
+h4 {
+  font-size: clamp(var(--text-font-big), 2.5vw, var(--text-font-2xl));
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.01em;
+}
+
+h5 {
+  font-size: clamp(var(--text-font-medium), 2vw, var(--text-font-xl));
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+}
+
+h6 {
+  font-size: clamp(var(--text-font-normal), 1.5vw, var(--text-font-medium));
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ========================================
+   BODY TEXT & PARAGRAPHS
+   ======================================== */
+
+p {
+  margin: 0;
+  line-height: var(--line-height-relaxed);
+  color: var(--gray-600);
+  font-size: var(--text-font-medium);
+}
+
+.text-lead {
+  font-size: var(--text-font-big);
+  line-height: var(--line-height-relaxed);
+  color: var(--gray-700);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-small {
+  font-size: var(--text-font-small);
+  line-height: var(--line-height-normal);
+  color: var(--gray-500);
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: var(--line-height-normal);
+  color: var(--gray-500);
+}
+
+/* ========================================
+   MODERN LINK STYLES
+   ======================================== */
+
+a {
+  color: var(--primary-600);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: var(--font-weight-medium);
+}
+
+a:hover {
+  color: var(--primary-700);
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid var(--primary-600);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Link Variants */
+.link-subtle {
+  color: var(--gray-600);
+  font-weight: var(--font-weight-normal);
+}
+
+.link-subtle:hover {
+  color: var(--gray-800);
+}
+
+.link-muted {
+  color: var(--gray-500);
+  font-weight: var(--font-weight-normal);
+}
+
+.link-muted:hover {
+  color: var(--gray-700);
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Font Weights */
+.font-light {
+  font-weight: var(--font-weight-light);
+}
+.font-normal {
+  font-weight: var(--font-weight-normal);
+}
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+.font-extrabold {
+  font-weight: var(--font-weight-extrabold);
+}
+.font-black {
+  font-weight: var(--font-weight-black);
+}
+
+/* Text Sizes */
+.text-xs {
+  font-size: 0.75rem;
+}
+.text-sm {
+  font-size: var(--text-font-small);
+}
+.text-base {
+  font-size: var(--text-font-normal);
+}
+.text-lg {
+  font-size: var(--text-font-medium);
+}
+.text-xl {
+  font-size: var(--text-font-big);
+}
+.text-2xl {
+  font-size: var(--text-font-2xl);
+}
+.text-3xl {
+  font-size: var(--text-font-3xl);
+}
+.text-4xl {
+  font-size: var(--text-font-4xl);
+}
+.text-5xl {
+  font-size: var(--text-font-5xl);
+}
+.text-6xl {
+  font-size: var(--text-font-6xl);
+}
+
+/* Text Colors */
+.text-gray-50 {
+  color: var(--gray-50);
+}
+.text-gray-100 {
+  color: var(--gray-100);
+}
+.text-gray-200 {
+  color: var(--gray-200);
+}
+.text-gray-300 {
+  color: var(--gray-300);
+}
+.text-gray-400 {
+  color: var(--gray-400);
+}
+.text-gray-500 {
+  color: var(--gray-500);
+}
+.text-gray-600 {
+  color: var(--gray-600);
+}
+.text-gray-700 {
+  color: var(--gray-700);
+}
+.text-gray-800 {
+  color: var(--gray-800);
+}
+.text-gray-900 {
+  color: var(--gray-900);
+}
+
+.text-primary-400 {
+  color: var(--primary-400);
+}
+.text-primary-500 {
+  color: var(--primary-500);
+}
+.text-primary-600 {
+  color: var(--primary-600);
+}
+.text-primary-700 {
+  color: var(--primary-700);
+}
+.text-primary-800 {
+  color: var(--primary-800);
+}
+
+.text-white {
+  color: white;
+}
+.text-black {
+  color: black;
+}
+
+/* Line Heights */
+.leading-tight {
+  line-height: var(--line-height-tight);
+}
+.leading-normal {
+  line-height: var(--line-height-normal);
+}
+.leading-relaxed {
+  line-height: var(--line-height-relaxed);
+}
+.leading-loose {
+  line-height: var(--line-height-loose);
+}
+
+/* Text Alignment */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/* Text Transform */
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.normal-case {
+  text-transform: none;
+}
+
+/* Letter Spacing */
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+.tracking-normal {
+  letter-spacing: 0em;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
+/* ========================================
+   LIST STYLES
+   ======================================== */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.styled,
+ol.styled {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+ul.styled {
+  list-style-type: disc;
+}
+
+ul.styled li {
+  margin-bottom: 0.5rem;
+  line-height: var(--line-height-relaxed);
+  color: var(--gray-600);
+}
+
+ol.styled {
+  list-style-type: decimal;
+}
+
+ol.styled li {
+  margin-bottom: 0.5rem;
+  line-height: var(--line-height-relaxed);
+  color: var(--gray-600);
+}
+
+/* ========================================
+   BLOCKQUOTES
+   ======================================== */
+
+blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-left: 4px solid var(--primary-500);
+  background: var(--gray-50);
+  border-radius: 0 8px 8px 0;
+}
+
+blockquote p {
+  font-size: var(--text-font-big);
+  font-style: italic;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: var(--text-font-normal);
+  font-style: normal;
+  color: var(--gray-500);
+}
+
+blockquote cite::before {
+  content: '— ';
+}
+
+/* ========================================
+   CODE & PREFORMATTED TEXT
+   ======================================== */
+
+code {
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+  font-size: 0.875em;
+  background: var(--gray-100);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: var(--primary-700);
+}
+
+pre {
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+  background: var(--gray-900);
+  color: var(--gray-100);
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+/* ========================================
+   RESPONSIVE TYPOGRAPHY
+   ======================================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: clamp(var(--text-font-2xl), 6vw, var(--text-font-4xl));
+  }
+
+  h2 {
+    font-size: clamp(var(--text-font-xl), 5vw, var(--text-font-3xl));
+  }
+
+  h3 {
+    font-size: clamp(var(--text-font-big), 4vw, var(--text-font-2xl));
+  }
+
+  p {
+    font-size: var(--text-font-normal);
+  }
+
+  .text-lead {
+    font-size: var(--text-font-medium);
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: clamp(var(--text-font-xl), 7vw, var(--text-font-3xl));
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: clamp(var(--text-font-big), 6vw, var(--text-font-2xl));
+  }
+
+  blockquote {
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+}
+
+/* ========================================
+   SMOOTH SCROLLING
+   ======================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+  * {
+    color: black !important;
+    background: white !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+  }
+
+  p,
+  blockquote {
+    page-break-inside: avoid;
+  }
+}

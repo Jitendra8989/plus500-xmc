@@ -1,0 +1,31 @@
+/* ========================================
+   🎯 PLUS500 MODERN DESIGN SYSTEM
+   ======================================== */
+
+/* Modern Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import 'tailwindcss';
+
+/* Base Styles */
+@import './base/index.css';
+@import './base/typography-modern.css';
+@import './base/utilities-modern.css';
+
+/* Component Styles */
+@import './components/index.css';
+@import './components/button-modern.css';
+@import './components/footer-enhanced.css';
+
+/* bootstrap grid to tailwind plugin */
+@plugin 'tailwind-bootstrap-grid' {
+  container_max_widths:
+    'sm', '576px', 'md', '768px', 'lg', '992px', 'xl', '1200px', '2xl', '1400px';
+}
+
+/* preload tailwind-bootstrap-grid utility classes; */
+/* responsive classes are in base/tailwind-bootstrap-grid */
+@source inline("col-{1..12}");
+@source inline("offset-{1..12}");
