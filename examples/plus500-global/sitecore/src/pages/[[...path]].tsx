@@ -22,9 +22,15 @@ const SitecorePage = ({ notFound, componentProps, page }: SitecorePageProps): JS
     handleEditorFastRefresh();
   }, []);
 
-  if (notFound || !page?.layout.sitecore.route) {
-    // Shouldn't hit this (as long as 'notFound' is being returned below), but just to be safe
+  if (notFound || !page || !page?.layout) {
+    // Return 404 page for missing pages or incomplete data
     return <NotFound />;
+  }
+
+  // Handle cases where sitecore route data might be missing
+  if (!page.layout.sitecore?.route) {
+    console.warn('Page layout missing sitecore route data:', page);
+    // Still render the layout, which will handle the missing route gracefully
   }
 
   return (
@@ -78,28 +84,41 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const path = extractPath(context);
   let page;
 
-  if (context.preview && isDesignLibraryPreviewData(context.previewData)) {
-    page = await client.getDesignLibraryData(context.previewData);
-  } else {
-    page = context.preview
-      ? await client.getPreview(context.previewData)
-      : await client.getPage(path, { locale: context.locale });
-  }
-  if (page) {
-    props = {
-      page,
-      dictionary: await client.getDictionary({
-        site: page.siteName,
-        locale: page.locale,
-      }),
-      componentProps: await client.getComponentData(page.layout, context, components),
+  try {
+    if (context.preview && isDesignLibraryPreviewData(context.previewData)) {
+      page = await client.getDesignLibraryData(context.previewData);
+    } else {
+      page = context.preview
+        ? await client.getPreview(context.previewData)
+        : await client.getPage(path, { locale: context.locale });
+    }
+  } catch (error) {
+    console.warn(`Failed to fetch page data for path: ${path}, locale: ${context.locale}`, error);
+    // Return 404 for pages that don't exist in the current locale
+    return {
+      notFound: true,
     };
   }
+
+  if (page) {
+    try {
+      props = {
+        page,
+        dictionary: await client.getDictionary({
+          site: page.siteName,
+          locale: page.locale,
+        }),
+        componentProps: await client.getComponentData(page.layout, context, components),
+      };
+    } catch (error) {
+      console.warn(`Failed to fetch additional page data for path: ${path}`, error);
+      // Return the page even if dictionary or component data fails
+      props = { page };
+    }
+  }
+
   return {
     props,
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 5 seconds
     // Next.js will attempt to re-generate the page:
     // - When a request comes in
     // - At most once every 5 seconds

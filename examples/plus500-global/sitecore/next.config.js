@@ -19,7 +19,7 @@ const nextConfig = {
   i18n: {
     // These are all the locales you want to support in your application.
     // These should generally match (or at least be a subset of) those in Sitecore.
-    locales: ['en','ar-AE','fr'],
+    locales: ['en','ar-ae','fr'],
     // This is the locale that will be used when visiting a non-locale
     // prefixed path e.g. `/about`.
     defaultLocale: process.env.DEFAULT_LANGUAGE || process.env.NEXT_PUBLIC_DEFAULT_LANGUAGE || 'en',
