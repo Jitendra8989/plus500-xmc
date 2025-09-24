@@ -92,7 +92,7 @@ export const Default: React.FC<HeaderProps> = (props) => {
         >
           {/* Logo */}
           <motion.div
-            className="flex items-center space-x-2"
+            className="flex items-center gap-2 rtl:flex-row-reverse"
             data-testid="logo-plus500"
             variants={fadeInUp}
           >
@@ -123,7 +123,7 @@ export const Default: React.FC<HeaderProps> = (props) => {
 
           {/* Desktop Navigation */}
           <motion.nav
-            className="hidden lg:flex items-center space-x-8"
+            className="hidden lg:flex items-center gap-8"
             variants={fadeInUp}
           >
             {/* Home link using LogoCTA */}
@@ -168,7 +168,7 @@ export const Default: React.FC<HeaderProps> = (props) => {
                   onMouseLeave={() => setOpenSubmenu(null)}
                 >
                   {submenuItems && submenuItems.length > 0 ? (
-                    <div className="flex items-center space-x-1 cursor-pointer py-2">
+                    <div className="flex items-center gap-1 cursor-pointer py-2 rtl:flex-row-reverse">
                       <a
                         href={itemHref}
                         className={cn(
@@ -226,7 +226,7 @@ export const Default: React.FC<HeaderProps> = (props) => {
 
           {/* Desktop CTA Buttons */}
           <motion.div
-            className="hidden lg:flex items-center space-x-4"
+            className="hidden lg:flex items-center gap-4 rtl:flex-row-reverse"
             variants={fadeInUp}
           >
             {isEditing ? (

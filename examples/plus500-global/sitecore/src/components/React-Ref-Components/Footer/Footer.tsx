@@ -60,7 +60,7 @@ export const Default: React.FC<FooterProps> = (props) => {
             {isEditing ? (
               <ContentSdkLink
                 field={logoCTA}
-                className="flex items-center space-x-2 mb-4"
+                className="flex items-center gap-2 rtl:flex-row-reverse mb-4"
               >
                 {logo && (
                   <ContentSdkImage
@@ -74,7 +74,7 @@ export const Default: React.FC<FooterProps> = (props) => {
               </ContentSdkLink>
             ) : (
               logoCTA?.value?.href && (
-                <a href={logoCTA.value.href} className="flex items-center space-x-2 mb-4">
+                <a href={logoCTA.value.href} className="flex items-center gap-2 rtl:flex-row-reverse mb-4">
                   {logo?.value?.src && (
                     <img
                       src={logo.value.src}
@@ -90,65 +90,90 @@ export const Default: React.FC<FooterProps> = (props) => {
               <Text
                 field={fields?.BrandDetail}
                 tag="p"
-                className="text-muted-foreground mb-6 max-w-sm"
+                className="text-muted-foreground mb-6 max-w-sm rtl:text-right ltr:text-left"
               />
             ) : (
               brandDetail && (
-                <p className="text-muted-foreground mb-6 max-w-sm">
+                <p className="text-muted-foreground mb-6 max-w-sm rtl:text-right ltr:text-left">
                   {brandDetail}
                 </p>
               )
             )}
 
-            {socialLinks.length > 0 && (
-              <div className="flex space-x-4">
-                {socialLinks.map((socialLink, index) => {
+            <div className="flex gap-4 rtl:flex-row-reverse">
+              {isEditing && socialLinks.length === 0 ? (
+                // Show default social icons in editing mode when no links configured
+                <>
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Facebook className="h-5 w-5" />
+                  </a>
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Twitter className="h-5 w-5" />
+                  </a>
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Linkedin className="h-5 w-5" />
+                  </a>
+                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Youtube className="h-5 w-5" />
+                  </a>
+                </>
+              ) : (
+                socialLinks.map((socialLink, index) => {
+                  // Improve icon detection logic
                   const icon = socialLink.fields?.Title?.value;
-                  const IconComponent =
-                    icon === '📘' ? Facebook :
-                    icon === '🐦' ? Twitter :
-                    icon === '▶️' ? Youtube :
-                    Linkedin; // default fallback
+                  const linkHref = socialLink.fields?.GeneralLink?.value?.href || '';
+
+                  // Detect icon by URL or name
+                  let IconComponent = Linkedin; // default
+                  if (icon === '📘' || linkHref.includes('facebook') || socialLink.name?.toLowerCase().includes('facebook')) {
+                    IconComponent = Facebook;
+                  } else if (icon === '🐦' || linkHref.includes('twitter') || socialLink.name?.toLowerCase().includes('twitter')) {
+                    IconComponent = Twitter;
+                  } else if (icon === '▶️' || linkHref.includes('youtube') || socialLink.name?.toLowerCase().includes('youtube')) {
+                    IconComponent = Youtube;
+                  } else if (linkHref.includes('linkedin') || socialLink.name?.toLowerCase().includes('linkedin')) {
+                    IconComponent = Linkedin;
+                  }
 
                   return isEditing ? (
                     <ContentSdkLink
                       key={socialLink.id}
                       field={socialLink.fields?.GeneralLink}
                       className="text-muted-foreground hover:text-primary transition-colors"
-                      data-testid={`link-${socialLink.name.toLowerCase()}`}
+                      data-testid={`link-${socialLink.name?.toLowerCase() || index}`}
                     >
                       <IconComponent className="h-5 w-5" />
                     </ContentSdkLink>
                   ) : (
-                    socialLink.fields?.GeneralLink?.value?.href && (
+                    linkHref && (
                       <a
                         key={socialLink.id}
-                        href={socialLink.fields.GeneralLink.value.href}
+                        href={linkHref}
                         className="text-muted-foreground hover:text-primary transition-colors"
-                        data-testid={`link-${socialLink.name.toLowerCase()}`}
-                        target={socialLink.fields.GeneralLink.value.target || '_self'}
+                        data-testid={`link-${socialLink.name?.toLowerCase() || index}`}
+                        target={socialLink.fields?.GeneralLink?.value?.target || '_blank'}
+                        rel="noopener noreferrer"
                       >
                         <IconComponent className="h-5 w-5" />
                       </a>
                     )
                   );
-                })}
-              </div>
-            )}
+                })
+              )}
+            </div>
           </motion.div>
 
           {/* Section 1 - Company */}
-          {section1Header && (
-            <motion.div variants={fadeInUp}>
-              {isEditing ? (
-                <Text
-                  field={fields?.['Section-1-Header']}
-                  tag="h3"
-                  className="font-semibold mb-4"
-                />
-              ) : (
-                <h3 className="font-semibold mb-4">{section1Header}</h3>
-              )}
+          <motion.div variants={fadeInUp}>
+            {isEditing ? (
+              <Text
+                field={fields?.['Section-1-Header']}
+                tag="h3"
+                className="font-semibold mb-4 rtl:text-right ltr:text-left"
+              />
+            ) : (
+              section1Header && <h3 className="font-semibold mb-4 rtl:text-right ltr:text-left">{section1Header}</h3>
+            )}
               <ul className="space-y-3">
                 {section1Links.map((link) => (
                   <li key={link.id}>
@@ -171,21 +196,19 @@ export const Default: React.FC<FooterProps> = (props) => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
-          )}
+          </motion.div>
 
           {/* Section 2 - Markets */}
-          {section2Header && (
-            <motion.div variants={fadeInUp}>
-              {isEditing ? (
-                <Text
-                  field={fields?.['Section-2-Header']}
-                  tag="h3"
-                  className="font-semibold mb-4"
-                />
-              ) : (
-                <h3 className="font-semibold mb-4">{section2Header}</h3>
-              )}
+          <motion.div variants={fadeInUp}>
+            {isEditing ? (
+              <Text
+                field={fields?.['Section-2-Header']}
+                tag="h3"
+                className="font-semibold mb-4 rtl:text-right ltr:text-left"
+              />
+            ) : (
+              section2Header && <h3 className="font-semibold mb-4 rtl:text-right ltr:text-left">{section2Header}</h3>
+            )}
               <ul className="space-y-3">
                 {section2Links.map((link) => (
                   <li key={link.id}>
@@ -208,21 +231,19 @@ export const Default: React.FC<FooterProps> = (props) => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
-          )}
+          </motion.div>
 
           {/* Section 3 - Learn */}
-          {section3Header && (
-            <motion.div variants={fadeInUp}>
-              {isEditing ? (
-                <Text
-                  field={fields?.['Section-3-Header']}
-                  tag="h3"
-                  className="font-semibold mb-4"
-                />
-              ) : (
-                <h3 className="font-semibold mb-4">{section3Header}</h3>
-              )}
+          <motion.div variants={fadeInUp}>
+            {isEditing ? (
+              <Text
+                field={fields?.['Section-3-Header']}
+                tag="h3"
+                className="font-semibold mb-4 rtl:text-right ltr:text-left"
+              />
+            ) : (
+              section3Header && <h3 className="font-semibold mb-4 rtl:text-right ltr:text-left">{section3Header}</h3>
+            )}
               <ul className="space-y-3">
                 {section3Links.map((link) => (
                   <li key={link.id}>
@@ -245,21 +266,19 @@ export const Default: React.FC<FooterProps> = (props) => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
-          )}
+          </motion.div>
 
           {/* Section 4 */}
-          {section4Header && (
-            <motion.div variants={fadeInUp}>
-              {isEditing ? (
-                <Text
-                  field={fields?.['Section-4-Header']}
-                  tag="h3"
-                  className="font-semibold mb-4"
-                />
-              ) : (
-                <h3 className="font-semibold mb-4">{section4Header}</h3>
-              )}
+          <motion.div variants={fadeInUp}>
+            {isEditing ? (
+              <Text
+                field={fields?.['Section-4-Header']}
+                tag="h3"
+                className="font-semibold mb-4 rtl:text-right ltr:text-left"
+              />
+            ) : (
+              section4Header && <h3 className="font-semibold mb-4 rtl:text-right ltr:text-left">{section4Header}</h3>
+            )}
               <ul className="space-y-3">
                 {section4Links.map((link) => (
                   <li key={link.id}>
@@ -282,35 +301,34 @@ export const Default: React.FC<FooterProps> = (props) => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
-          )}
+          </motion.div>
 
         </motion.div>
 
         {/* Disclaimer */}
-        {regionInfo && (
-          <motion.div
-            className="border-t pt-8 mb-8"
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewportSettings}
-            variants={fadeInUp}
-          >
+        <motion.div
+          className="border-t pt-8 mb-8"
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportSettings}
+          variants={fadeInUp}
+        >
+          {(isEditing || regionInfo?.value) && (
             <div className="bg-muted/20 p-6 rounded-lg">
               {isEditing ? (
                 <SafeRichText
                   field={regionInfo}
-                  className="text-xs text-muted-foreground leading-relaxed"
+                  className="text-xs text-muted-foreground leading-relaxed rtl:text-right ltr:text-left"
                 />
               ) : (
                 <div
-                  className="text-xs text-muted-foreground leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: regionInfo?.value || '' }}
+                  className="text-xs text-muted-foreground leading-relaxed rtl:text-right ltr:text-left"
+                  dangerouslySetInnerHTML={{ __html: regionInfo.value || '' }}
                 />
               )}
             </div>
-          </motion.div>
-        )}
+          )}
+        </motion.div>
 
         {/* Bottom Bar */}
         <motion.div
@@ -320,32 +338,28 @@ export const Default: React.FC<FooterProps> = (props) => {
           viewport={viewportSettings}
           variants={fadeInUp}
         >
-          {legalText1 && (
-            <div className="text-sm text-muted-foreground mb-4 md:mb-0">
-              {isEditing ? (
-                <Text
-                  field={fields?.['LegalText-1']}
-                  tag="div"
-                  className="text-sm text-muted-foreground"
-                />
-              ) : (
-                legalText1
-              )}
-            </div>
-          )}
-          {legalText2 && (
-            <div className="text-sm text-muted-foreground">
-              {isEditing ? (
-                <Text
-                  field={fields?.['LegalText-2']}
-                  tag="div"
-                  className="text-sm text-muted-foreground"
-                />
-              ) : (
-                legalText2
-              )}
-            </div>
-          )}
+          <div className="text-sm text-muted-foreground mb-4 md:mb-0 rtl:text-right ltr:text-left">
+            {isEditing ? (
+              <Text
+                field={fields?.['LegalText-1']}
+                tag="div"
+                className="text-sm text-muted-foreground"
+              />
+            ) : (
+              legalText1 && legalText1
+            )}
+          </div>
+          <div className="text-sm text-muted-foreground rtl:text-right ltr:text-left">
+            {isEditing ? (
+              <Text
+                field={fields?.['LegalText-2']}
+                tag="div"
+                className="text-sm text-muted-foreground"
+              />
+            ) : (
+              legalText2 && legalText2
+            )}
+          </div>
         </motion.div>
       </div>
     </div>

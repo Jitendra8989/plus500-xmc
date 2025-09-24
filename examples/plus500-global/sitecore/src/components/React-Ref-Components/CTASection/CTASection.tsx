@@ -107,90 +107,85 @@ export const Default: React.FC<CTASectionProps> = (props) => {
           viewport={viewportSettings}
           variants={staggerContainer}
         >
-          {title && (
-            <motion.h2
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
-              variants={fadeInUp}
-            >
-              {isEditing ? (
-                <Text
-                  field={fields?.Title}
-                  tag="span"
-                />
-              ) : (
-                title
-              )}
-            </motion.h2>
-          )}
-
-          {subtitle && (
-            <motion.p
-              className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
-              variants={fadeInUp}
-            >
-              {isEditing ? (
-                <Text
-                  field={fields?.Subtitle}
-                  tag="span"
-                />
-              ) : (
-                subtitle
-              )}
-            </motion.p>
-          )}
-
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          <motion.h2
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 rtl:text-right ltr:text-left"
             variants={fadeInUp}
           >
-            {primaryCTA && (
-              <div>
-                {isEditing ? (
-                  <ContentSdkLink
-                    field={primaryCTA}
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border border-primary-border min-h-10 rounded-md bg-white text-primary hover:bg-white/90 px-8 py-6 text-lg font-semibold group"
-                  >
-                    <TrendingUp className="mr-2 h-5 w-5" />
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </ContentSdkLink>
-                ) : (
-                  primaryCTA?.value?.href && (
-                    <a
-                      href={primaryCTA.value.href}
-                      className="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border border-primary-border min-h-10 rounded-md bg-white text-primary hover:bg-white/90 px-8 py-6 text-lg font-semibold group"
-                      target={primaryCTA.value.target || '_self'}
-                      data-testid="button-cta-primary"
-                    >
-                      <TrendingUp className="mr-2 h-5 w-5" />
-                      {primaryCTA.value.text || "Apply for DFS Account"}
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                    </a>
-                  )
-                )}
-              </div>
+            {isEditing ? (
+              <Text
+                field={fields?.Title || { value: '' }}
+                tag="span"
+              />
+            ) : (
+              title && title
             )}
+          </motion.h2>
 
-            {secondaryCTA && (
-              <div>
-                {isEditing ? (
-                  <ContentSdkLink
-                    field={secondaryCTA}
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border [border-color:var(--button-outline)] shadow-xs active:shadow-none min-h-10 rounded-md border-white text-white hover:bg-white hover:text-primary px-8 py-6 text-lg backdrop-blur-sm"
-                  />
-                ) : (
-                  secondaryCTA?.value?.href && (
-                    <a
-                      href={secondaryCTA.value.href}
-                      className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border [border-color:var(--button-outline)] shadow-xs active:shadow-none min-h-10 rounded-md border-white text-white hover:bg-white hover:text-primary px-8 py-6 text-lg backdrop-blur-sm"
-                      target={secondaryCTA.value.target || '_self'}
-                      data-testid="button-cta-secondary"
-                    >
-                      {secondaryCTA.value.text || "Learn More"}
-                    </a>
-                  )
-                )}
-              </div>
+          <motion.p
+            className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed rtl:text-right ltr:text-left"
+            variants={fadeInUp}
+          >
+            {isEditing ? (
+              <Text
+                field={fields?.Subtitle || { value: '' }}
+                tag="span"
+              />
+            ) : (
+              subtitle && subtitle
             )}
+          </motion.p>
+
+          <motion.div
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center rtl:sm:flex-row-reverse"
+            variants={fadeInUp}
+          >
+            <div>
+              {isEditing ? (
+                <ContentSdkLink
+                  field={primaryCTA || { value: { text: 'Primary CTA', href: '#' } }}
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border border-primary-border min-h-10 rounded-md bg-white text-primary hover:bg-white/90 px-8 py-6 text-lg font-semibold group"
+                >
+                  <TrendingUp className="mr-2 rtl:ml-2 rtl:mr-0 h-5 w-5" />
+                  <span>{primaryCTA?.value?.text || "Primary CTA"}</span>
+                  <ArrowRight className="ml-2 rtl:mr-2 rtl:ml-0 h-5 w-5 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
+                </ContentSdkLink>
+              ) : (
+                primaryCTA?.value?.href && (
+                  <a
+                    href={primaryCTA.value.href}
+                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border border-primary-border min-h-10 rounded-md bg-white text-primary hover:bg-white/90 px-8 py-6 text-lg font-semibold group"
+                    target={primaryCTA.value.target || '_self'}
+                    data-testid="button-cta-primary"
+                  >
+                    <TrendingUp className="mr-2 rtl:ml-2 rtl:mr-0 h-5 w-5" />
+                    {primaryCTA.value.text || "Apply for DFS Account"}
+                    <ArrowRight className="ml-2 rtl:mr-2 rtl:ml-0 h-5 w-5 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
+                  </a>
+                )
+              )}
+            </div>
+
+            <div>
+              {isEditing ? (
+                <ContentSdkLink
+                  field={secondaryCTA || { value: { text: 'Secondary CTA', href: '#' } }}
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border [border-color:var(--button-outline)] shadow-xs active:shadow-none min-h-10 rounded-md border-white text-white hover:bg-white hover:text-primary px-8 py-6 text-lg backdrop-blur-sm"
+                >
+                  {secondaryCTA?.value?.text || "Secondary CTA"}
+                </ContentSdkLink>
+              ) : (
+                secondaryCTA?.value?.href && (
+                  <a
+                    href={secondaryCTA.value.href}
+                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border [border-color:var(--button-outline)] shadow-xs active:shadow-none min-h-10 rounded-md border-white text-white hover:bg-white hover:text-primary px-8 py-6 text-lg backdrop-blur-sm"
+                    target={secondaryCTA.value.target || '_self'}
+                    data-testid="button-cta-secondary"
+                  >
+                    {secondaryCTA.value.text || "Learn More"}
+                  </a>
+                )
+              )}
+            </div>
           </motion.div>
         </motion.div>
       </div>

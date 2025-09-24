@@ -66,8 +66,8 @@ export const Default: React.FC<TestimonialGridProps> = (props) => {
   const items = fields?.Items || [];
   const columns = fields?.Columns?.value || 3;
 
-  // Safety check for items
-  if (!items || !Array.isArray(items)) {
+  // Safety check for items - don't render if no items and not in editing mode
+  if ((!items || !Array.isArray(items)) && !isEditing) {
     return null;
   }
 
@@ -80,26 +80,24 @@ export const Default: React.FC<TestimonialGridProps> = (props) => {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-6">
-        {heading && (
-          <div className="text-center mb-12">
-            {isEditing ? (
-              <Text
-                field={fields?.Heading}
-                tag="h2"
-                className="text-3xl md:text-4xl font-bold"
-              />
-            ) : (
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-3xl md:text-4xl font-bold"
-              >
-                {heading}
-              </motion.h2>
-            )}
-          </div>
-        )}
+        <div className="text-center mb-12">
+          {isEditing ? (
+            <Text
+              field={fields?.Heading || { value: '' }}
+              tag="h2"
+              className="text-3xl md:text-4xl font-bold rtl:text-right ltr:text-left"
+            />
+          ) : (
+            heading && <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-3xl md:text-4xl font-bold rtl:text-right ltr:text-left"
+            >
+              {heading}
+            </motion.h2>
+          )}
+        </div>
 
         <motion.div
           variants={containerVariants}
@@ -107,18 +105,31 @@ export const Default: React.FC<TestimonialGridProps> = (props) => {
           whileInView="visible"
           viewport={{ once: true }}
           className={`grid ${columnClasses[columns as keyof typeof columnClasses]} gap-8`}
+          dir="ltr"
         >
-          {items.map((item, index) => {
-            if (!item || !item.fields) {
-              return null;
-            }
+          {isEditing && (!items || items.length === 0) ? (
+            <div className="min-h-20 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-gray-500 bg-gray-50 col-span-full">
+              {/* Empty div for selecting component in page editor */}
+            </div>
+          ) : (
+            (items || isEditing) && items.map((item, index) => {
+              // In editing mode, show all items even if fields are empty
+              // In production, skip invalid items
+              if (!isEditing && (!item || !item.fields)) {
+                return null;
+              }
 
-            const name = item?.fields?.Text?.value || '';
-            const quote = item?.fields?.Subtext?.value || '';
-            const avatar = item?.fields?.Icon;
-            const profession = item?.fields?.Money?.value || '';
-            const percentageString = item?.fields?.Percentage?.value;
-            const rating = parsePercentageToStars(percentageString);
+              const name = item?.fields?.Text?.value || '';
+              const quote = item?.fields?.Subtext?.value || '';
+              const avatar = item?.fields?.Icon;
+              const profession = item?.fields?.Money?.value || '';
+              const percentageString = item?.fields?.Percentage?.value;
+              const rating = parsePercentageToStars(percentageString);
+              const textField = item?.fields?.Text || { value: '' };
+              const subtextField = item?.fields?.Subtext || { value: '' };
+              const moneyField = item?.fields?.Money || { value: '' };
+              const percentageField = item?.fields?.Percentage || { value: '' };
+              const iconField = item?.fields?.Icon || { value: { src: '', alt: 'Avatar' } };
 
             return (
               <motion.div
@@ -127,20 +138,18 @@ export const Default: React.FC<TestimonialGridProps> = (props) => {
                 className="bg-card p-6 rounded-lg border hover-elevate group relative"
                 data-testid={`review-card-${index}`}
               >
-                <Quote className="absolute top-4 right-4 h-6 w-6 text-primary/20" />
+                <Quote className="absolute top-4 right-4 rtl:left-4 rtl:right-auto h-6 w-6 text-primary/20" />
 
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full mr-4 flex-shrink-0">
+                <div className="flex items-center mb-4 rtl:flex-row-reverse">
+                  <div className="w-12 h-12 rounded-full mr-4 rtl:ml-4 rtl:mr-0 flex-shrink-0">
                     {isEditing ? (
-                      avatar && (
-                        <ContentSdkImage
-                          field={avatar}
-                          className="w-12 h-12 rounded-full object-cover"
-                          width={48}
-                          height={48}
-                          alt="Profile"
-                        />
-                      )
+                      <ContentSdkImage
+                        field={iconField}
+                        className="w-12 h-12 rounded-full object-cover"
+                        width={48}
+                        height={48}
+                        alt="Profile"
+                      />
                     ) : (
                       avatar?.value?.src && (
                         <img
@@ -152,58 +161,58 @@ export const Default: React.FC<TestimonialGridProps> = (props) => {
                     )}
                   </div>
                   <div>
-                    {name && (
-                      <h4 className="font-semibold">
-                        {isEditing ? (
-                          item.fields?.Text && (
-                            <Text
-                              field={item.fields.Text}
-                              tag="span"
-                            />
-                          )
-                        ) : (
-                          name
-                        )}
+                    <h4 className="font-semibold rtl:text-right ltr:text-left">
+                      {isEditing ? (
+                        <Text
+                          field={textField}
+                          tag="span"
+                        />
+                      ) : (
+                        name && name
+                      )}
                       </h4>
-                    )}
-                    {profession && (
-                      <p className="text-sm text-muted-foreground">
-                        {isEditing ? (
-                          item.fields?.Money && (
-                            <Text
-                              field={item.fields.Money}
-                              tag="span"
-                            />
-                          )
-                        ) : (
-                          profession
-                        )}
-                      </p>
-                    )}
+                    <p className="text-sm text-muted-foreground rtl:text-right ltr:text-left">
+                      {isEditing ? (
+                        <Text
+                          field={moneyField}
+                          tag="span"
+                        />
+                      ) : (
+                        profession && profession
+                      )}
+                    </p>
                   </div>
                 </div>
 
-                <div className="flex mb-3">
-                  {renderStars(rating)}
+                <div className="flex mb-3 items-center gap-2">
+                  {isEditing ? (
+                    <>
+                      <span className="text-sm text-gray-600">Rating:</span>
+                      <Text
+                        field={percentageField}
+                        tag="span"
+                        className="min-h-5 inline-block min-w-12 bg-gray-50 border border-dashed border-gray-300 px-2 py-1 rounded text-sm"
+                      />
+                      <span className="text-sm text-gray-500">(1-5 stars)</span>
+                    </>
+                  ) : (
+                    renderStars(rating)
+                  )}
                 </div>
 
-                {quote && (
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    {isEditing ? (
-                      item.fields?.Subtext && (
-                        <Text
-                          field={item.fields.Subtext}
-                          tag="span"
-                        />
-                      )
-                    ) : (
-                      quote
-                    )}
-                  </p>
-                )}
+                <p className="text-muted-foreground leading-relaxed mb-4 rtl:text-right ltr:text-left">
+                  {isEditing ? (
+                    <Text
+                      field={subtextField}
+                      tag="span"
+                    />
+                  ) : (
+                    quote && quote
+                  )}
+                </p>
               </motion.div>
             );
-          })}
+            }))}
         </motion.div>
       </div>
     </section>

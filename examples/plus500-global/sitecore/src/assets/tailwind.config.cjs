@@ -23,6 +23,12 @@ const proseVars = [
 
 module.exports = {
     darkMode: ['class'],
+    plugins: [
+        require('tailwindcss/plugin')(({ addVariant }) => {
+            addVariant('rtl', '[dir="rtl"] &')
+            addVariant('ltr', '[dir="ltr"] &')
+        })
+    ],
     theme: {
         extend: {
             animation: {

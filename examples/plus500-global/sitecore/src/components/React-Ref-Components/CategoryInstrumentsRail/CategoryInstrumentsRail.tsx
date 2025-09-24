@@ -44,27 +44,25 @@ export const Default: React.FC<CategoryInstrumentsRailProps> = (props) => {
   return (
     <section className="py-16 bg-muted/20">
       <div className="container mx-auto px-6">
-        {heading && (
-          <div className="text-center mb-12">
-            {isEditing ? (
-              <Text
-                field={fields?.Heading}
-                tag="h2"
-                className="text-3xl md:text-4xl font-bold"
-              />
-            ) : (
-              <motion.h2
-                initial="hidden"
-                whileInView="visible"
-                variants={fadeInUp}
-                viewport={viewportSettings}
-                className="text-3xl md:text-4xl font-bold"
-              >
-                {heading}
-              </motion.h2>
-            )}
-          </div>
-        )}
+        <div className="text-center mb-12">
+          {isEditing ? (
+            <Text
+              field={fields?.Heading || { value: '' }}
+              tag="h2"
+              className="text-3xl md:text-4xl font-bold rtl:text-right ltr:text-left"
+            />
+          ) : (
+            heading && <motion.h2
+              initial="hidden"
+              whileInView="visible"
+              variants={fadeInUp}
+              viewport={viewportSettings}
+              className="text-3xl md:text-4xl font-bold rtl:text-right ltr:text-left"
+            >
+              {heading}
+            </motion.h2>
+          )}
+        </div>
 
         <motion.div
           initial="hidden"
@@ -72,17 +70,35 @@ export const Default: React.FC<CategoryInstrumentsRailProps> = (props) => {
           variants={staggerContainer}
           viewport={viewportSettings}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          dir="ltr"
         >
-          {items && Array.isArray(items) && items.map((item, index) => {
-            // Skip invalid items
-            if (!item || !item.fields) {
-              return null;
-            }
+          {isEditing && (!items || items.length === 0) ? (
+            <div className="min-h-20 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-gray-500 bg-gray-50 col-span-full">
+              {/* Empty div for selecting component in page editor */}
+            </div>
+          ) : (
+            items && Array.isArray(items) && items.map((item, index) => {
+              // In editing mode, always show items
+              // In production, skip invalid items
+              if (!isEditing && (!item || !item.fields)) {
+                return null;
+              }
 
-            const symbol = item?.fields?.Text?.value;
-            const name = item?.fields?.Subtext?.value;
-            const price = item?.fields?.Money?.value;
-            const percentageString = item?.fields?.Percentage?.value;
+              // In editing mode, ensure item has at least an id for key
+              if (isEditing && !item) {
+                return null;
+              }
+
+              const symbol = item?.fields?.Text?.value;
+              const name = item?.fields?.Subtext?.value;
+              const price = item?.fields?.Money?.value;
+              const percentageString = item?.fields?.Percentage?.value;
+
+              // Create fallback fields even if item.fields is undefined
+              const textField = (item?.fields?.Text) || { value: '' };
+              const subtextField = (item?.fields?.Subtext) || { value: '' };
+              const moneyField = (item?.fields?.Money) || { value: '' };
+              const percentageField = (item?.fields?.Percentage) || { value: '' };
 
             // Parse percentage to determine trend
             const { isPositive, value: percentageValue } = parsePercentageChange(percentageString);
@@ -95,32 +111,30 @@ export const Default: React.FC<CategoryInstrumentsRailProps> = (props) => {
                 data-testid={`instrument-card-${symbol}`}
               >
                 {/* Header with Symbol/Name and Trend Icon */}
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between mb-4 rtl:flex-row-reverse">
                   <div>
-                    {symbol && (
-                      <h3 className="font-bold text-lg">
-                        {isEditing ? (
-                          <Text
-                            field={item.fields?.Text}
-                            tag="span"
-                          />
-                        ) : (
-                          symbol
-                        )}
-                      </h3>
-                    )}
-                    {name && (
-                      <p className="text-sm text-muted-foreground">
-                        {isEditing ? (
-                          <Text
-                            field={item.fields?.Subtext}
-                            tag="span"
-                          />
-                        ) : (
-                          name
-                        )}
-                      </p>
-                    )}
+                    <h3 className="font-bold text-lg rtl:text-right ltr:text-left">
+                      {isEditing ? (
+                        <Text
+                          field={textField}
+                          tag="span"
+                          className="min-h-6 block w-full bg-gray-50 border border-dashed border-gray-300 px-2 py-1 rounded"
+                        />
+                      ) : (
+                        symbol && symbol
+                      )}
+                    </h3>
+                    <p className="text-sm text-muted-foreground rtl:text-right ltr:text-left">
+                      {isEditing ? (
+                        <Text
+                          field={subtextField}
+                          tag="span"
+                          className="min-h-5 block w-full bg-gray-50 border border-dashed border-gray-300 px-2 py-1 rounded text-sm"
+                        />
+                      ) : (
+                        name && name
+                      )}
+                    </p>
                   </div>
                   <div className={`p-2 rounded-full ${
                     isPositive === true
@@ -143,44 +157,42 @@ export const Default: React.FC<CategoryInstrumentsRailProps> = (props) => {
 
                 <div className="space-y-2">
                   {/* Price */}
-                  {price && (
-                    <div className="text-2xl font-bold">
-                      {isEditing ? (
-                        <Text
-                          field={item.fields?.Money}
-                          tag="span"
-                        />
-                      ) : (
-                        price
-                      )}
-                    </div>
-                  )}
+                  <div className="text-2xl font-bold rtl:text-right ltr:text-left">
+                    {isEditing ? (
+                      <Text
+                        field={moneyField}
+                        tag="span"
+                        className="min-h-8 block w-full bg-gray-50 border border-dashed border-gray-300 px-2 py-1 rounded text-2xl font-bold"
+                      />
+                    ) : (
+                      price && price
+                    )}
+                  </div>
 
                   {/* Percentage Change */}
-                  {percentageString && (
-                    <div className={`flex items-center space-x-2 text-sm ${
-                      isPositive === true
-                        ? 'text-green-600 dark:text-green-400'
-                        : isPositive === false
-                          ? 'text-red-600 dark:text-red-400'
-                          : 'text-muted-foreground'
-                    }`}>
-                      <span>
-                        {isEditing ? (
-                          <Text
-                            field={item.fields?.Percentage}
-                            tag="span"
-                          />
-                        ) : (
-                          percentageValue
-                        )}
+                  <div className={`flex items-center space-x-2 text-sm ${
+                    isPositive === true
+                      ? 'text-green-600 dark:text-green-400'
+                      : isPositive === false
+                        ? 'text-red-600 dark:text-red-400'
+                        : 'text-muted-foreground'
+                  }`}>
+                    <span>
+                      {isEditing ? (
+                        <Text
+                          field={percentageField}
+                          tag="span"
+                          className="min-h-5 inline-block min-w-12 bg-gray-50 border border-dashed border-gray-300 px-2 py-1 rounded text-sm"
+                        />
+                      ) : (
+                        percentageValue
+                      )}
                       </span>
                     </div>
-                  )}
                 </div>
               </motion.div>
             );
-          })}
+            }))}
         </motion.div>
       </div>
     </section>

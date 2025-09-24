@@ -42,9 +42,9 @@ export const Minimal: React.FC<HeroSectionProps> = (props) => {
           viewport={viewportSettings}
           variants={staggerContainer}
         >
-          {title && (
+          {(isEditing || title) && (
             <motion.h1
-              className="text-4xl md:text-5xl font-bold mb-6"
+              className="text-4xl md:text-5xl font-bold mb-6 rtl:text-right ltr:text-left"
               variants={fadeInUp}
             >
               {isEditing ? (
@@ -57,9 +57,9 @@ export const Minimal: React.FC<HeroSectionProps> = (props) => {
               )}
             </motion.h1>
           )}
-          {subtitle && (
+          {(isEditing || subtitle) && (
             <motion.p
-              className="text-xl text-muted-foreground"
+              className="text-xl text-muted-foreground rtl:text-right ltr:text-left"
               variants={fadeInUp}
             >
               {isEditing ? (
@@ -94,9 +94,24 @@ export const Default: React.FC<HeroSectionProps> = (props) => {
   const { fields } = props;
   const title = fields?.Title?.value;
   const subtitle = fields?.Subtitle?.value;
+
+  // Debug logging for Arabic content
+  if (isEditing) {
+    console.log('HeroSection Debug:', {
+      title,
+      subtitle,
+      titleField: fields?.Title,
+      subtitleField: fields?.Subtitle,
+      hasTitle: !!title,
+      hasSubtitle: !!subtitle
+    });
+  }
   const backgroundImage = fields?.Media?.value;
   const primaryCTA = fields?.PrimaryCTA;
   const secondaryCTA = fields?.SecondaryCTA;
+
+  // Check if we have a background image to determine styling
+  const hasBackgroundImage = backgroundImage?.src;
 
   const handleCtaClick = () => {
     // TODO: Handle primary CTA click
@@ -112,13 +127,26 @@ export const Default: React.FC<HeroSectionProps> = (props) => {
     <div className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
       {isEditing ? (
-        <ContentSdkImage
-          field={fields?.Media}
-          className="absolute inset-0 w-full h-full object-cover"
-          width={1920}
-          height={1080}
-          alt="Hero Background"
-        />
+        backgroundImage?.src ? (
+          <ContentSdkImage
+            field={fields?.Media}
+            className="absolute inset-0 w-full h-full object-cover"
+            width={1920}
+            height={1080}
+            alt="Hero Background"
+          />
+        ) : (
+          // Small placeholder in top-right when image is empty
+          <div className="absolute top-4 right-4 z-20">
+            <ContentSdkImage
+              field={fields?.Media}
+              className="w-32 h-20 object-cover rounded border-2 border-dashed border-gray-400 bg-gray-100"
+              width={128}
+              height={80}
+              alt="Hero Background"
+            />
+          </div>
+        )
       ) : (
         backgroundImage?.src && (
           <div
@@ -128,8 +156,10 @@ export const Default: React.FC<HeroSectionProps> = (props) => {
         )
       )}
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60" />
+      {/* Dark Overlay - only show when there's actually a background image */}
+      {backgroundImage?.src && (
+        <div className="absolute inset-0 bg-black/60" />
+      )}
 
       {/* Content */}
       <div className="relative z-10 flex h-full items-center">
@@ -141,91 +171,117 @@ export const Default: React.FC<HeroSectionProps> = (props) => {
             viewport={viewportSettings}
             variants={staggerContainer}
           >
-            {isEditing ? (
-              <motion.div variants={fadeInUp}>
-                <Text
-                  field={fields?.Title}
-                  tag="h1"
-                  className="mb-6 text-5xl font-bold text-white md:text-7xl"
-                />
-              </motion.div>
-            ) : (
-              title && (
-                <motion.h1
-                  className="mb-6 text-5xl font-bold text-white md:text-7xl"
-                  variants={fadeInUp}
-                >
-                  {title}
-                </motion.h1>
-              )
-            )}
+            <motion.div variants={fadeInUp}>
+              {isEditing ? (
+                <div className={`mb-6 text-5xl font-bold md:text-7xl rtl:text-right ltr:text-left ${
+                  hasBackgroundImage ? 'text-white' : 'text-foreground'
+                }`}>
+                  <Text
+                    field={fields?.Title}
+                    tag="h1"
+                    className="block w-full min-h-[1em]"
+                  />
+                </div>
+              ) : (
+                title && (
+                  <h1 className={`mb-6 text-5xl font-bold md:text-7xl rtl:text-right ltr:text-left ${
+                    hasBackgroundImage ? 'text-white' : 'text-foreground'
+                  }`}>
+                    {title}
+                  </h1>
+                )
+              )}
+            </motion.div>
 
-            {isEditing ? (
-              <motion.div variants={fadeInUp}>
-                <Text
-                  field={fields?.Subtitle}
-                  tag="p"
-                  className="mb-8 text-xl text-white/90 md:text-2xl"
-                />
-              </motion.div>
-            ) : (
-              subtitle && (
-                <motion.p
-                  className="mb-8 text-xl text-white/90 md:text-2xl"
-                  variants={fadeInUp}
-                >
-                  {subtitle}
-                </motion.p>
-              )
-            )}
+            <motion.div variants={fadeInUp}>
+              {isEditing ? (
+                <div className={`mb-8 text-xl md:text-2xl rtl:text-right ltr:text-left ${
+                  hasBackgroundImage ? 'text-white/90' : 'text-muted-foreground'
+                }`}>
+                  <Text
+                    field={fields?.Subtitle}
+                    tag="p"
+                    className="block w-full min-h-[1em]"
+                  />
+                </div>
+              ) : (
+                subtitle && (
+                  <p className={`mb-8 text-xl md:text-2xl rtl:text-right ltr:text-left ${
+                    hasBackgroundImage ? 'text-white/90' : 'text-muted-foreground'
+                  }`}>
+                    {subtitle}
+                  </p>
+                )
+              )}
+            </motion.div>
 
             <motion.div
-              className="flex flex-col gap-4 sm:flex-row"
+              className="flex flex-col gap-4 sm:flex-row sm:gap-6 rtl:sm:flex-row-reverse"
               variants={fadeInUp}
             >
-              {isEditing ? (
-                <>
-                  <ContentSdkLink
-                    field={primaryCTA}
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border border-primary-border min-h-10 rounded-md bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg"
-                    data-testid="button-hero-cta"
-                  >
-                    <TrendingUp className="mr-2 h-5 w-5" />
-                    {primaryCTA?.value?.text || <ArrowRight className="h-5 w-5" />}
-                  </ContentSdkLink>
-                  <ContentSdkLink
-                    field={secondaryCTA}
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 min-h-10 rounded-md text-white hover:bg-white hover:text-black px-8 py-6 text-lg backdrop-blur-sm"
-                    data-testid="button-hero-secondary"
-                  >
-                    <Play className="mr-2 h-5 w-5" />
-                    {secondaryCTA?.value?.text || <ArrowRight className="h-5 w-5" />}
-                  </ContentSdkLink>
-                </>
-              ) : (
-                <>
-                  {primaryCTA?.value && (
-                    <button
-                      className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border border-primary-border min-h-10 rounded-md bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg"
-                      onClick={() => window.location.href = primaryCTA.value?.href || '#'}
+              {/* Primary CTA - always show in editing mode, show with content in non-editing */}
+              <div className="flex-shrink-0 sm:mr-3 rtl:sm:mr-0 rtl:sm:ml-3">
+                {isEditing ? (
+                  <div className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border border-primary-border min-h-10 rounded-md px-8 py-6 text-lg bg-primary hover:bg-primary/90 text-white">
+                    <TrendingUp className="mr-2 rtl:ml-2 rtl:mr-0 h-5 w-5" />
+                    <ContentSdkLink
+                      field={primaryCTA}
+                      className="text-white no-underline"
                       data-testid="button-hero-cta"
                     >
-                      <TrendingUp className="mr-2 h-5 w-5" />
+                      {primaryCTA?.value?.text || "Primary CTA"}
+                    </ContentSdkLink>
+                  </div>
+                ) : (
+                  primaryCTA?.value && (
+                    <button
+                      className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border border-primary-border min-h-10 rounded-md px-8 py-6 text-lg bg-primary hover:bg-primary/90 text-white"
+                      onClick={() => window.location.href = primaryCTA?.value?.href || '#'}
+                      data-testid="button-hero-cta"
+                    >
+                      <TrendingUp className="mr-2 rtl:ml-2 rtl:mr-0 h-5 w-5" />
                       {primaryCTA.value?.text}
                     </button>
-                  )}
-                  {secondaryCTA?.value && (
-                    <button
-                      className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 min-h-10 rounded-md text-white hover:bg-white hover:text-black px-8 py-6 text-lg backdrop-blur-sm"
-                      onClick={() => window.location.href = secondaryCTA.value?.href || '#'}
+                  )
+                )}
+              </div>
+
+              {/* Secondary CTA - always show in editing mode, show with content in non-editing */}
+              <div className="flex-shrink-0 sm:ml-3 rtl:sm:ml-0 rtl:sm:mr-3">
+                {isEditing ? (
+                  <div className={`inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 min-h-10 rounded-md px-8 py-6 text-lg border ${
+                    hasBackgroundImage
+                      ? 'backdrop-blur-sm border-white text-white hover:bg-white hover:text-black'
+                      : 'border-primary text-primary hover:bg-primary hover:text-white'
+                  }`}>
+                    <Play className="mr-2 rtl:ml-2 rtl:mr-0 h-5 w-5" />
+                    <ContentSdkLink
+                      field={secondaryCTA}
+                      className={`no-underline ${
+                        hasBackgroundImage ? 'text-white' : 'text-foreground'
+                      }`}
                       data-testid="button-hero-secondary"
                     >
-                      <Play className="mr-2 h-5 w-5" />
+                      {secondaryCTA?.value?.text || "Secondary CTA"}
+                    </ContentSdkLink>
+                  </div>
+                ) : (
+                  secondaryCTA?.value && (
+                    <button
+                      className={`inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 min-h-10 rounded-md px-8 py-6 text-lg ${
+                        hasBackgroundImage
+                          ? 'backdrop-blur-sm border border-white text-white hover:bg-white hover:text-black'
+                          : 'border border-primary text-primary hover:bg-primary hover:text-white'
+                      }`}
+                      onClick={() => window.location.href = secondaryCTA?.value?.href || '#'}
+                      data-testid="button-hero-secondary"
+                    >
+                      <Play className="mr-2 rtl:ml-2 rtl:mr-0 h-5 w-5" />
                       {secondaryCTA.value?.text}
                     </button>
-                  )}
-                </>
-              )}
+                  )
+                )}
+              </div>
             </motion.div>
           </motion.div>
         </div>

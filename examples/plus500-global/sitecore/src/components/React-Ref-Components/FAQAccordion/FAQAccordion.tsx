@@ -46,36 +46,32 @@ export const Default: React.FC<FAQAccordionProps> = (props) => {
           viewport={viewportSettings}
           variants={staggerContainer}
         >
-          {title && (
-            <motion.h2
-              className="text-3xl md:text-4xl font-bold mb-4"
-              variants={fadeInUp}
-            >
-              {isEditing ? (
-                <Text
-                  field={fields?.Heading}
-                  tag="span"
-                />
-              ) : (
-                title
-              )}
-            </motion.h2>
-          )}
-          {subtitle && (
-            <motion.p
-              className="text-xl text-muted-foreground max-w-2xl mx-auto"
-              variants={fadeInUp}
-            >
-              {isEditing ? (
-                <Text
-                  field={fields?.SubTitle}
-                  tag="span"
-                />
-              ) : (
-                subtitle
-              )}
-            </motion.p>
-          )}
+          <motion.h2
+            className="text-3xl md:text-4xl font-bold mb-4 rtl:text-right ltr:text-left"
+            variants={fadeInUp}
+          >
+            {isEditing ? (
+              <Text
+                field={fields?.Heading || { value: '' }}
+                tag="span"
+              />
+            ) : (
+              title && title
+            )}
+          </motion.h2>
+          <motion.p
+            className="text-xl text-muted-foreground max-w-2xl mx-auto rtl:text-right ltr:text-left"
+            variants={fadeInUp}
+          >
+            {isEditing ? (
+              <Text
+                field={fields?.SubTitle || { value: '' }}
+                tag="span"
+              />
+            ) : (
+              subtitle && subtitle
+            )}
+          </motion.p>
         </motion.div>
 
         <motion.div
@@ -85,18 +81,26 @@ export const Default: React.FC<FAQAccordionProps> = (props) => {
           viewport={viewportSettings}
           variants={staggerContainer}
         >
-          <Accordion
-            type={allowMultipleOpen ? "multiple" : "single"}
-            className="space-y-4"
-          >
-            {faqItems && Array.isArray(faqItems) && faqItems.map((faqItem, index) => {
-              // Skip invalid items
-              if (!faqItem || !faqItem.fields) {
-                return null;
-              }
+          {isEditing && (!faqItems || faqItems.length === 0) ? (
+            <div className="min-h-20 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-gray-500 bg-gray-50">
+              {/* Empty div for selecting component in page editor */}
+            </div>
+          ) : (
+            <Accordion
+              type={allowMultipleOpen ? "multiple" : "single"}
+              className="space-y-4"
+            >
+              {((isEditing && faqItems) || (faqItems && Array.isArray(faqItems))) && faqItems.map((faqItem, index) => {
+                // In editing mode, show all items even if fields are empty
+                // In production, skip invalid items
+                if (!isEditing && (!faqItem || !faqItem.fields)) {
+                  return null;
+                }
 
-              const question = faqItem?.fields?.Question?.value;
-              const answer = faqItem?.fields?.Answer?.value;
+                const question = faqItem?.fields?.Question?.value;
+                const answer = faqItem?.fields?.Answer?.value;
+                const questionField = faqItem?.fields?.Question || { value: '' };
+                const answerField = faqItem?.fields?.Answer || { value: '' };
 
               return (
                 <motion.div
@@ -108,22 +112,20 @@ export const Default: React.FC<FAQAccordionProps> = (props) => {
                     value={`item-${index}`}
                     className="bg-card border rounded-lg px-6 hover-elevate"
                   >
-                    <AccordionTrigger className="text-left text-lg font-semibold hover:no-underline">
+                    <AccordionTrigger className="text-left rtl:text-right text-lg font-semibold hover:no-underline">
                       {isEditing ? (
                         <Text
-                          field={faqItem.fields?.Question}
+                          field={questionField}
                           tag="span"
+                          className="min-h-6 inline-block w-full"
                         />
                       ) : (
                         question || faqItem.displayName
                       )}
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground leading-relaxed pt-2">
+                    <AccordionContent className="text-muted-foreground leading-relaxed pt-2 rtl:text-right ltr:text-left">
                       {isEditing ? (
-                        <SafeRichText
-                          field={faqItem.fields?.Answer}
-                          className="prose prose-sm max-w-none"
-                        />
+                        <p className="text-sm italic text-gray-500">Answer field is displayed below for editing</p>
                       ) : (
                         answer && (
                           <div
@@ -136,9 +138,52 @@ export const Default: React.FC<FAQAccordionProps> = (props) => {
                   </AccordionItem>
                 </motion.div>
               );
-            })}
-          </Accordion>
+              })}
+            </Accordion>
+          )}
         </motion.div>
+
+        {/* Answer Fields Section - Only visible in editing mode */}
+        {isEditing && faqItems && Array.isArray(faqItems) && (
+          <motion.div
+            className="max-w-4xl mx-auto mt-12 space-y-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportSettings}
+            variants={staggerContainer}
+          >
+            <h3 className="text-xl font-semibold text-center mb-6 text-gray-700">FAQ Answer Fields (Edit Mode Only)</h3>
+            {faqItems.map((faqItem, index) => {
+              if (!faqItem) return null;
+
+              const question = faqItem?.fields?.Question?.value;
+              const answerField = faqItem?.fields?.Answer || { value: '' };
+
+              return (
+                <motion.div
+                  key={`answer-${faqItem.id}`}
+                  className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-4"
+                  variants={fadeInUp}
+                >
+                  <div className="mb-2">
+                    <label className="text-sm font-medium text-gray-600">
+                      Question {index + 1}: {question || `FAQ Item ${index + 1}`}
+                    </label>
+                  </div>
+                  <div className="mb-2">
+                    <label className="text-sm font-medium text-gray-700">Answer:</label>
+                  </div>
+                  <div className="min-h-24 w-full bg-white border border-gray-300 rounded p-3">
+                    <Text
+                      field={answerField}
+                      tag="div"
+                    />
+                  </div>
+                </motion.div>
+              );
+            })}
+          </motion.div>
+        )}
 
       </div>
     </section>
