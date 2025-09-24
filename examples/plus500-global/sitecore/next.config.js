@@ -1,6 +1,6 @@
 const path = require('path');
 const SassAlias = require('sass-alias');
- 
+
 /**
  * @type {import('next').NextConfig}
  */
@@ -15,7 +15,7 @@ const nextConfig = {
   // ✅ ✅ ✅ END OF ADDED OPTIONS ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
   // Allow specifying a distinct distDir when concurrently running app in a container
   distDir: process.env.NEXTJS_DIST_DIR || '.next',
- 
+
   i18n: {
     // These are all the locales you want to support in your application.
     // These should generally match (or at least be a subset of) those in Sitecore.
@@ -24,13 +24,13 @@ const nextConfig = {
     // prefixed path e.g. `/about`.
     defaultLocale: process.env.DEFAULT_LANGUAGE || process.env.NEXT_PUBLIC_DEFAULT_LANGUAGE || 'en',
   },
- 
+
   // Enable React Strict Mode
   reactStrictMode: true,
- 
+
   // Disable the X-Powered-By header. Follows security best practices.
   poweredByHeader: false,
- 
+
   // use this configuration to ensure that only images from the whitelisted domains
   // can be served from the Next.js Image Optimization API
   // see https://nextjs.org/docs/app/api-reference/components/image#remotepatterns
@@ -49,7 +49,7 @@ const nextConfig = {
       },
     ],
   },
- 
+
   async headers() {
     return [
       {
@@ -76,7 +76,7 @@ const nextConfig = {
       },
     ];
   },
- 
+
   async rewrites() {
     return [
       // healthz check
@@ -101,7 +101,7 @@ const nextConfig = {
       },
     ];
   },
- 
+
   webpack: (config, options) => {
     if (!options.isServer) {
       // Add a loader to strip out getServerSideProps and getStaticProps from components in the client bundle
@@ -122,10 +122,10 @@ const nextConfig = {
         ...config.externals,
       ];
     }
- 
+
     return config;
   },
- 
+
   // Add sass settings for SXA themes and styles
   sassOptions: {
     importer: new SassAlias({
@@ -137,6 +137,5 @@ const nextConfig = {
     silenceDeprecations: ["import", "legacy-js-api"]
   },
 };
- 
+
 module.exports = nextConfig;
- 
