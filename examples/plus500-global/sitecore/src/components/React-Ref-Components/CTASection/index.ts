@@ -1,0 +1,1 @@
+export { Default, Default as Gradient, Default as Solid, Default as Image } from './CTASection';

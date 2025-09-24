@@ -1,0 +1,1 @@
+export { Default, Default as Center, Default as Left, Default as Right } from './ImageWithCaption';
