@@ -136,7 +136,7 @@
   },
   "scripts": {
     "fix": "npm-run-all --serial lint:fix prettier",
-    "build": "cross-env NODE_ENV=production npm-run-all --serial sitecore-tools:build build-css-prod next:build",
+    "build": "cross-env NODE_ENV=production npm-run-all --serial sitecore-tools:build next:build",
     "lint": "eslint ./src/**/*.tsx ./src/**/*.ts",
     "lint:fix": "eslint ./src/**/*.tsx ./src/**/*.ts --fix",
     "prettier": "prettier --write \"./src/**/*.{ts,tsx}\"",
